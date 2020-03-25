@@ -2,7 +2,8 @@
 
 I am a big movie fan. I watched just in cinema 100 movies in 10 years.
 
-<https://movies-krsiak.netlify.com/>
+- Builds from `develop` branch and deploys to Netlify: <https://movies-krsiak.netlify.com/>
+- Then points to: <https://movies.krsiak.cz/>
 
 ## Status
 

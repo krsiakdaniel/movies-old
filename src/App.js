@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="Movies" />
         <h1>Movies</h1>
         <p>
-          Work in progress.
+          Movie DB. Project to learn React and JavaScript.
         </p>
       </header>
     </div>
