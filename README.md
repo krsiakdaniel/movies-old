@@ -4,6 +4,10 @@ I am a big movie fan. I watched just in cinema 100 movies in 10 years.
 
 <https://movies-krsiak.netlify.com/>
 
+## Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0/deploy-status)](https://app.netlify.com/sites/movies-krsiak/deploys)
+
 ## Todo
 
 - [x] Use: [Create React App](https://github.com/facebook/create-react-app) to start your project
