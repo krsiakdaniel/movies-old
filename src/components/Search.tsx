@@ -6,13 +6,15 @@ type Props = {
   search: any;
 };
 
+const SEARCH_TEXT = `Search 'Batman', ...`;
+
 const Search = ({ handleInput, search }: Props) => {
   return (
     <>
       <Box>
         <Input
           type="text"
-          placeholder="Search ..."
+          placeholder={SEARCH_TEXT}
           onChange={handleInput}
           onKeyPress={search}
           size="lg"

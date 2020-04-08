@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Box, Heading, SimpleGrid } from '@chakra-ui/core';
+import { Box, Heading } from '@chakra-ui/core';
 import axios from 'axios';
 
 import Search from '../components/Search';
+import Results from '../components/Results';
 
 const Movies = () => {
   const [state, setState] = useState({
     searchQuery: '',
+    results: [],
   });
   const apiUrl = 'http://www.omdbapi.com/?apikey=6fc8b664';
   // example: http://www.omdbapi.com/?apikey=6fc8b664&s=batman
@@ -15,6 +17,12 @@ const Movies = () => {
   const search = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       axios(apiUrl + '&s=' + state.searchQuery).then(({ data }) => {
+        let results = data.Search;
+
+        setState((prevState) => {
+          return { ...prevState, results: results };
+        });
+
         console.log(data);
       });
     }
@@ -36,13 +44,7 @@ const Movies = () => {
         </Heading>
       </Box>
       <Search handleInput={handleInput} search={search} />
-      <SimpleGrid
-        columns={{ sm: 1, md: 3, lg: 6 }}
-        spacingX="16px"
-        spacingY="16px"
-      >
-        <p>results</p>
-      </SimpleGrid>
+      <Results results={state.results} />
     </>
   );
 };
