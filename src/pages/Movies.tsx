@@ -5,10 +5,6 @@ import axios from 'axios';
 
 import Search from '../components/Search';
 
-type Props = {
-  e: any;
-};
-
 const Movies = () => {
   const [state, setState] = useState({
     searchQuery: '',
@@ -16,15 +12,15 @@ const Movies = () => {
   const apiUrl = 'http://www.omdbapi.com/?apikey=6fc8b664';
   // example: http://www.omdbapi.com/?apikey=6fc8b664&s=batman
 
-  const search = ({ e }: Props) => {
+  const search = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
-      axios(apiUrl + '&s=' + state.searchQuery).then((data) => {
+      axios(apiUrl + '&s=' + state.searchQuery).then(({ data }) => {
         console.log(data);
       });
     }
   };
 
-  const handleInput = ({ e }: Props) => {
+  const handleInput = (e: any) => {
     let searchValue = e.target.value;
 
     setState((prevState) => {
