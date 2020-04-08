@@ -1,6 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Box, Heading, Image, Input, SimpleGrid, Text } from '@chakra-ui/core';
+import { Box, Heading, Image, SimpleGrid } from '@chakra-ui/core';
+
+import Search from '../components/Search';
 
 const Movies = () => {
   return (
@@ -10,9 +12,7 @@ const Movies = () => {
           Movies
         </Heading>
       </Box>
-      <Box>
-        <Input placeholder="Search ..." size="lg" mb={4} />
-      </Box>
+      <Search />
       <SimpleGrid
         columns={{ sm: 1, md: 3, lg: 6 }}
         spacingX="16px"
