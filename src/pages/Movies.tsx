@@ -1,24 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import {
-  Box,
-  Heading,
-  Image,
-  Input,
-  SimpleGrid,
-  Skeleton,
-  Text,
-} from '@chakra-ui/core';
+import { Box, Heading, Image, Input, SimpleGrid, Text } from '@chakra-ui/core';
 
 const Movies = () => {
   return (
     <>
       <Box>
-        <Heading as="h1">Movies</Heading>
-        <Text>movies</Text>
+        <Heading as="h1" mb={4}>
+          Movies
+        </Heading>
       </Box>
       <Box>
-        <Input placeholder="Search ..." size="lg" />
+        <Input placeholder="Search ..." size="lg" mb={4} />
       </Box>
       <SimpleGrid
         columns={{ sm: 1, md: 3, lg: 6 }}
@@ -60,44 +53,6 @@ const Movies = () => {
             src="https://image.tmdb.org/t/p/w300/bYR8O1H1ZlME7Dm9ysfTYZnRDpw.jpg"
             alt="i"
           />
-        </Box>
-
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
-        </Box>
-        <Box>
-          <Skeleton height="80px" mb="16px" />
         </Box>
       </SimpleGrid>
     </>

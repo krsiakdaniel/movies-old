@@ -9,7 +9,8 @@ const About = () => {
     <>
       <Heading as="h1">About</Heading>
       <Text>
-        I am a big movie fan. I watched just in cinema 100 movies in 10 years.
+        I am a big movie fan and just in cinema I watched 100 movies in 10
+        years.
       </Text>
       <table className="table-movies">
         <thead>

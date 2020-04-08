@@ -5,15 +5,9 @@ import { List, ListItem } from '@chakra-ui/core';
 
 const Menu = () => {
   return (
-    <List styleType="none">
+    <List styleType="none" mb={4}>
       <ListItem>
         <Link to="/">Movies</Link>
-      </ListItem>
-      <ListItem>
-        <Link to="/detail">Detail</Link>
-      </ListItem>
-      <ListItem>
-        <Link to="/charts">Charts</Link>
       </ListItem>
       <ListItem>
         <Link to="/about">About</Link>
