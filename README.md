@@ -28,17 +28,15 @@
 
 ## 📚 Study plan
 
-This project and my [study plan](study-plan.md) show what I learnt about React, JavaScript and other tools.
+This project and my [study plan](study-plan.md) show what I learnt about JavaScript, TypeScript, React and other things.
 
 ## 📦 Deployment
 
 App uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch and deploys on each commit.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0/deploy-status)](https://app.netlify.com/sites/movies-krsiak/deploys)
-
 ## 🔨 Scripts
 
-[Makefile](Makefile) provides following scripts.
+Have a look in [Makefile](Makefile) for available scripts.
 
 ### React
 
@@ -56,7 +54,7 @@ make build
 
 ### Prettier
 
-Changed files will be formatted automatically with each commit using [.prettierrc](.prettierrc) options. It can be done manually as well.
+Changed files are formatted on save in editor and with each commit using [.prettierrc](.prettierrc) options. It can be done manually as well.
 
 ```
 make prettier
@@ -64,7 +62,7 @@ make prettier
 
 ## Built with
 
-What I use to create this app including all [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies).
+What I use to create this app including [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies).
 
 ### Technology
 
@@ -79,6 +77,11 @@ What I use to create this app including all [dependencies](https://github.com/kr
 - [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/docs/en/index.html)
 - [browserl.ist](https://browserl.ist/?q=%3E0.2%25%2C+not+dead%2C+not+ie+%3C%3D+11%2C+not+op_mini+all)
+- [shields.io](https://shields.io/)
+
+### API
+
+- [TMDb](https://www.themoviedb.org/documentation/api)
 
 ### Services
 

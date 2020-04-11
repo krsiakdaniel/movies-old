@@ -1,6 +1,6 @@
 ## 📚 Study plan
 
-This project and my study-plan show what I learnt about React, JavaScript and other tools.
+What I learnt about JavaScript, TypeScript, React and other things.
 
 ## React
 
@@ -20,10 +20,6 @@ Learn all from:
 - [ ] Manage local [app state](https://alligator.io/react/react-redux/)
 - [ ] Make async actions with [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
 
-## JavaScript
-
-- [x] [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-
 ### API
 
 - [ ] Use: [Axios](https://github.com/axios/axios)
@@ -36,7 +32,10 @@ Learn all from:
 ## Design
 
 - [x] [Chakra](https://chakra-ui.com/getting-started)
-- [ ] Data visualization: [recharts](http://recharts.org/en-US/)
+
+## Data visualization
+
+- [ ] : [recharts](http://recharts.org/en-US/)
 
 ## Tools
 
@@ -52,3 +51,7 @@ Learn all from:
 ## Deployment
 
 - [x] Deploy from Github using [Netlify](https://www.netlify.com/)
+
+## JavaScript
+
+- [x] [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
