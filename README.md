@@ -1,5 +1,4 @@
 <div align="center">
-  <h1>Movies</h1>
   <p>
     <a href="https://movies.krsiak.cz/">
       <img
@@ -10,11 +9,20 @@
       />
     </a>
   </p>
-  <p>I am a big movie fan and just in cinema I watched 100 movies in 10 years.</p>
+    <h1>Movies</h1>
+    <p>I am a big movie fan and just in cinema I watched 100 movies in 10 years.</p>
   <p>
     <a href="https://movies.krsiak.cz/">https://movies.krsiak.cz/</a>
   </p>
 </div>
+
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
+[![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://www.codacy.com/manual/krsiakdaniel/movies?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=krsiakdaniel/movies&amp;utm_campaign=Badge_Grade)
+[![GitHub issues](https://img.shields.io/github/issues-raw/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/krsiakdaniel/movies?color=%23e74c3c)](https://github.com/krsiakdaniel/movies/issues?q=is%3Aissue+is%3Aclosed)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/network/dependencies)
+[![GitHub repo size](https://img.shields.io/github/repo-size/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies)
 
 ---
 
