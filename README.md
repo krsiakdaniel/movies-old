@@ -18,7 +18,7 @@
 
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 [![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://www.codacy.com/manual/krsiakdaniel/movies?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=krsiakdaniel/movies&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
 [![GitHub issues](https://img.shields.io/github/issues-raw/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/krsiakdaniel/movies?color=%23e74c3c)](https://github.com/krsiakdaniel/movies/issues?q=is%3Aissue+is%3Aclosed)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/network/dependencies)
@@ -60,24 +60,31 @@ Changed files are formatted on save in editor and with each commit using [.prett
 make prettier
 ```
 
-## Built with
+## 🔑 TMDB API
+
+Read wiki on how [TMDB API](https://github.com/krsiakdaniel/movies/wiki) works.
+
+## ⚙️ Built with
 
 What I use to create this app including [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies).
 
-### Technology
+### Core
 
 - [React](https://reactjs.org/)
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS - Emotion](https://emotion.sh/docs/introduction)
+
+### Technologies
+
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 - [Chakra UI](https://chakra-ui.com/getting-started)
-- [Emotion](https://emotion.sh/docs/introduction)
 
 ### Tools
 
 - [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/docs/en/index.html)
 - [browserl.ist](https://browserl.ist/?q=%3E0.2%25%2C+not+dead%2C+not+ie+%3C%3D+11%2C+not+op_mini+all)
-- [shields.io](https://shields.io/)
 
 ### API
 
@@ -85,7 +92,9 @@ What I use to create this app including [dependencies](https://github.com/krsiak
 
 ### Services
 
-- [Netlify](https://www.netlify.com/)
+- [Uptime Robot status](https://stats.uptimerobot.com/7DxZ0imzV4)
+- [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys)
+- [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
 - [Smartlook](https://www.smartlook.com/)
 
 > Made by [Krsiak Daniel](https://krsiak.cz/)
