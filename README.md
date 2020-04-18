@@ -60,9 +60,9 @@ Changed files are formatted on save in editor and with each commit using [.prett
 make prettier
 ```
 
-## 🔑 TMDB API
+## 🔑 TMDb API
 
-Read wiki on how [TMDB API](https://github.com/krsiakdaniel/movies/wiki) works.
+Read wiki on how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
 
 ## ⚙️ Built with
 
