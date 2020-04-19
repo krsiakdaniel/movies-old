@@ -46,7 +46,6 @@ const StyledMovieInfoBar = styled.div`
   height: auto;
   background: #1c1c1c;
   padding: 16px;
-  box-sizing: border-box;
   font-size: 16px;
   margin-bottom: 16px;
 
@@ -59,8 +58,7 @@ const StyledMovieInfoBar = styled.div`
 
   .movieinfobar-content-col {
     float: left;
-    width: 33.33%;
-    box-sizing: border-box;
+    width: 33%;
     padding: 8px 16px 0 0;
   }
 

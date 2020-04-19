@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
    }
 
   a {
-    color: #16d47b;
+    color: #27ae60;
     text-decoration: none;
     display: inline-block;
     }

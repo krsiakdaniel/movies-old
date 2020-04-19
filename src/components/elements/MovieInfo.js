@@ -69,7 +69,6 @@ const StyledMovieInfo = styled.div`
   background-position: center !important;
   width: 100%;
   padding: 40px 16px;
-  box-sizing: border-box;
   animation: animateMovieinfo 1s;
 
   .movieinfo-content {

@@ -11,6 +11,7 @@ const Header = () => {
       <div className="header-content">
         <Link to="/">
           <StyledRMDBLogo src={RMDBLogo} alt="i" />
+          <span>Movies</span>
         </Link>
         <StyledTMDBLogo src={TMDBLogo} alt="i" />
       </div>
@@ -20,44 +21,41 @@ const Header = () => {
 
 // css
 const StyledHeader = styled.div`
-  background: #1c1c1c;
-  padding: 0 16px;
-  box-sizing: border-box;
+  background: #27ae60;
 
   .header-content {
     max-width: 1280px;
-    min-height: 120px;
     padding: 16px 0px;
     margin: 0 auto;
-    box-sizing: border-box;
 
-    @media screen and (max-width: 500px) {
-      max-width: 1280px;
-      min-height: 0px;
+    a {
+      color: #fff;
+      font-size: 40px;
+    }
+
+    a:hover img {
+      transition: all 0.4s;
+      transform: rotate(180deg);
     }
   }
 `;
 
 const StyledRMDBLogo = styled.img`
+  // TODO: remove floats, use flexbox
+  float: left;
   width: 64px;
-  margin-top: 8px;
+  margin-right: 16px;
+  transition: all 0.4s;
 
-  @media screen and (max-width: 500px) {
-    width: 150px;
-    margin-top: 4px;
+  :hover {
+    transform: rotate(180deg);
   }
 `;
 
 const StyledTMDBLogo = styled.img`
-  width: 122px;
-  margin-top: 24px;
   float: right;
-
-  @media screen and (max-width: 500px) {
-    display: inline-block;
-    width: 80px;
-    margin-top: 0px;
-  }
+  width: 128px;
+  margin-top: 8px;
 `;
 
 export default Header;

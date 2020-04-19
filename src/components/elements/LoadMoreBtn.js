@@ -23,7 +23,7 @@ const StyledLoadMoreBtn = styled.button`
   min-width: 150px;
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.4s;
   border-radius: 32px;
   font-size: 24px;
   display: block;

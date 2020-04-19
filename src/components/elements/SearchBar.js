@@ -41,7 +41,6 @@ SearchBar.propTypes = {
 // css
 const StyledSearchBar = styled.div`
   width: 100%;
-  box-sizing: border-box;
 `;
 
 const StyledSearchBarContent = styled.div`
@@ -55,24 +54,23 @@ const StyledSearchBarContent = styled.div`
     width: 100%;
     height: 40px;
     color: #000;
-    box-sizing: border-box;
     position: relative;
     display: inline-block;
     min-width: 0;
     padding: 4px 16px;
-    color: rgba(0, 0, 0, 0.65);
+    color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
     line-height: 1.5715;
     background-color: #fff;
     background-image: none;
     border: 1px solid #d9d9d9;
     border-radius: 32px;
-    transition: all 0.3s;
+    transition: all 0.4s;
 
     :focus {
       outline: 0;
-      border-color: #40a9ff;
-      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      border-color: #27ae60;
+      box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.1);
     }
   }
 `;
