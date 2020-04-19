@@ -30,6 +30,10 @@
 
 This project and my [study plan](study-plan.md) show what I learnt about JavaScript, TypeScript, React and other things.
 
+## Project board
+
+Browse this [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) to see what is planned, in progress and done.
+
 ## 📦 Deployment
 
 App uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch and deploys on each commit.
