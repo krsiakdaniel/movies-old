@@ -1,68 +1,100 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <p>
+    <a href="https://movies.krsiak.cz/">
+      <img
+      width="128"
+      height="128"
+      alt="movies"
+      src="https://raw.githubusercontent.com/krsiakdaniel/movies/master/src/img/png/logo-128.png"
+      />
+    </a>
+  </p>
+    <h1>Movies</h1>
+    <p>I am a big movie fan and just in cinema I watched 100 movies in 10 years.</p>
+  <p>
+    <a href="https://movies.krsiak.cz/">https://movies.krsiak.cz/</a>
+  </p>
+</div>
 
-## Available Scripts
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
+[![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
+[![GitHub issues](https://img.shields.io/github/issues-raw/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/krsiakdaniel/movies?color=%23e74c3c)](https://github.com/krsiakdaniel/movies/issues?q=is%3Aissue+is%3Aclosed)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/network/dependencies)
+[![GitHub repo size](https://img.shields.io/github/repo-size/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📚 Study plan
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project and my [study plan](study-plan.md) show what I learnt about JavaScript, TypeScript, React and other things.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 📦 Deployment
 
-### `npm test`
+App uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch and deploys on each commit.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔨 Scripts
 
-### `npm run build`
+Have a look in [Makefile](Makefile) for available scripts.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### React
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Run app on <http://localhost:3000/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+make start
+```
 
-### `npm run eject`
+Build the app in `/build/` folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+make build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prettier
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Changed files are formatted on save in editor and with each commit using [.prettierrc](.prettierrc) options. It can be done manually as well.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+make prettier
+```
 
-## Learn More
+## 🔑 TMDb API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Read wiki on how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Built with
 
-### Code Splitting
+What I use to create this app including [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Core
 
-### Analyzing the Bundle Size
+- [React](https://reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS - Emotion](https://emotion.sh/docs/introduction)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Technologies
 
-### Making a Progressive Web App
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+- [Chakra UI](https://chakra-ui.com/getting-started)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Tools
 
-### Advanced Configuration
+- [EditorConfig](https://editorconfig.org/)
+- [Prettier](https://prettier.io/docs/en/index.html)
+- [browserl.ist](https://browserl.ist/?q=%3E0.2%25%2C+not+dead%2C+not+ie+%3C%3D+11%2C+not+op_mini+all)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### API
 
-### Deployment
+- [TMDb](https://www.themoviedb.org/documentation/api)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Services
 
-### `npm run build` fails to minify
+- [Uptime Robot status](https://stats.uptimerobot.com/7DxZ0imzV4)
+- [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys)
+- [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
+- [Smartlook](https://www.smartlook.com/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> Made by [Krsiak Daniel](https://krsiak.cz/)
