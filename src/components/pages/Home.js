@@ -12,7 +12,7 @@ import MovieThumb from '../elements/MovieThumb';
 import LoadMoreBtn from '../elements/LoadMoreBtn';
 import Spinner from '../elements/Spinner';
 
-import { useHomeFetch } from '../hooks/useHomeFetch';
+import { useHomeFetch } from '../hooks/index';
 
 import NoImage from '../../assets/jpg/error/no-image.jpg';
 
