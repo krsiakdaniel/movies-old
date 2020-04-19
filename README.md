@@ -30,9 +30,9 @@
 
 This project and my [study plan](study-plan.md) show what I learnt about JavaScript, TypeScript, React and other things.
 
-## Project board
+## 📆 Project board
 
-Browse this [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) to see what is planned, in progress and done.
+Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) and [milestones](https://github.com/krsiakdaniel/movies/milestones) to see what is planned, in progress and done.
 
 ## 📦 Deployment
 
