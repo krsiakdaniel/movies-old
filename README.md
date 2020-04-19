@@ -32,7 +32,7 @@ My [study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript,
 
 ## 📆 Project board
 
-Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) and [milestones](https://github.com/krsiakdaniel/movies/milestones) to see what is planned, in progress and done.
+Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) and [milestones](https://github.com/krsiakdaniel/movies/milestones?direction=asc&sort=due_date&state=open) to see what is planned, in progress and done.
 
 ## 🔑 TMDb API
 
