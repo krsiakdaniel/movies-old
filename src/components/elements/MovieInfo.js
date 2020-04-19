@@ -8,13 +8,14 @@ import {
   SIZE_BACKDROP,
   SIZE_POSTER,
 } from '../../config/apiMovies';
+import { calcTime, convertMoney } from '../../utils/index';
 
 import styled from 'styled-components';
 
 const TEXT_DIRECTOR = 'Director';
 const TEXT_DIRECTORS = 'Directors';
 
-const MovieInfo = ({ movie }) => {
+const MovieInfo = ({ movie, time, budget, revenue }) => {
   return (
     <StyledMovieInfo backdrop={movie.backdrop_path}>
       <div className="movieinfo-content">
@@ -48,6 +49,18 @@ const MovieInfo = ({ movie }) => {
               ))}
             </div>
           </div>
+
+          <ul>
+            <li>
+              <span>Running time:</span> {calcTime(time)}
+            </li>
+            <li>
+              <span>Budget:</span> {convertMoney(budget)}
+            </li>
+            <li>
+              <span>Revenue:</span> {convertMoney(revenue)}
+            </li>
+          </ul>
         </div>
       </div>
     </StyledMovieInfo>
@@ -69,6 +82,7 @@ const StyledMovieInfo = styled.div`
   background-position: center !important;
   width: 100%;
   padding: 40px 16px;
+  margin-bottom: 32px;
   animation: animateMovieinfo 1s;
 
   .movieinfo-content {
@@ -78,6 +92,17 @@ const StyledMovieInfo = styled.div`
     background: rgb(0, 0, 0, 0.7);
     border-radius: 16px;
     position: relative;
+
+    ul {
+      margin-top: 16px;
+      li {
+        margin-bottom: 8px;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .movieinfo-thumb {

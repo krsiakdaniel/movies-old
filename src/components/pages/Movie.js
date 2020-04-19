@@ -2,7 +2,6 @@ import React from 'react';
 
 import Navigation from '../elements/Navigation';
 import MovieInfo from '../elements/MovieInfo';
-import MovieInfoBar from '../elements/MovieInfoBar';
 import Grid from '../elements/Grid';
 import Actor from '../elements/Actor';
 import Spinner from '../elements/Spinner';
@@ -19,8 +18,8 @@ const Movie = ({ movieId }) => {
   return (
     <>
       <Navigation movie={movie.original_title} />
-      <MovieInfo movie={movie} />
-      <MovieInfoBar
+      <MovieInfo
+        movie={movie}
         time={movie.runtime}
         budget={movie.budget}
         revenue={movie.revenue}

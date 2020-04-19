@@ -22,6 +22,7 @@ const Header = () => {
 // css
 const StyledHeader = styled.div`
   background: #27ae60;
+  box-shadow: 0 0 7px 0 rgba(26, 46, 86, 0.1);
 
   .header-content {
     max-width: 1280px;
