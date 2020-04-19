@@ -28,7 +28,7 @@
 
 ## 📚 Study plan
 
-This project and my [study plan](study-plan.md) show what I learnt about JavaScript, TypeScript, React and other things.
+My [study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript, React and other technologies.
 
 ## 📆 Project board
 
@@ -68,37 +68,8 @@ make prettier
 
 Read wiki on how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
 
-## ⚙️ Built with
+## ⚙️ Technologies
 
-What I use to create this app including [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies).
-
-### Core
-
-- [React](https://reactjs.org/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [TypeScript](https://www.typescriptlang.org/)
-- [CSS - Emotion](https://emotion.sh/docs/introduction)
-
-### Technologies
-
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
-- [Chakra UI](https://chakra-ui.com/getting-started)
-
-### Tools
-
-- [EditorConfig](https://editorconfig.org/)
-- [Prettier](https://prettier.io/docs/en/index.html)
-- [browserl.ist](https://browserl.ist/?q=%3E0.2%25%2C+not+dead%2C+not+ie+%3C%3D+11%2C+not+op_mini+all)
-
-### API
-
-- [TMDb](https://www.themoviedb.org/documentation/api)
-
-### Services
-
-- [Uptime Robot status](https://stats.uptimerobot.com/7DxZ0imzV4)
-- [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys)
-- [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
-- [Smartlook](https://www.smartlook.com/)
+Learn about [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), [technologies](technologies.md) and services used to build this app.
 
 > Made by [Krsiak Daniel](https://krsiak.cz/)

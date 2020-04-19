@@ -1,6 +1,6 @@
-## 📚 Study plan
+# 📚 Study plan
 
-What I learnt about JavaScript, TypeScript, React and other things.
+My study plan shows what I learnt about JavaScript, TypeScript, React and other technologies.
 
 ## React
 
