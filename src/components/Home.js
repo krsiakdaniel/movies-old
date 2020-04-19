@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
-  POPULAR_BASE_URL,
-  SEARCH_BASE_URL,
+  BASE_URL_MOVIES_POPULAR,
+  BASE_URL_MOVIES_SEARCH,
   SIZE_POSTER,
   SIZE_BACKDROP,
   BASE_URL_IMAGE,
@@ -32,7 +32,7 @@ const Home = () => {
   ] = useHomeFetch(searchTerm);
 
   const searchMovies = search => {
-    const endpoint = search ? SEARCH_BASE_URL + search : POPULAR_BASE_URL;
+    const endpoint = search ? BASE_URL_MOVIES_SEARCH + search : BASE_URL_MOVIES_POPULAR;
 
     setSearchTerm(search);
     fetchMovies(endpoint);
@@ -40,8 +40,8 @@ const Home = () => {
   }
 
   const loadMoreMovies = () => {
-    const searchEndpoint = `${SEARCH_BASE_URL}${searchTerm}&page=${currentPage + 1}`;
-    const popularEndpoint = `${POPULAR_BASE_URL}&page=${currentPage + 1}`;
+    const searchEndpoint = `${BASE_URL_MOVIES_SEARCH}${searchTerm}&page=${currentPage + 1}`;
+    const popularEndpoint = `${BASE_URL_MOVIES_POPULAR}&page=${currentPage + 1}`;
 
     const endpoint = searchTerm ? searchEndpoint : popularEndpoint;
 

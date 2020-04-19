@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { POPULAR_BASE_URL } from '../../config';
+import { BASE_URL_MOVIES_POPULAR } from '../../config';
 
 export const useHomeFetch = searchTerm => {
   const [state, setState] = useState({ movies: [] });
@@ -37,7 +37,7 @@ export const useHomeFetch = searchTerm => {
       setState(JSON.parse(sessionStorage.homeState));
       setLoading(false);
     } else {
-      fetchMovies(POPULAR_BASE_URL);
+      fetchMovies(BASE_URL_MOVIES_POPULAR);
     }
   }, []);
 
