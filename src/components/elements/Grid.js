@@ -21,6 +21,10 @@ const StyledGrid = styled.div`
   max-width: 1280px;
   margin: 0 auto 16px auto;
   padding: 0 16px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 24px;
+  }
 `;
 
 const StyledGridContent = styled.div`
@@ -28,6 +32,10 @@ const StyledGridContent = styled.div`
   grid-template-columns: repeat(6, minmax(100px, 1fr));
   grid-gap: 32px;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    grid-gap: 16px;
+  }
 
   .grid-element {
     animation: animateGrid 0.5s;

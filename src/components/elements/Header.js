@@ -26,7 +26,7 @@ const StyledHeader = styled.div`
 
   .header-content {
     max-width: 1280px;
-    padding: 16px 0px;
+    padding: 16px;
     margin: 0 auto;
 
     a {
@@ -37,6 +37,10 @@ const StyledHeader = styled.div`
     a:hover img {
       transition: all 0.4s;
       transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 16px 24px;
     }
   }
 `;
