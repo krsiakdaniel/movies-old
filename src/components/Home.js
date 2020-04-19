@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import {
   POPULAR_BASE_URL,
   SEARCH_BASE_URL,
-  POSTER_SIZE,
-  BACKDROP_SIZE,
-  IMAGE_BASE_URL,
+  SIZE_POSTER,
+  SIZE_BACKDROP,
+  BASE_URL_IMAGE,
 } from '../config';
 
 // import Components
@@ -56,7 +56,7 @@ const Home = () => {
     <>
       {!searchTerm && (
         <HeroImage
-          image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${heroImage.backdrop_path}`}
+          image={`${BASE_URL_IMAGE}${SIZE_BACKDROP}${heroImage.backdrop_path}`}
           title={heroImage.original_title}
           text={heroImage.overview}
         />
@@ -69,7 +69,7 @@ const Home = () => {
             clickable
             image={
               movie.poster_path
-                ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
+                ? BASE_URL_IMAGE + SIZE_POSTER + movie.poster_path
                 : NoImage
             }
             movieId={movie.id}

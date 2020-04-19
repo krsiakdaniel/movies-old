@@ -1,24 +1,25 @@
-// Configuration for TMDB
-// To se the latest configuration fetch it from https://api.themoviedb.org/3/configuration?api_key=019e8f375549e0bbd4a4191862ebc88f
-// Read more about the API here: https://developers.themoviedb.org/
+// TMDb API
+// https://www.themoviedb.org/documentation/api/discover
+// https://api.themoviedb.org/3/movie/9922?api_key=295bad0176d1e0739cd94f5f2594968b
 
-const API_URL = 'https://api.themoviedb.org/3/';
+const BASE_URL_API = 'https://api.themoviedb.org/3/';
 const API_KEY = '844dba0bfd8f3a4f3799f6130ef9e335';
 
-const SEARCH_BASE_URL = `${API_URL}search/movie?api_key=${API_KEY}&query=`;
-const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}`;
+// images
+// https://api.themoviedb.org/3/configuration?api_key=295bad0176d1e0739cd94f5f2594968b
+// http://image.tmdb.org/t/p/w780/1aZfvT2Yc03waSTQjaf9rF2MSLu.jpg
+const BASE_URL_IMAGE = 'http://image.tmdb.org/t/p/';
+const SIZE_POSTER = 'w500'; // w92, w154, w185, w342, w500, w780, original
+const SIZE_BACKDROP = 'w1280'; // w300, w780, w1280, original
 
-const IMAGE_BASE_URL = 'http://image.tmdb.org/t/p/';
-// Sizes: w300, w780, w1280, original
-const BACKDROP_SIZE = 'w1280';
-// w92, w154, w185, w342, w500, w780, original
-const POSTER_SIZE = 'w500';
+const SEARCH_BASE_URL = `${BASE_URL_API}search/movie?api_key=${API_KEY}&query=`;
+const POPULAR_BASE_URL = `${BASE_URL_API}movie/popular?api_key=${API_KEY}`;
 
-export { 
-  SEARCH_BASE_URL, 
+export {
+  SEARCH_BASE_URL,
   POPULAR_BASE_URL,
-  API_URL, API_KEY, 
-  IMAGE_BASE_URL, 
-  BACKDROP_SIZE, 
-  POSTER_SIZE 
+  BASE_URL_API, API_KEY,
+  BASE_URL_IMAGE,
+  SIZE_BACKDROP,
+  SIZE_POSTER
 };

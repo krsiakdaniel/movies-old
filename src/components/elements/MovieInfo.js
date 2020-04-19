@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import NoImage from '../images/no_image.jpg';
-import { IMAGE_BASE_URL, POSTER_SIZE } from '../../config';
+import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
 
 import MovieThumb from './MovieThumb';
 
@@ -15,7 +15,7 @@ const MovieInfo = ({ movie }) => (
         <MovieThumb
           image={
             movie.poster_path
-              ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
+              ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
               : NoImage
           }
           clickable={false}
@@ -26,7 +26,7 @@ const MovieInfo = ({ movie }) => (
         <h1>{movie.title}</h1>
         <h3>PLOT</h3>
         <p>{movie.overview}</p>
-     
+
         <div className="rating-director">
           <div>
             <h3>IMDB RATING</h3>
