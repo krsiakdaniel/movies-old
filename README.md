@@ -34,13 +34,21 @@ My [study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript,
 
 Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) and [milestones](https://github.com/krsiakdaniel/movies/milestones) to see what is planned, in progress and done.
 
+## 🔑 TMDb API
+
+Learn how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
+
+## ⚙️ Technologies
+
+Read about [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), [technologies](technologies.md) and services used to build this app.
+
 ## 📦 Deployment
 
 App uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch and deploys on each commit.
 
 ## 🔨 Scripts
 
-Have a look in [Makefile](Makefile) for available scripts.
+Read [Makefile](Makefile) to find available scripts.
 
 ### React
 
@@ -58,18 +66,8 @@ make build
 
 ### Prettier
 
-Changed files are formatted on save in editor and with each commit using [.prettierrc](.prettierrc) options. It can be done manually as well.
+Changed files are formatted on save in editor using [.prettierrc](.prettierrc) options. This can be done manually as well.
 
 ```
 make prettier
 ```
-
-## 🔑 TMDb API
-
-Read wiki on how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
-
-## ⚙️ Technologies
-
-Learn about [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), [technologies](technologies.md) and services used to build this app.
-
-> Made by [Krsiak Daniel](https://krsiak.cz/)
