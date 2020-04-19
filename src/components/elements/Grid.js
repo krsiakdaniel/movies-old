@@ -22,7 +22,6 @@ const StyledGrid = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   h1 {
-    font-family: 'Abel', sans-serif;
     font-size: 42px;
 
     @media screen and (max-width: 768px) {

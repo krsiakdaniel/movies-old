@@ -91,18 +91,16 @@ const StyledMovieInfo = styled.div`
   }
 
   .movieinfo-text {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 40px;
     color: #fff;
     overflow: hidden;
 
     h1 {
-      font-family: 'Abel', sans-serif;
       font-size: 48px;
       margin: 0;
 
       @media screen and (max-width: 1000px) {
-        font-size: 32px !important;
+        font-size: 32px;
       }
     }
 
@@ -114,7 +112,6 @@ const StyledMovieInfo = styled.div`
     }
 
     p {
-      font-family: 'Abel', sans-serif;
       font-size: 18px;
       line-height: 26px;
     }

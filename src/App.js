@@ -24,11 +24,54 @@ const App = () => {
 
 // css
 const GlobalStyle = createGlobalStyle`
-  body {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #032139;
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    }
+
+  ul {
+    line-height: 1;
+   }
+
+  li {
+    list-style: none;
+    line-height: 1;
+   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    }
+    a:hover, a:active, a:focus {
+      text-decoration: underline;
+      }
+    a:focus {
+      outline: none;
+      }
+
+  input, label {
+    line-height: 1;
+    }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
 `;
 
 export default App;

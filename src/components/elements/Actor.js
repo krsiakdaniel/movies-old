@@ -30,7 +30,6 @@ Actor.propTypes = {
 
 // css
 const StyledActor = styled.div`
-  font-family: 'Abel', sans-serif;
   color: #fff;
   background: #1c1c1c;
   border-radius: 20px;

@@ -59,7 +59,6 @@ const StyledSearchBarContent = styled.div`
   color: #000;
 
   input {
-    font-family: 'Abel', sans-serif;
     font-size: 28px;
     position: absolute;
     left: 0px;

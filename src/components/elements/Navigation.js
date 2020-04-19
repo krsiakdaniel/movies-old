@@ -6,17 +6,17 @@ import styled from 'styled-components';
 
 const Navigation = ({ movie }) => {
   return (
-    <>
-      <StyledNavigation>
-        <div className="navigation-content">
-          <Link to="/">
-            <p>Home</p>
-          </Link>
-          <p>|</p>
-          <p>{movie}</p>
-        </div>
-      </StyledNavigation>
-    </>
+    <StyledNavigation>
+      <div className="navigation-content">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>/</li>
+          <li>{movie}</li>
+        </ul>
+      </div>
+    </StyledNavigation>
   );
 };
 
@@ -27,28 +27,20 @@ Navigation.propTypes = {
 // css
 const StyledNavigation = styled.div`
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  background: #353535;
-  color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
 
   .navigation-content {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
     width: 100%;
 
-    p {
-      font-family: 'Abel', sans-serif;
-      font-size: 22px;
-      float: left;
-      color: #fff;
-      padding-right: 10px;
-      text-decoration: none;
-
-      @media screen and (max-width: 768px) {
-        font-size: 16px;
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 10px;
+        a {
+          color: #16d47b;
+        }
       }
     }
   }
