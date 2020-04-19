@@ -3,19 +3,15 @@ import {
   BASE_URL_MOVIES_POPULAR,
   BASE_URL_MOVIES_SEARCH,
   SIZE_POSTER,
-  SIZE_BACKDROP,
   BASE_URL_IMAGE,
 } from '../config';
 
-// import Components
-import HeroImage from './elements/HeroImage';
 import SearchBar from './elements/SearchBar';
 import Grid from './elements/Grid';
 import MovieThumb from './elements/MovieThumb';
 import LoadMoreBtn from './elements/LoadMoreBtn';
 import Spinner from './elements/Spinner';
 
-// Custom Hook
 import { useHomeFetch } from './hooks/useHomeFetch';
 
 import NoImage from './images/no_image.jpg';
@@ -24,7 +20,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [
     {
-      state: { movies, currentPage, totalPages, heroImage },
+      state: { movies, currentPage, totalPages },
       loading,
       error,
     },
@@ -54,13 +50,6 @@ const Home = () => {
 
   return (
     <>
-      {!searchTerm && (
-        <HeroImage
-          image={`${BASE_URL_IMAGE}${SIZE_BACKDROP}${heroImage.backdrop_path}`}
-          title={heroImage.original_title}
-          text={heroImage.overview}
-        />
-      )}
       <SearchBar callback={searchMovies} />
       <Grid header={searchTerm ? 'Search Result' : 'Popular Movies'}>
         {movies.map(movie => (

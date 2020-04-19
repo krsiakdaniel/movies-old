@@ -20,7 +20,6 @@ export const useHomeFetch = searchTerm => {
           isLoadMore !== -1
             ? [...prev.movies, ...result.results]
             : [...result.results],
-        heroImage: prev.heroImage || result.results[0],
         currentPage: result.page,
         totalPages: result.total_pages,
       }));
