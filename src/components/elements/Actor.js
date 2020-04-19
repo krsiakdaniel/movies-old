@@ -30,30 +30,25 @@ Actor.propTypes = {
 
 // css
 const StyledActor = styled.div`
-  color: #fff;
-  background: #1c1c1c;
-  border-radius: 20px;
-  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px;
   text-align: center;
 
   img {
-    display: block;
-    width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 8px;
   }
 
   .actor-name {
     display: block;
-    font-size: 18px;
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
   }
 
   .actor-character {
     display: block;
-    font-size: 16px;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
   }
 `;
 

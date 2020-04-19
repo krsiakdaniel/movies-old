@@ -19,21 +19,14 @@ Grid.propTypes = {
 // css
 const StyledGrid = styled.div`
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  h1 {
-    font-size: 42px;
-
-    @media screen and (max-width: 768px) {
-      font-size: 22px;
-    }
-  }
+  margin: 0 auto 16px auto;
+  padding: 0 16px;
 `;
 
 const StyledGridContent = styled.div`
   display: grid;
   grid-template-columns: repeat(6, minmax(100px, 1fr));
-  grid-gap: 40px;
+  grid-gap: 32px;
   position: relative;
 
   .grid-element {

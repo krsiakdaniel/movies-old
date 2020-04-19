@@ -19,20 +19,20 @@ LoadMoreBtn.propTypes = {
 // css
 const StyledLoadMoreBtn = styled.button`
   background: #27ae60;
-  border: 1px solid #27ae60;
-  min-width: 220px;
+  border: transparent;
+  min-width: 150px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
-  border-radius: 8px;
+  border-radius: 32px;
   font-size: 24px;
   display: block;
-  margin: 20px auto;
+  margin: 16px auto;
   padding: 4px 8px;
   outline: none;
 
   :hover {
-    opacity: 0.8;
+    background: #2ecc71;
   }
 `;
 

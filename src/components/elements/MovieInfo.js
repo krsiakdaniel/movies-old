@@ -68,7 +68,7 @@ const StyledMovieInfo = styled.div`
   background-size: cover !important;
   background-position: center !important;
   width: 100%;
-  padding: 40px 20px;
+  padding: 40px 16px;
   box-sizing: border-box;
   animation: animateMovieinfo 1s;
 
@@ -77,7 +77,7 @@ const StyledMovieInfo = styled.div`
     min-height: 450px;
     margin: 0 auto;
     background: rgb(0, 0, 0, 0.7);
-    border-radius: 20px;
+    border-radius: 16px;
     position: relative;
   }
 
@@ -94,27 +94,6 @@ const StyledMovieInfo = styled.div`
     padding: 40px;
     color: #fff;
     overflow: hidden;
-
-    h1 {
-      font-size: 48px;
-      margin: 0;
-
-      @media screen and (max-width: 1000px) {
-        font-size: 32px;
-      }
-    }
-
-    h3 {
-      font-size: 16px;
-      line-height: 0;
-      margin-top: 30px;
-      text-transform: capitalize;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 26px;
-    }
   }
 
   .rating-director {
@@ -131,16 +110,12 @@ const StyledMovieInfo = styled.div`
     background: #fff;
     color: #000;
     font-weight: 800;
-    border-radius: 25px;
+    border-radius: 24px;
     margin: 0px 0 0 0;
   }
 
   .director {
     margin: 0 0 0 40px;
-
-    p {
-      margin: 0;
-    }
   }
 
   @media screen and (max-width: 768px) {

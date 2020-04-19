@@ -13,7 +13,7 @@ const StyledSpinner = styled.div`
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
-  margin: 20px auto;
+  margin: 16px auto;
 
   @keyframes spin {
     0% {

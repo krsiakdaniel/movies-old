@@ -26,32 +26,14 @@ MovieThumb.propTypes = {
 // css
 const StyledMovieThumb = styled.div`
   img {
-    width: 100%;
-    height: auto;
-    /* max-height: 350px; */
     transition: all 0.3s;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     :hover {
-      opacity: 0.8;
+      transform: scale(1.1);
     }
-
-    /* @media screen and (max-width: 1024px) {
-      height: 300px;
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 350px;
-    }
-
-    @media screen and (max-width: 600px) {
-      max-height: 300px;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-height: 450px;
-    } */
 
     .clickable {
       cursor: pointer;

@@ -39,9 +39,13 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     line-height: 1;
     }
+
+  p {
+      margin-bottom: 16px;
+  }
 
   ul {
     line-height: 1;
@@ -53,15 +57,18 @@ const GlobalStyle = createGlobalStyle`
    }
 
   a {
-    display: inline-block;
+    color: #16d47b;
     text-decoration: none;
+    display: inline-block;
     }
-    a:hover, a:active, a:focus {
-      text-decoration: underline;
-      }
-    a:focus {
-      outline: none;
-      }
+
+  a:hover, a:active, a:focus {
+    text-decoration: underline;
+    }
+
+  a:focus {
+    outline: none;
+    }
 
   input, label {
     line-height: 1;

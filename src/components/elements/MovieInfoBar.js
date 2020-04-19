@@ -45,9 +45,10 @@ const StyledMovieInfoBar = styled.div`
   min-height: 100px;
   height: auto;
   background: #1c1c1c;
-  padding: 20px;
+  padding: 16px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 16px;
 
   .movieinfobar-content {
     max-width: 1280px;
@@ -60,11 +61,11 @@ const StyledMovieInfoBar = styled.div`
     float: left;
     width: 33.33%;
     box-sizing: border-box;
-    padding: 10px 20px 0 0;
+    padding: 8px 16px 0 0;
   }
 
   .movieinfobar-info {
-    padding: 5px 0 0 10px;
+    padding: 4px 0 0 8px;
     float: left;
   }
 

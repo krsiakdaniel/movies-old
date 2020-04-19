@@ -31,16 +31,13 @@ const StyledNavigation = styled.div`
   margin: 0 auto;
 
   .navigation-content {
-    padding: 10px 20px;
+    padding: 16px;
     width: 100%;
 
     ul {
       li {
         display: inline-block;
-        padding-right: 10px;
-        a {
-          color: #16d47b;
-        }
+        padding-right: 8px;
       }
     }
   }

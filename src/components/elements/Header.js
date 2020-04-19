@@ -21,13 +21,13 @@ const Header = () => {
 // css
 const StyledHeader = styled.div`
   background: #1c1c1c;
-  padding: 0 20px;
+  padding: 0 16px;
   box-sizing: border-box;
 
   .header-content {
     max-width: 1280px;
     min-height: 120px;
-    padding: 20px 0px;
+    padding: 16px 0px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -40,17 +40,17 @@ const StyledHeader = styled.div`
 
 const StyledRMDBLogo = styled.img`
   width: 64px;
-  margin-top: 10px;
+  margin-top: 8px;
 
   @media screen and (max-width: 500px) {
     width: 150px;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 `;
 
 const StyledTMDBLogo = styled.img`
   width: 122px;
-  margin-top: 25px;
+  margin-top: 24px;
   float: right;
 
   @media screen and (max-width: 500px) {
