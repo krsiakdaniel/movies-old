@@ -14,7 +14,7 @@ import Spinner from './elements/Spinner';
 
 import { useHomeFetch } from './hooks/useHomeFetch';
 
-import NoImage from './images/no-image.jpg';
+import NoImage from '../assets/jpg/error/no-image.jpg';
 
 const TEXT_MOVIES = 'Popular Movies';
 const TEXT_RESULTS = 'Search Results';

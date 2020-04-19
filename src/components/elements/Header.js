@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
 
-import RMDBLogo from '../images/logo.svg';
-import TMDBLogo from '../images/logo-tmdb.svg';
+import RMDBLogo from '../../assets/svg/logo/logo-512.svg';
+import TMDBLogo from '../../assets/svg/logo/tmdb.svg';
 
 const Header = () => {
   return (

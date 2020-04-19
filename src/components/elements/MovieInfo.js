@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import MovieThumb from './MovieThumb';
-import NoImage from '../images/no-image.jpg';
+import NoImage from '../../assets/jpg/error/no-image.jpg';
 import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
 
 import styled from 'styled-components';
@@ -58,9 +58,9 @@ MovieInfo.propTypes = {
 // css
 const StyledMovieInfo = styled.div`
   background: ${(props) =>
-  props.backdrop
-    ? `url('${BASE_URL_IMAGE}${SIZE_BACKDROP}${props.backdrop}')`
-    : '#000'};
+    props.backdrop
+      ? `url('${BASE_URL_IMAGE}${SIZE_BACKDROP}${props.backdrop}')`
+      : '#000'};
   background-size: cover !important;
   background-position: center !important;
   width: 100%;
