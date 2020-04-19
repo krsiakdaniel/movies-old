@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import NoImage from '../images/no_image.jpg';
+import NoImage from '../images/no-image.jpg';
 import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
 
 import MovieThumb from './MovieThumb';
