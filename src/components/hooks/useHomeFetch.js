@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BASE_URL_MOVIES_POPULAR } from '../../config';
+import { BASE_URL_MOVIES_POPULAR } from '../../config/apiMovies';
 
 export const useHomeFetch = (searchTerm) => {
   const [state, setState] = useState({ movies: [] });

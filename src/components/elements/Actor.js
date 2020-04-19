@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import NoImage from '../../assets/jpg/error/no-image.jpg';
-import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
+import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config/apiMovies';
 import styled from 'styled-components';
 
 const Actor = ({ actor }) => {

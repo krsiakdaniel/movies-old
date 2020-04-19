@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { BASE_URL_API, API_KEY } from '../../config';
+import { BASE_URL_API, API_KEY } from '../../config/apiMovies';
 
 export const useMovieFetch = (movieId) => {
   const [state, setState] = useState({});

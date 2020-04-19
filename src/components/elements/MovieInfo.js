@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 import MovieThumb from './MovieThumb';
 import NoImage from '../../assets/jpg/error/no-image.jpg';
-import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
+import {
+  BASE_URL_IMAGE,
+  SIZE_BACKDROP,
+  SIZE_POSTER,
+} from '../../config/apiMovies';
 
 import styled from 'styled-components';
 

@@ -4,17 +4,17 @@ import {
   SIZE_POSTER,
   BASE_URL_MOVIES_POPULAR,
   BASE_URL_MOVIES_SEARCH,
-} from '../config';
+} from '../../config/apiMovies';
 
-import SearchBar from './elements/SearchBar';
-import Grid from './elements/Grid';
-import MovieThumb from './elements/MovieThumb';
-import LoadMoreBtn from './elements/LoadMoreBtn';
-import Spinner from './elements/Spinner';
+import SearchBar from '../elements/SearchBar';
+import Grid from '../elements/Grid';
+import MovieThumb from '../elements/MovieThumb';
+import LoadMoreBtn from '../elements/LoadMoreBtn';
+import Spinner from '../elements/Spinner';
 
-import { useHomeFetch } from './hooks/useHomeFetch';
+import { useHomeFetch } from '../hooks/useHomeFetch';
 
-import NoImage from '../assets/jpg/error/no-image.jpg';
+import NoImage from '../../assets/jpg/error/no-image.jpg';
 
 const TEXT_MOVIES = 'Popular Movies';
 const TEXT_RESULTS = 'Search Results';
