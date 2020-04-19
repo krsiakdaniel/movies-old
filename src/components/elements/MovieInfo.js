@@ -18,6 +18,7 @@ const MovieInfo = ({ movie }) => (
               : NoImage
           }
           clickable={false}
+          alt="moviethumb"
         />
       </div>
       <div className="movieinfo-text">
