@@ -5,7 +5,7 @@
       width="128"
       height="128"
       alt="movies"
-      src="https://raw.githubusercontent.com/krsiakdaniel/movies/master/src/img/png/logo-128.png"
+      src="https://raw.githubusercontent.com/krsiakdaniel/movies/master/src/assets/png/logo-128.png"
       />
     </a>
   </p>
@@ -25,6 +25,8 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies)
 
 ---
+
+![movies](https://movies.krsiak.cz/og-image.png)
 
 ## 📚 Study plan
 
