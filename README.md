@@ -26,7 +26,7 @@
 
 ---
 
-![movies](https://movies.krsiak.cz/og-image.png)
+[![movies](https://movies.krsiak.cz/og-image.png)](https://movies.krsiak.cz/)
 
 ## 📚 Study plan
 
