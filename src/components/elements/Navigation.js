@@ -27,17 +27,21 @@ Navigation.propTypes = {
 // css
 const StyledNavigation = styled.div`
   display: flex;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 
   .navigation-content {
     padding: 16px;
     width: 100%;
 
-    ul {
+    li {
+      display: inline-block;
+      padding-right: 8px;
+    }
+
+    @media screen and (max-width: 480px) {
       li {
-        display: inline-block;
-        padding-right: 8px;
+        font-size: 16px;
       }
     }
   }

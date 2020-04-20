@@ -39,6 +39,10 @@ const StyledActor = styled.div`
     height: 160px;
     object-fit: cover;
     border-radius: 8px;
+
+    @media screen and (max-width: 480px) {
+      height: 200px;
+    }
   }
 
   .actor-name {

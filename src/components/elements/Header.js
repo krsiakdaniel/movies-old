@@ -25,7 +25,7 @@ const StyledHeader = styled.div`
   box-shadow: 0 0 7px 0 rgba(26, 46, 86, 0.1);
 
   .header-content {
-    max-width: 1280px;
+    max-width: 1200px;
     padding: 16px;
     margin: 0 auto;
 
@@ -39,8 +39,12 @@ const StyledHeader = styled.div`
       transform: rotate(180deg);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       padding: 16px 24px;
+
+      a {
+        font-size: 32px;
+      }
     }
   }
 `;
@@ -55,12 +59,21 @@ const StyledRMDBLogo = styled.img`
   :hover {
     transform: rotate(180deg);
   }
+
+  @media screen and (max-width: 480px) {
+    width: 48px;
+  }
 `;
 
 const StyledTMDBLogo = styled.img`
   float: right;
   width: 128px;
-  margin-top: 8px;
+
+  @media screen and (max-width: 480px) {
+    width: 80px;
+    position: relative;
+    top: 8px;
+  }
 `;
 
 export default Header;

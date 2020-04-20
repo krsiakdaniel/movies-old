@@ -18,7 +18,7 @@ Grid.propTypes = {
 
 // css
 const StyledGrid = styled.div`
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto 16px auto;
   padding: 0 16px;
 
@@ -33,10 +33,6 @@ const StyledGridContent = styled.div`
   grid-gap: 32px;
   position: relative;
 
-  @media screen and (max-width: 768px) {
-    grid-gap: 16px;
-  }
-
   .grid-element {
     animation: animateGrid 0.5s;
   }
@@ -50,19 +46,26 @@ const StyledGridContent = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  // TODO: breakpoints 480, 576, 768, 992, 1200, 1600
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+
+  @media screen and (max-width: 992px) {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 16px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 576px) {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;

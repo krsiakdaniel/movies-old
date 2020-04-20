@@ -12,14 +12,14 @@ import { calcTime, convertMoney } from '../../utils/index';
 
 import styled from 'styled-components';
 
-const TEXT_DIRECTOR = 'Director';
-const TEXT_DIRECTORS = 'Directors';
+const TEXT_DIRECTOR = 'Director: ';
+const TEXT_DIRECTORS = 'Directors: ';
 
 const MovieInfo = ({ movie, time, budget, revenue }) => {
   return (
     <StyledMovieInfo backdrop={movie.backdrop_path}>
-      <div className="movieinfo-content">
-        <div className="movieinfo-thumb">
+      <div className="movieinfo">
+        <div className="movieinfo__thumb">
           <MovieThumb
             image={
               movie.poster_path
@@ -31,34 +31,33 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
           />
         </div>
 
-        <div className="movieinfo-text">
+        <div className="movieinfo__text">
           <h1>{movie.title}</h1>
           <p>{movie.overview}</p>
 
-          <div className="rating-director">
-            <div>
-              <h3>Imdb rating</h3>
-              <div className="score">{movie.vote_average}</div>
-            </div>
-            <div className="director">
-              <h3>
-                {movie.directors.length > 1 ? TEXT_DIRECTOR : TEXT_DIRECTORS}
-              </h3>
-              {movie.directors.map((director) => (
-                <p key={director.credit_id}>{director.name}</p>
-              ))}
-            </div>
-          </div>
-
           <ul>
             <li>
-              <span>Running time:</span> {calcTime(time)}
+              <strong>Imdb rating:</strong> {movie.vote_average}
             </li>
             <li>
-              <span>Budget:</span> {convertMoney(budget)}
+              <strong>
+                {movie.directors.length > 1 ? TEXT_DIRECTORS : TEXT_DIRECTOR}
+              </strong>
+              {movie.directors.map((director) => (
+                <span key={director.credit_id}>
+                  {director.name}
+                  {movie.directors.length > 1 ? ', ' : ''}
+                </span>
+              ))}
             </li>
             <li>
-              <span>Revenue:</span> {convertMoney(revenue)}
+              <strong>Running time:</strong> {calcTime(time)}
+            </li>
+            <li>
+              <strong>Budget:</strong> {convertMoney(budget)}
+            </li>
+            <li>
+              <strong>Revenue:</strong> {convertMoney(revenue)}
             </li>
           </ul>
         </div>
@@ -81,65 +80,39 @@ const StyledMovieInfo = styled.div`
   background-size: cover !important;
   background-position: center !important;
   width: 100%;
-  padding: 40px 16px;
+  padding: 32px 16px;
   margin-bottom: 32px;
   animation: animateMovieinfo 1s;
 
-  .movieinfo-content {
-    max-width: 1280px;
-    min-height: 450px;
+  .movieinfo {
+    max-width: 1200px;
+    min-height: 456px;
     margin: 0 auto;
     background: rgb(0, 0, 0, 0.7);
     border-radius: 16px;
     position: relative;
 
-    ul {
-      margin-top: 16px;
-      li {
-        margin-bottom: 8px;
+    &__thumb {
+      width: 300px;
+      float: left;
 
-        span {
-          font-weight: 700;
+      @media screen and (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+
+    &__text {
+      padding: 40px;
+      color: #fff;
+      overflow: hidden;
+
+      ul {
+        margin-top: 16px;
+        li {
+          margin-bottom: 8px;
         }
       }
     }
-  }
-
-  .movieinfo-thumb {
-    width: 300px;
-    float: left;
-
-    @media screen and (max-width: 768px) {
-      width: 100% !important;
-    }
-  }
-
-  .movieinfo-text {
-    padding: 40px;
-    color: #fff;
-    overflow: hidden;
-  }
-
-  .rating-director {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .score {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #000;
-    font-weight: 800;
-    border-radius: 24px;
-    margin: 0px 0 0 0;
-  }
-
-  .director {
-    margin: 0 0 0 40px;
   }
 
   @media screen and (max-width: 768px) {

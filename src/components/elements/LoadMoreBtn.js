@@ -24,7 +24,7 @@ const StyledLoadMoreBtn = styled.button`
   color: #fff;
   cursor: pointer;
   transition: all 0.4s;
-  border-radius: 32px;
+  border-radius: 8px;
   font-size: 24px;
   display: block;
   margin: 16px auto;
