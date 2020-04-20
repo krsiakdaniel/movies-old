@@ -1,9 +1,11 @@
 // API
 // https://www.themoviedb.org/documentation/api/discover
-// https://api.themoviedb.org/3/movie/9922?api_key=295bad0176d1e0739cd94f5f2594968b
 
 const BASE_URL_API = 'https://api.themoviedb.org/3/';
-const API_KEY = '844dba0bfd8f3a4f3799f6130ef9e335';
+const API_KEY = '295bad0176d1e0739cd94f5f2594968b';
+
+// MOVIES
+// https://api.themoviedb.org/3/movie/9922?api_key=295bad0176d1e0739cd94f5f2594968b
 
 // IMAGES
 // https://api.themoviedb.org/3/configuration?api_key=295bad0176d1e0739cd94f5f2594968b
