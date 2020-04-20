@@ -29,7 +29,7 @@ const StyledGrid = styled.div`
 
 const StyledGridContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  grid-template-columns: repeat(7, minmax(100px, 1fr));
   grid-gap: 32px;
   position: relative;
 
@@ -49,24 +49,24 @@ const StyledGridContent = styled.div`
   // TODO: breakpoints 480, 576, 768, 992, 1200, 1600
 
   @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
   }
 
   @media screen and (max-width: 992px) {
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
   }
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-gap: 16px;
   }
 
   @media screen and (max-width: 576px) {
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
 
   @media screen and (max-width: 480px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
