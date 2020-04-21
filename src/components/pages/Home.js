@@ -53,7 +53,9 @@ const Home = () => {
   };
 
   if (error) return <div>Something went wrong ...</div>;
+  console.log('log:', movies);
   if (!movies[0]) return <Spinner />;
+  // TODO: add empty state movies === 0 - delka pole vzdy
   // TODO: if spinner is removed it gives type error https://tppr.me/thzwm
 
   return (

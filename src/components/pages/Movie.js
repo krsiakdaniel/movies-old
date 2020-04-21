@@ -14,6 +14,7 @@ const Movie = ({ movieId }) => {
   // TODO: return NotFound page
   if (error) return <div>Something went wrong ...</div>;
   if (isLoading) return <Spinner />;
+  console.log('log:', movie);
 
   return (
     <>

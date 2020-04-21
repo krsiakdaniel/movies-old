@@ -13,6 +13,7 @@ export const useHomeFetch = (searchTerm) => {
     const isLoadMore = endpoint.search('page');
 
     try {
+      // TODO: await rozdelit
       const result = await (await fetch(endpoint)).json();
       setState((prevState) => ({
         ...prevState,

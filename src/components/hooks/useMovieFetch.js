@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { BASE_URL_API, API_KEY } from '../../config/apiMovies';
 
 export const useMovieFetch = (movieId) => {
+  // TODO: null namisto {}
   const [state, setState] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
