@@ -3,13 +3,16 @@ import { Link } from '@reach/router';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const MovieThumb = ({ alt, clickable, image, movieId }) => {
+const MovieThumb = ({ alt, clickable, image, movieId, movieName }) => {
   return (
     <StyledMovieThumb>
       {clickable ? (
-        <Link to={`/${movieId}`}>
-          <img src={image} className="clickable" alt={alt} />
-        </Link>
+        <>
+          <Link to={`/${movieId}`}>
+            <img src={image} className="clickable" alt={alt} />
+          </Link>
+          <span className="movie-name">{movieName}</span>
+        </>
       ) : (
         <img src={image} alt={alt} />
       )}
@@ -25,6 +28,8 @@ MovieThumb.propTypes = {
 
 // css
 const StyledMovieThumb = styled.div`
+  text-align: center;
+
   img {
     object-fit: cover;
     border-radius: 8px;
@@ -43,6 +48,10 @@ const StyledMovieThumb = styled.div`
         transform: none;
       }
     }
+  }
+
+  .movie-name {
+    font-size: 12px;
   }
 `;
 

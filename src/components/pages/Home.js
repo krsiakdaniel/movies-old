@@ -65,7 +65,7 @@ const Home = () => {
             clickable
             key={movie.id}
             movieId={movie.id}
-            movieName={movie.original_title}
+            movieName={movie.title}
             image={
               movie.poster_path
                 ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`

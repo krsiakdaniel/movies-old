@@ -21,7 +21,8 @@ const Header = () => {
 
 // css
 const StyledHeader = styled.div`
-  background: #27ae60;
+  //background: #27ae60;
+  background: #2c3e50;
   box-shadow: 0 0 7px 0 rgba(26, 46, 86, 0.1);
 
   .header-content {
@@ -31,7 +32,7 @@ const StyledHeader = styled.div`
 
     a {
       color: #fff;
-      font-size: 40px;
+      font-size: 32px;
     }
 
     a:hover img {
@@ -43,7 +44,11 @@ const StyledHeader = styled.div`
       padding: 16px 24px;
 
       a {
-        font-size: 32px;
+        font-size: 28px;
+        span {
+          position: relative;
+          top: 5px;
+        }
       }
     }
   }
@@ -52,27 +57,24 @@ const StyledHeader = styled.div`
 const StyledLogoMovies = styled.img`
   // TODO: remove floats, use flexbox
   float: left;
-  width: 64px;
+  width: 48px;
   margin-right: 16px;
   transition: all 0.4s;
 
   :hover {
     transform: rotate(180deg);
   }
-
-  @media screen and (max-width: 480px) {
-    width: 48px;
-  }
 `;
 
 const StyledLogoTmdb = styled.img`
   float: right;
-  width: 128px;
+  width: 200px;
+  position: relative;
+  top: 18px;
 
   @media screen and (max-width: 480px) {
-    width: 80px;
-    position: relative;
-    top: 8px;
+    width: 100px;
+    top: 24px;
   }
 `;
 
