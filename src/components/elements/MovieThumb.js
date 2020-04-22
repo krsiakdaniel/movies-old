@@ -3,15 +3,15 @@ import { Link } from '@reach/router';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const MovieThumb = ({ clickable, image, movieId }) => {
+const MovieThumb = ({ alt, clickable, image, movieId }) => {
   return (
     <StyledMovieThumb>
       {clickable ? (
         <Link to={`/${movieId}`}>
-          <img src={image} className="clickable" alt="i" />
+          <img src={image} className="clickable" alt={alt} />
         </Link>
       ) : (
-        <img src={image} alt="x" />
+        <img src={image} alt={alt} />
       )}
     </StyledMovieThumb>
   );
