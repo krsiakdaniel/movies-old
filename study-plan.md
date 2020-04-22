@@ -30,32 +30,13 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 - [ ] ...
 - [ ] ...
 
-### Redux
+## Redux
 
 - [ ] Setup: [Redux](https://redux.js.org/introduction/getting-started)
 - [ ] Manage local [app state](https://alligator.io/react/react-redux/)
 - [ ] Make async actions with [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
 
-### API
-
-- [x] Connect to API and fetch data
-- [ ] Use: [Axios](https://github.com/axios/axios)
-- [ ] Axios: Fetch data [from API](https://rapidapi.com/blog/list-of-online-movie-databases/)
-
-## TypeScript
-
-- [ ] Use in code: [Typescript](https://www.typescriptlang.org/)
-
-## Testing
-
-- [ ] E2E tests: [Cypress](https://docs.cypress.io/)
-- [ ] Unit tests: [Jest](https://jestjs.io/)
-
-## Deployment
-
-- [x] Deploy from Github using [Netlify](https://www.netlify.com/)
-
-## JavaSCript
+## JavaScript
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
@@ -68,4 +49,23 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 - https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c
 - https://wesbos.com/tagged-template-literals
 - https://css-tricks.com/template-literals/
+
+## TypeScript
+
+- [ ] Use in code: [Typescript](https://www.typescriptlang.org/)
+
+## API
+
+- [x] Connect to API and fetch data
+- [ ] Use: [Axios](https://github.com/axios/axios)
+- [ ] Axios: Fetch data [from API](https://rapidapi.com/blog/list-of-online-movie-databases/)
+
+## Testing
+
+- [ ] E2E tests: [Cypress](https://docs.cypress.io/)
+- [ ] Unit tests: [Jest](https://jestjs.io/)
+
+## Deployment
+
+- [x] Deploy from Github using [Netlify](https://www.netlify.com/)
 
