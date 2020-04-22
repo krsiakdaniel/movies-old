@@ -3,7 +3,7 @@ import { BASE_URL_MOVIES_POPULAR } from '../../config/apiMovies';
 
 export const useHomeFetch = (searchTerm) => {
   const [state, setState] = useState({ movies: [] });
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const fetchMovies = async (endpoint) => {

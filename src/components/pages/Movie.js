@@ -12,8 +12,8 @@ import { useMovieFetch } from '../hooks/index';
 const Movie = ({ movieId }) => {
   const [movie, isLoading, error] = useMovieFetch(movieId);
 
-  if (error) return <NotFound />;
   if (isLoading) return <Spinner />;
+  if (error) return <NotFound />;
   console.log('log:', movie);
 
   return (

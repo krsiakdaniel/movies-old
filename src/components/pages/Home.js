@@ -55,8 +55,9 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
-  if (error) return <NotFound />;
+  if (isLoading) return <Spinner />;
   if (movies.length === 0) return <NoResults />;
+  if (error) return <NotFound />;
   console.log('log:', movies);
 
   return (
