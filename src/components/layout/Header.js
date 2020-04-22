@@ -2,18 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
 
-import RMDBLogo from '../../assets/svg/logo/logo-512.svg';
-import TMDBLogo from '../../assets/svg/logo/tmdb.svg';
+import LogoMovies from '../../assets/svg/logo/logo-512.svg';
+import LogoTmdb from '../../assets/svg/logo/tmdb.svg';
 
 const Header = () => {
   return (
     <StyledHeader>
       <div className="header-content">
         <Link to="/">
-          <StyledRMDBLogo src={RMDBLogo} alt="i" />
+          <StyledLogoMovies src={LogoMovies} alt="Movies" />
           <span>Movies</span>
         </Link>
-        <StyledTMDBLogo src={TMDBLogo} alt="i" />
+        <StyledLogoTmdb src={LogoTmdb} alt="TMDb" />
       </div>
     </StyledHeader>
   );
@@ -49,7 +49,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const StyledRMDBLogo = styled.img`
+const StyledLogoMovies = styled.img`
   // TODO: remove floats, use flexbox
   float: left;
   width: 64px;
@@ -65,7 +65,7 @@ const StyledRMDBLogo = styled.img`
   }
 `;
 
-const StyledTMDBLogo = styled.img`
+const StyledLogoTmdb = styled.img`
   float: right;
   width: 128px;
 
@@ -76,4 +76,4 @@ const StyledTMDBLogo = styled.img`
   }
 `;
 
-export default Header;
+export { Header };

@@ -1,13 +1,9 @@
 import React from 'react';
 
-import Navigation from '../elements/Navigation';
-import MovieInfo from '../elements/MovieInfo';
-import Grid from '../elements/Grid';
-import Actor from '../elements/Actor';
-import Spinner from '../elements/Spinner';
-import NotFound from './NotFound';
-
-import { useMovieFetch } from '../hooks/index';
+import { NotFound } from './index';
+import { Actor, MovieInfo, Navigation } from '../elements';
+import { Grid, Spinner } from '../shared';
+import { useMovieFetch } from '../hooks';
 
 const Movie = ({ movieId }) => {
   const [movie, isLoading, error] = useMovieFetch(movieId);
@@ -34,4 +30,4 @@ const Movie = ({ movieId }) => {
   );
 };
 
-export default Movie;
+export { Movie };

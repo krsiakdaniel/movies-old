@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BASE_URL_MOVIES_POPULAR } from '../../config/apiMovies';
 
-export const useHomeFetch = (searchTerm) => {
+import { BASE_URL_MOVIES_POPULAR } from '../../config';
+
+const useHomeFetch = (searchTerm) => {
   const [state, setState] = useState({ movies: [] });
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -49,3 +50,5 @@ export const useHomeFetch = (searchTerm) => {
 
   return [{ state, isLoading, error }, fetchMovies];
 };
+
+export { useHomeFetch };

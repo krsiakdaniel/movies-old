@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styled from 'styled-components';
 
 const Grid = ({ header, children }) => {
@@ -16,6 +15,7 @@ Grid.propTypes = {
   header: PropTypes.string,
 };
 
+// TODO: use flexbox
 // css
 const StyledGrid = styled.div`
   max-width: 1200px;
@@ -71,4 +71,4 @@ const StyledGridContent = styled.div`
   }
 `;
 
-export default Grid;
+export { Grid };

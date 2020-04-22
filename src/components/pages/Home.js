@@ -1,26 +1,21 @@
 import React, { useState } from 'react';
 
+import { NoResults, NotFound } from './index';
+import { LoadMoreBtn, SearchBar } from '../elements';
+import { Grid, MovieThumb, Spinner } from '../shared';
+import { useHomeFetch } from '../hooks';
+
 import {
   BASE_URL_IMAGE,
   SIZE_POSTER,
   BASE_URL_MOVIES_POPULAR,
   BASE_URL_MOVIES_SEARCH,
-} from '../../config/apiMovies';
-
-import SearchBar from '../elements/SearchBar';
-import Grid from '../elements/Grid';
-import MovieThumb from '../elements/MovieThumb';
-import LoadMoreBtn from '../elements/LoadMoreBtn';
-import Spinner from '../elements/Spinner';
-import NotFound from './NotFound';
-import NoResults from './NoResults';
-
-import { useHomeFetch } from '../hooks/index';
+} from '../../config';
 
 import NoImage from '../../assets/jpg/error/no-image.jpg';
 
 const TEXT_MOVIES = 'Popular Movies';
-const TEXT_RESULTS = 'Search Results';
+const TEXT_RESULTS = 'Search Results ×';
 const TEXT_LOAD_MORE = 'More ...';
 
 const Home = () => {
@@ -60,6 +55,7 @@ const Home = () => {
   if (error) return <NotFound />;
   console.log('log:', movies);
 
+  // TODO: clear results using '×'
   return (
     <>
       <SearchBar callback={searchMovies} />
@@ -87,4 +83,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export { Home };

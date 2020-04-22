@@ -1,26 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import NoImage from '../../assets/jpg/error/no-image.jpg';
-import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config/apiMovies';
 import styled from 'styled-components';
+
+import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
+import NoImage from '../../assets/jpg/error/no-image.jpg';
 
 const Actor = ({ actor }) => {
   return (
-    <>
-      <StyledActor>
-        <img
-          src={
-            actor.profile_path
-              ? `${BASE_URL_IMAGE}${SIZE_POSTER}${actor.profile_path}`
-              : NoImage
-          }
-          alt={actor.name}
-        />
-        <div className="actor-name">{actor.name}</div>
-        <div className="actor-character">{actor.character}</div>
-      </StyledActor>
-    </>
+    <StyledActor>
+      <img
+        src={
+          actor.profile_path
+            ? `${BASE_URL_IMAGE}${SIZE_POSTER}${actor.profile_path}`
+            : NoImage
+        }
+        alt={actor.name}
+      />
+      <div className="actor-name">{actor.name}</div>
+      <div className="actor-character">{actor.character}</div>
+    </StyledActor>
   );
 };
 
@@ -48,6 +46,7 @@ const StyledActor = styled.div`
   .actor-name {
     display: block;
     margin: 8px 0 0 0;
+    font-weight: 700;
   }
 
   .actor-character {
@@ -56,4 +55,4 @@ const StyledActor = styled.div`
   }
 `;
 
-export default Actor;
+export { Actor };

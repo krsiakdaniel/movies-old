@@ -1,16 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import MovieThumb from './MovieThumb';
-import NoImage from '../../assets/jpg/error/no-image.jpg';
-import {
-  BASE_URL_IMAGE,
-  SIZE_BACKDROP,
-  SIZE_POSTER,
-} from '../../config/apiMovies';
-import { calcTime, convertMoney } from '../../utils/index';
-
 import styled from 'styled-components';
+
+import { MovieThumb } from '../shared';
+import { calcTime, convertMoney } from '../../utils';
+
+import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
+
+import NoImage from '../../assets/jpg/error/no-image.jpg';
 
 const TEXT_DIRECTOR = 'Director: ';
 const TEXT_DIRECTORS = 'Directors: ';
@@ -86,7 +83,7 @@ const StyledMovieInfo = styled.div`
 
   .movieinfo {
     max-width: 1200px;
-    min-height: 456px;
+    min-height: 450px;
     margin: 0 auto;
     background: rgb(0, 0, 0, 0.7);
     border-radius: 16px;
@@ -130,4 +127,4 @@ const StyledMovieInfo = styled.div`
   }
 `;
 
-export default MovieInfo;
+export { MovieInfo };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const MovieThumb = ({ alt, clickable, image, movieId }) => {
   return (
@@ -46,4 +46,4 @@ const StyledMovieThumb = styled.div`
   }
 `;
 
-export default MovieThumb;
+export { MovieThumb };

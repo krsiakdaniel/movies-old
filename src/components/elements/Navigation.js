@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import PropTypes from 'prop-types';
-
 import styled from 'styled-components';
 
 const Navigation = ({ movie }) => {
@@ -47,4 +46,4 @@ const StyledNavigation = styled.div`
   }
 `;
 
-export default Navigation;
+export { Navigation };

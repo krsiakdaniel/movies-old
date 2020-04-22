@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const TEXT_SEARCH_BAR = 'Search ...';
+const TEXT_SEARCH_BAR = 'Search...';
 
 const SearchBar = ({ callback }) => {
   const [state, setState] = useState('');
@@ -19,18 +19,16 @@ const SearchBar = ({ callback }) => {
   };
 
   return (
-    <>
-      <StyledSearchBar>
-        <StyledSearchBarContent>
-          <input
-            type="text"
-            placeholder={TEXT_SEARCH_BAR}
-            onChange={handleSearch}
-            value={state}
-          />
-        </StyledSearchBarContent>
-      </StyledSearchBar>
-    </>
+    <StyledSearchBar>
+      <StyledSearchBarContent>
+        <input
+          type="text"
+          placeholder={TEXT_SEARCH_BAR}
+          onChange={handleSearch}
+          value={state}
+        />
+      </StyledSearchBarContent>
+    </StyledSearchBar>
   );
 };
 
@@ -80,4 +78,4 @@ const StyledSearchBarContent = styled.div`
   }
 `;
 
-export default SearchBar;
+export { SearchBar };

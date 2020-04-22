@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
-import { BASE_URL_API, API_KEY } from '../../config/apiMovies';
 
-export const useMovieFetch = (movieId) => {
-  // TODO: null namisto {}
-  const [state, setState] = useState({});
+import { BASE_URL_API, API_KEY } from '../../config';
+
+const useMovieFetch = (movieId) => {
+  const [state, setState] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -54,3 +54,5 @@ export const useMovieFetch = (movieId) => {
 
   return [state, isLoading, error];
 };
+
+export { useMovieFetch };

@@ -15,8 +15,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Poppins", sans-serif;
     color: #032139;
+    overflow-y: scroll;
   }
-
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 16px;
@@ -55,4 +55,4 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default GlobalStyle;
+export { GlobalStyle };

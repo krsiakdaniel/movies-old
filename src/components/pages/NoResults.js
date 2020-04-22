@@ -5,7 +5,7 @@ const NoResults = () => {
   return (
     <>
       <h2>No such movie</h2>
-      <p>Seems there is no movie with the name you searched for.</p>
+      <p>Seems there is no movie with the name you searched.</p>
       <p>
         <Link to="/">Go back to homepage</Link>
       </p>
@@ -13,4 +13,4 @@ const NoResults = () => {
   );
 };
 
-export default NoResults;
+export { NoResults };
