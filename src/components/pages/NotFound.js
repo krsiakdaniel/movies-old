@@ -1,5 +1,12 @@
 import React from 'react';
 
-const NotFound = () => <div>Whoooops ... nothing found here...</div>;
+const NotFound = () => {
+  return (
+    <>
+      <h2>404</h2>
+      <p>movie not found</p>
+    </>
+  );
+};
 
 export default NotFound;

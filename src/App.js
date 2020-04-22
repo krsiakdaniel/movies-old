@@ -5,6 +5,7 @@ import Header from './components/elements/Header';
 import Home from './components/pages/Home';
 import Movie from './components/pages/Movie';
 import NotFound from './components/pages/NotFound';
+import NoResults from './components/pages/NoResults';
 
 import GlobalStyle from './styles/global';
 
@@ -18,6 +19,7 @@ const App = () => {
         <Home path="/" />
         <Movie path="/:movieId" />
         <NotFound default />
+        <NoResults path="/NoResults" />
       </Router>
     </>
   );

@@ -5,14 +5,14 @@ import MovieInfo from '../elements/MovieInfo';
 import Grid from '../elements/Grid';
 import Actor from '../elements/Actor';
 import Spinner from '../elements/Spinner';
+import NotFound from './NotFound';
 
 import { useMovieFetch } from '../hooks/index';
 
 const Movie = ({ movieId }) => {
   const [movie, isLoading, error] = useMovieFetch(movieId);
 
-  // TODO: return NotFound page
-  if (error) return <div>Something went wrong ...</div>;
+  if (error) return <NotFound />;
   if (isLoading) return <Spinner />;
   console.log('log:', movie);
 

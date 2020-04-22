@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   BASE_URL_IMAGE,
   SIZE_POSTER,
@@ -11,6 +12,8 @@ import Grid from '../elements/Grid';
 import MovieThumb from '../elements/MovieThumb';
 import LoadMoreBtn from '../elements/LoadMoreBtn';
 import Spinner from '../elements/Spinner';
+import NotFound from './NotFound';
+import NoResults from './NoResults';
 
 import { useHomeFetch } from '../hooks/index';
 
@@ -52,11 +55,9 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
-  if (error) return <div>Something went wrong ...</div>;
+  if (error) return <NotFound />;
+  if (movies.length === 0) return <NoResults />;
   console.log('log:', movies);
-  if (!movies[0]) return <Spinner />;
-  // TODO: add empty state movies === 0 - delka pole vzdy
-  // TODO: if spinner is removed it gives type error https://tppr.me/thzwm
 
   return (
     <>
