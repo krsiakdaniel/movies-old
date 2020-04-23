@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { NoResults, NotFound } from './index';
 import { LoadMoreBtn, SearchBar } from '../elements';
@@ -14,13 +15,10 @@ import {
 
 import NoImage from '../../assets/jpg/error/no-image.jpg';
 
-const TEXT_MOVIES = 'Popular Movies';
-const TEXT_RESULTS = 'Search Results ×';
-const TEXT_LOAD_MORE = 'More ...';
-
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const { t } = useTranslation();
 
+  const [searchTerm, setSearchTerm] = useState('');
   const [
     {
       state: { movies, currentPage, totalPages },
@@ -59,7 +57,7 @@ const Home = () => {
   return (
     <>
       <SearchBar callback={searchMovies} />
-      <Grid header={searchTerm ? TEXT_RESULTS : TEXT_MOVIES}>
+      <Grid header={searchTerm ? t('homeResults') : t('homeMovies')}>
         {movies.map((movie) => (
           <MovieThumb
             clickable
@@ -77,7 +75,7 @@ const Home = () => {
       </Grid>
       {isLoading && <Spinner />}
       {currentPage < totalPages && !isLoading && (
-        <LoadMoreBtn text={TEXT_LOAD_MORE} callback={loadMoreMovies} />
+        <LoadMoreBtn text={t('homeLoadMore')} callback={loadMoreMovies} />
       )}
     </>
   );

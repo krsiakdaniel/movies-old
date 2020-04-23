@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Navigation = ({ movie }) => {
+  const { t } = useTranslation();
+
   return (
     <StyledNavigation>
       <div className="navigation-content">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t('navHome')}</Link>
           </li>
           <li>/</li>
           <li>{movie}</li>

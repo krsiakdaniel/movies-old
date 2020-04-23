@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { NotFound } from './index';
 import { Actor, MovieInfo, Navigation } from '../elements';
@@ -6,6 +7,8 @@ import { Grid, Spinner } from '../shared';
 import { useMovieFetch } from '../hooks';
 
 const Movie = ({ movieId }) => {
+  const { t } = useTranslation();
+
   const [movie, isLoading, error] = useMovieFetch(movieId);
 
   if (isLoading) return <Spinner />;
@@ -21,7 +24,7 @@ const Movie = ({ movieId }) => {
         budget={movie.budget}
         revenue={movie.revenue}
       />
-      <Grid header="Actors">
+      <Grid header={t('movieActors')}>
         {movie.actors.map((actor) => (
           <Actor key={actor.credit_id} actor={actor} />
         ))}

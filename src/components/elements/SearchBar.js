@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const TEXT_SEARCH_BAR = 'Search...';
-
 const SearchBar = ({ callback }) => {
+  const { t } = useTranslation();
+
   const [state, setState] = useState('');
   const timeOut = useRef(null);
 
@@ -23,7 +24,7 @@ const SearchBar = ({ callback }) => {
       <StyledSearchBarContent>
         <input
           type="text"
-          placeholder={TEXT_SEARCH_BAR}
+          placeholder={t('search')}
           onChange={handleSearch}
           value={state}
         />

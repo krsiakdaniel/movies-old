@@ -1,10 +1,10 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
-import { Header, Footer } from './layout';
-import { Home, Movie, NotFound, NoResults } from './pages';
+import { Header, Footer } from './components/layout';
+import { Home, Movie, NotFound, NoResults } from './components/pages';
 
-import { GlobalStyle } from '../styles';
+import { GlobalStyle } from './styles';
 
 const App = () => {
   return (

@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
+import { useTranslation } from 'react-i18next';
 
 import LogoMovies from '../../assets/svg/logo/logo-512.svg';
 import LogoTmdb from '../../assets/svg/logo/tmdb.svg';
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledHeader>
       <div className="header-content">
         <Link to="/">
           <StyledLogoMovies src={LogoMovies} alt="Movies" />
-          <span>Movies</span>
+          <span>{t('headerTitle')}</span>
         </Link>
         <StyledLogoTmdb src={LogoTmdb} alt="TMDb" />
       </div>

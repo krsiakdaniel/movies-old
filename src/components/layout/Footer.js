@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from '@reach/router';
 import styled from 'styled-components';
 
+// TODO: add 'useTranslation'
 const Footer = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const StyledFooter = styled.div`
 
   p {
     text-align: center;
+    font-size: 12px;
   }
 `;
 
