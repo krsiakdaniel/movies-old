@@ -38,6 +38,10 @@ const StyledFooter = styled.div`
     margin: 0 16px 16px;
     font-size: 10px;
     color: #bdc3c7;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 24px 16px;
+    }
   }
 `;
 

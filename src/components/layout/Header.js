@@ -41,9 +41,10 @@ const StyledHeader = styled.div`
       transform: rotate(180deg);
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       padding: 16px 24px;
-
+    }
+    @media screen and (max-width: 480px) {
       a {
         font-size: 28px;
         span {
