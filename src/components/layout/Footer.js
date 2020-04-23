@@ -35,6 +35,7 @@ const StyledFooter = styled.div`
   }
 
   .tmdb {
+    margin: 0 16px 16px;
     font-size: 10px;
     color: #bdc3c7;
   }
