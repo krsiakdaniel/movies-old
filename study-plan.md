@@ -52,7 +52,7 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ## TypeScript
 
-- [ ] Use in code: [Typescript](https://www.typescriptlang.org/)
+- [x] Use in code: [Typescript](https://www.typescriptlang.org/)
 
 ## API
 
@@ -62,10 +62,9 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ## Testing
 
-- [ ] E2E tests: [Cypress](https://docs.cypress.io/)
 - [ ] Unit tests: [Jest](https://jestjs.io/)
+- [ ] E2E tests: [Cypress](https://docs.cypress.io/)
 
 ## Deployment
 
 - [x] Deploy from Github using [Netlify](https://www.netlify.com/)
-

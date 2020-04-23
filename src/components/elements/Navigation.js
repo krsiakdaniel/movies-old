@@ -29,12 +29,13 @@ Navigation.propTypes = {
 // css
 const StyledNavigation = styled.div`
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #fff;
 
   .navigation-content {
-    padding: 16px;
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
+    padding: 16px;
 
     li {
       display: inline-block;

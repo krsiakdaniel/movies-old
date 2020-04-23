@@ -23,10 +23,10 @@ const StyledLoadMoreBtn = styled.button`
   color: #fff;
   cursor: pointer;
   transition: all 0.4s;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 24px;
   display: block;
-  margin: 16px auto;
+  margin: 32px auto;
   padding: 4px 8px;
   outline: none;
 

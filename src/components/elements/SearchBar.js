@@ -68,7 +68,7 @@ const StyledSearchBarContent = styled.div`
     background-color: #fff;
     background-image: none;
     border: 1px solid #d9d9d9;
-    border-radius: 32px;
+    border-radius: 8px;
     transition: all 0.4s;
 
     :focus {

@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from '@reach/router';
+import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 import LogoMovies from '../../assets/svg/logo/logo-512.svg';
@@ -24,9 +24,7 @@ const Header = () => {
 
 // css
 const StyledHeader = styled.div`
-  //background: #27ae60;
   background: #2c3e50;
-  box-shadow: 0 0 7px 0 rgba(26, 46, 86, 0.1);
 
   .header-content {
     max-width: 1200px;

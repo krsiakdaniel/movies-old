@@ -9,9 +9,9 @@ const MovieThumb = ({ alt, clickable, image, movieId, movieName }) => {
       {clickable ? (
         <>
           <Link to={`/${movieId}`}>
-            <img src={image} className="clickable" alt={alt} />
+            <img src={image} alt={alt} className="clickable" />
+            <span className="movie-name">{movieName}</span>
           </Link>
-          <span className="movie-name">{movieName}</span>
         </>
       ) : (
         <img src={image} alt={alt} />
@@ -29,29 +29,36 @@ MovieThumb.propTypes = {
 // css
 const StyledMovieThumb = styled.div`
   text-align: center;
+  position: relative;
+  border-radius: 8px;
 
   img {
     object-fit: cover;
+    border: transparent;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+
     :hover {
-      transform: scale(1.1);
+      opacity: 0.8;
     }
 
     .clickable {
       cursor: pointer;
     }
-
-    @media screen and (max-width: 768px) {
-      :hover {
-        transform: none;
-      }
-    }
   }
 
   .movie-name {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
     font-size: 12px;
+    color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px 4px;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
   }
 `;
 

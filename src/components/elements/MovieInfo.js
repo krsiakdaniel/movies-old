@@ -86,7 +86,7 @@ const StyledMovieInfo = styled.div`
     min-height: 450px;
     margin: 0 auto;
     background: rgb(0, 0, 0, 0.7);
-    border-radius: 16px;
+    border-radius: 8px;
     position: relative;
 
     &__thumb {
@@ -106,7 +106,7 @@ const StyledMovieInfo = styled.div`
       ul {
         margin-top: 16px;
         li {
-          margin-bottom: 8px;
+          margin-bottom: 4px;
         }
       }
     }

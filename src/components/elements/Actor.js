@@ -15,9 +15,12 @@ const Actor = ({ actor }) => {
             : NoImage
         }
         alt={actor.name}
+        className="actor__img"
       />
-      <div className="actor-name">{actor.name}</div>
-      <div className="actor-character">{actor.character}</div>
+      <div className="actor-details">
+        <div className="actor-details__name">{actor.name}</div>
+        <div className="actor-details__character">{actor.character}</div>
+      </div>
     </StyledActor>
   );
 };
@@ -28,30 +31,39 @@ Actor.propTypes = {
 
 // css
 const StyledActor = styled.div`
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
-  padding: 8px;
+  padding: 4px;
   text-align: center;
+  background: #fff;
 
-  img {
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
+  // TODO: start using BEM
+  .actor {
+    &__img {
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
 
-    @media screen and (max-width: 480px) {
-      height: 200px;
+      @media screen and (max-width: 480px) {
+        height: 200px;
+      }
     }
-  }
 
-  .actor-name {
-    display: block;
-    margin: 8px 0 0 0;
-    font-weight: 700;
-  }
+    &-details {
+      padding: 0 4px;
+      font-size: 14px;
 
-  .actor-character {
-    display: block;
-    margin: 0 0 8px 0;
+      &__name {
+        display: block;
+        margin: 8px 0 0 0;
+        font-weight: 700;
+      }
+
+      &__character {
+        display: block;
+        margin: 0 0 8px 0;
+      }
+    }
   }
 `;
 

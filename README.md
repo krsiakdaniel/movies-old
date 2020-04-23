@@ -19,10 +19,6 @@
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 [![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
-[![GitHub issues](https://img.shields.io/github/issues-raw/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/krsiakdaniel/movies?color=%23e74c3c)](https://github.com/krsiakdaniel/movies/issues?q=is%3Aissue+is%3Aclosed)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies/network/dependencies)
-[![GitHub repo size](https://img.shields.io/github/repo-size/krsiakdaniel/movies)](https://github.com/krsiakdaniel/movies)
 
 ---
 
@@ -34,15 +30,16 @@ My [study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript,
 
 ## 📆 Project board
 
-Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) and [milestones](https://github.com/krsiakdaniel/movies/milestones?direction=asc&sort=due_date&state=open) to see what is planned, in progress and done.
+Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) to see what is planned and in progress.
 
 ## 🔑 TMDb API
 
-Learn how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
+This product uses the TMDb API but is not endorsed or certified by TMDb.
+Browse project WIKI to learn how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
 
 ## ⚙️ Technologies
 
-Read about [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), [technologies](technologies.md) and services used to build this app.
+Read about [technologies](technologies.md) and services used to build this app.
 
 ## 📦 Deployment
 
@@ -68,7 +65,7 @@ make build
 
 ### Prettier
 
-Changed files are formatted on save in editor using [.prettierrc](.prettierrc) options. This can be done manually as well.
+Files format on save in the editor using [.prettierrc](.prettierrc) options. This can be done manually as well.
 
 ```
 make prettier

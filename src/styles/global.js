@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+// TODO: use in app https://flatuicolors.com/palette/defo
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
@@ -16,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", sans-serif;
     color: #032139;
     overflow-y: scroll;
+    background: #f7fbfb;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -30,7 +32,8 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  h1, h2, h3, h4, h5, h6, ul, li, input, label {
+  // TODO: add proper typography rules
+  h1, h2, h3, h4, h5, h6, ul, li, p, span, input, label {
     line-height: 1;
    }
 

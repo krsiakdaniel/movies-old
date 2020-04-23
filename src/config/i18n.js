@@ -20,6 +20,8 @@ i18n
           noResultsLink: 'Go back to homepage',
           error404Title: '404',
           error404Text: 'Sorry but it looks like the page does not exist.',
+          footerTmdb:
+            'This product uses the TMDb API but is not endorsed or certified by TMDb.',
         },
       },
     },
