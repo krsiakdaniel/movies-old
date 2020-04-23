@@ -49,7 +49,7 @@ const StyledMovieThumb = styled.div`
   }
 
   .movie-name {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
     font-size: 12px;
     color: #fff;
     border-bottom-left-radius: 4px;
