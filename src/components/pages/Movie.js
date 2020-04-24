@@ -10,10 +10,10 @@ const Movie = ({ movieId }) => {
   const { t } = useTranslation();
 
   const [movie, isLoading, error] = useMovieFetch(movieId);
-
   if (isLoading) return <Spinner />;
   if (error) return <NotFound />;
-  console.log('Log page - MOVIES:', movie);
+  console.log('Log - page - movie:', movie);
+  console.log('Log - movieId:', movie.movieId);
 
   return (
     <>
@@ -25,7 +25,7 @@ const Movie = ({ movieId }) => {
         revenue={movie.revenue}
       />
       <Grid header={t('movieActors')}>
-        {movie.actors.map((actor) => (
+        {movie?.actors?.map((actor) => (
           <Actor key={actor.credit_id} actor={actor} />
         ))}
       </Grid>

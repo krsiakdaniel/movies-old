@@ -14,11 +14,11 @@ const useMovieFetch = (movieId) => {
     try {
       const endpointMovieData = `${BASE_URL_API}movie/${movieId}?api_key=${API_KEY}`;
       const resultMovieData = await (await fetch(endpointMovieData)).json();
-      console.log(resultMovieData);
+      console.log('Log - result movie data:', resultMovieData);
 
       const endpointCredits = `${BASE_URL_API}movie/${movieId}/credits?api_key=${API_KEY}`;
       const resultCredits = await (await fetch(endpointCredits)).json();
-      console.log(resultCredits);
+      console.log('Log - credits:', resultCredits);
 
       const directors = resultCredits.crew.filter(
         (member) => member.job === 'Director',
@@ -41,10 +41,10 @@ const useMovieFetch = (movieId) => {
     if (localStorage[movieId]) {
       setState(JSON.parse(localStorage[movieId]));
       setIsLoading(false);
-      console.log('data from localStorage');
+      console.log('Log - data from: localStorage');
     } else {
       fetchData();
-      console.log('data from API');
+      console.log('Log - data loaded from: API');
     }
   }, [fetchData, movieId]);
 

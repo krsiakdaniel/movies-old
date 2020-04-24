@@ -7,7 +7,7 @@ import { calcTime, convertMoney } from '../../utils';
 
 import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
 
-import NoImage from '../../assets/jpg/error/no-image.jpg';
+import NoImage from '../../assets/svg/error/no-image.svg';
 
 const TEXT_DIRECTOR = 'Director: ';
 const TEXT_DIRECTORS = 'Directors: ';
@@ -38,9 +38,9 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
             </li>
             <li>
               <strong>
-                {movie.directors.length > 1 ? TEXT_DIRECTORS : TEXT_DIRECTOR}
+                {movie?.directors?.length > 1 ? TEXT_DIRECTORS : TEXT_DIRECTOR}
               </strong>
-              {movie.directors.map((director) => (
+              {movie?.directors?.map((director) => (
                 <span key={director.credit_id}>
                   {director.name}
                   {movie.directors.length > 1 ? ', ' : ''}
@@ -73,7 +73,7 @@ const StyledMovieInfo = styled.div`
   background: ${(props) =>
     props.backdrop
       ? `url('${BASE_URL_IMAGE}${SIZE_BACKDROP}${props.backdrop}')`
-      : '#000'};
+      : '#34495e'};
   background-size: cover !important;
   background-position: center !important;
   width: 100%;
@@ -94,7 +94,7 @@ const StyledMovieInfo = styled.div`
       float: left;
 
       @media screen and (max-width: 768px) {
-        width: 100% !important;
+        width: 100%;
       }
     }
 
@@ -113,8 +113,7 @@ const StyledMovieInfo = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    min-height: 600px;
-    height: auto;
+    padding: 32px 24px;
   }
 
   @keyframes animateMovieinfo {

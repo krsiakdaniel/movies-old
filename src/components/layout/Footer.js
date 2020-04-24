@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 // TODO: add texts to i18n
+// TODO: create config for url '/about'
 const Footer = () => {
   const { t } = useTranslation();
-  const url = '/About';
+  const url = '/about';
 
   return (
     <>

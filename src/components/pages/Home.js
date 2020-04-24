@@ -13,7 +13,7 @@ import {
   BASE_URL_MOVIES_SEARCH,
 } from '../../config';
 
-import NoImage from '../../assets/jpg/error/no-image.jpg';
+import NoImage from '../../assets/svg/error/no-image.svg';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -51,7 +51,7 @@ const Home = () => {
   if (isLoading) return <Spinner />;
   if (movies.length === 0) return <NoSearchResults />;
   if (error) return <NotFound />;
-  console.log('Log page: HOME:', movies);
+  console.log('Log - page - movies:', movies);
 
   // TODO: clear results using '×'
   return (

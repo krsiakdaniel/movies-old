@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+// TODO: create config for url '/movie/'
 const MovieThumb = ({ alt, clickable, image, movieId, movieName }) => {
   return (
     <StyledMovieThumb>
       {clickable ? (
         <>
-          <Link to={`/${movieId}`}>
+          <Link to={`/movie/${movieId}`}>
             <img src={image} alt={alt} className="clickable" />
             <span className="movie-name">{movieName}</span>
           </Link>
@@ -36,7 +37,6 @@ const StyledMovieThumb = styled.div`
     object-fit: cover;
     border: transparent;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     transition: all 0.4s ease;
 
     :hover {

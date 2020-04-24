@@ -57,7 +57,6 @@ const StyledSearchBarContent = styled.div`
     margin: 32px auto;
     width: 100%;
     height: 40px;
-    color: #000;
     position: relative;
     display: inline-block;
     min-width: 0;

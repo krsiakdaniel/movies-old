@@ -9,15 +9,13 @@ const Navigation = ({ movie }) => {
 
   return (
     <StyledNavigation>
-      <div className="navigation-content">
-        <ul>
-          <li>
-            <Link to="/">{t('navHome')}</Link>
-          </li>
-          <li>/</li>
-          <li>{movie}</li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <Link to="/">{t('navHome')}</Link>
+        </li>
+        <li>/</li>
+        <li>{movie}</li>
+      </ul>
     </StyledNavigation>
   );
 };
@@ -31,21 +29,21 @@ const StyledNavigation = styled.div`
   display: flex;
   background: #fff;
 
-  .navigation-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 16px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+
+  li {
+    display: inline-block;
+    padding-right: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 16px 24px;
 
     li {
-      display: inline-block;
-      padding-right: 8px;
-    }
-
-    @media screen and (max-width: 480px) {
-      li {
-        font-size: 16px;
-      }
+      font-size: 16px;
     }
   }
 `;

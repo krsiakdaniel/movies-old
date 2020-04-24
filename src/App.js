@@ -13,6 +13,7 @@ import {
 import { GlobalStyle } from './styles';
 
 // TODO: load pages from 'routes.js'
+// TODO: useLocation + get id from route 'movie'
 const App = () => {
   return (
     <>
@@ -21,10 +22,10 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/:movieId" component={Movie} />
-          <Route path="/About" component={About} />
-          <Route path="/NoSearchResults" component={NoSearchResults} />
-          <Route path="/NotFound" component={NotFound} />
+          <Route path="/movie/:movieId" component={Movie} />
+          <Route path="/about" component={About} />
+          <Route path="/no-search-results" component={NoSearchResults} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>
