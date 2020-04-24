@@ -1,7 +1,10 @@
 {
   "short_name": "Movies",
   "name": "Movies Database.",
-  "start_url": "/",
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone",
   "icons": [
     {
       "src": "favicon.png",
@@ -18,9 +21,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
