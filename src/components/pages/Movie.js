@@ -13,7 +13,7 @@ const Movie = ({ movieId }) => {
 
   if (isLoading) return <Spinner />;
   if (error) return <NotFound />;
-  console.log('log:', movie);
+  console.log('Log page - MOVIES:', movie);
 
   return (
     <>

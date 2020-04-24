@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { NoResults, NotFound } from './index';
+import { NoSearchResults, NotFound } from './index';
 import { LoadMoreBtn, SearchBar } from '../elements';
 import { Grid, MovieThumb, Spinner } from '../shared';
 import { useHomeFetch } from '../hooks';
@@ -49,9 +49,9 @@ const Home = () => {
   };
 
   if (isLoading) return <Spinner />;
-  if (movies.length === 0) return <NoResults />;
+  if (movies.length === 0) return <NoSearchResults />;
   if (error) return <NotFound />;
-  console.log('log:', movies);
+  console.log('Log page: HOME:', movies);
 
   // TODO: clear results using '×'
   return (

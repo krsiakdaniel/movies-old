@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from '@reach/router';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 // TODO: add texts to i18n
 const Footer = () => {
   const { t } = useTranslation();
+  const url = '/About';
 
   return (
     <>
@@ -15,7 +16,7 @@ const Footer = () => {
           <span aria-hidden="true" role="img">
             🇨🇿
           </span>{' '}
-          by <Link to="https://krsiak.cz/">Krsiak Daniel</Link>
+          by <Link to={url}>Krsiak Daniel</Link>
         </p>
         <p className="tmdb">{t('footerTmdb')}</p>
       </StyledFooter>

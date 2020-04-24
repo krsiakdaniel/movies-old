@@ -15,13 +15,14 @@ i18n
           homeResults: 'Search Results',
           homeLoadMore: 'More...',
           movieActors: 'Actors',
-          noResultsTitle: 'No such movie',
-          noResultsText: 'Seems there is no movie with the name you searched.',
-          noResultsLink: 'Go back to homepage',
+          NoSearchResultsTitle: 'No such movie',
+          NoSearchResultsText:
+            'Seems there is no movie with the name you searched.',
           error404Title: '404',
           error404Text: 'Sorry but it looks like the page does not exist.',
           footerTmdb:
             'This product uses the TMDb API but is not endorsed or certified by TMDb.',
+          linkHomepage: 'Go back to homepage',
         },
       },
     },

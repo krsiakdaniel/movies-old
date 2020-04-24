@@ -1,23 +1,33 @@
 import React from 'react';
-import { Router } from '@reach/router';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Header, Footer } from './components/layout';
-import { Home, Movie, NotFound, NoResults } from './components/pages';
+import {
+  Home,
+  About,
+  Movie,
+  NoSearchResults,
+  NotFound,
+} from './components/pages';
 
 import { GlobalStyle } from './styles';
 
+// TODO: load pages from 'routes.js'
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Header />
       <Router>
-        <Home path="/" />
-        <Movie path="/:movieId" />
-        <NotFound path="/NotFound" />
-        <NoResults path="/NoResults" />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/:movieId" component={Movie} />
+          <Route path="/About" component={About} />
+          <Route path="/NoSearchResults" component={NoSearchResults} />
+          <Route path="/NotFound" component={NotFound} />
+        </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 };
