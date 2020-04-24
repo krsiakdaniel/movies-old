@@ -14,6 +14,8 @@ const Movie = ({ movieId }) => {
   if (error) return <NotFound />;
   console.log('Log - page - movie:', movie);
   console.log('Log - movieId:', movie.movieId);
+  // TODO: movieId undefined, not loading data from movie fetch
+  // FIX: fetch or get ID from url using router location hook?
 
   return (
     <>
