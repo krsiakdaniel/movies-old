@@ -13,7 +13,6 @@ import {
 import { GlobalStyle } from './styles';
 
 // TODO: load pages from 'routes.js'
-// TODO: useLocation + get id from route 'movie'
 const App = () => {
   return (
     <>

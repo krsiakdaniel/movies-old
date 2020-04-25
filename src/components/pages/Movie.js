@@ -6,16 +6,17 @@ import { Actor, MovieInfo, Navigation } from '../elements';
 import { Grid, Spinner } from '../shared';
 import { useMovieFetch } from '../hooks';
 
-const Movie = ({ movieId }) => {
+const Movie = ({ match }) => {
   const { t } = useTranslation();
+  const movieId = match.params.movieId;
+  console.log('Log - match:', match);
+  // TODO: useLocation + get id from route 'movie'
 
   const [movie, isLoading, error] = useMovieFetch(movieId);
   if (isLoading) return <Spinner />;
   if (error) return <NotFound />;
   console.log('Log - page - movie:', movie);
-  console.log('Log - movieId:', movie.movieId);
-  // TODO: movieId undefined, not loading data from movie fetch
-  // FIX: fetch or get ID from url using router location hook?
+  console.log('Log - movieId:', movieId);
 
   return (
     <>
