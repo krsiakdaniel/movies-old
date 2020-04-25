@@ -34,19 +34,8 @@ const useHomeFetch = (searchTerm) => {
   };
 
   useEffect(() => {
-    if (sessionStorage.homeState) {
-      setState(JSON.parse(sessionStorage.homeState));
-      setIsLoading(false);
-    } else {
-      fetchMovies(`${BASE_URL_MOVIES_POPULAR}`);
-    }
+    fetchMovies(`${BASE_URL_MOVIES_POPULAR}`);
   }, []);
-
-  useEffect(() => {
-    if (!searchTerm) {
-      sessionStorage.setItem('homeState', JSON.stringify(state));
-    }
-  }, [searchTerm, state]);
 
   return [{ state, isLoading, error }, fetchMovies];
 };

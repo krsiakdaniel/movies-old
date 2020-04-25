@@ -38,19 +38,8 @@ const useMovieFetch = (movieId) => {
   }, [movieId]);
 
   useEffect(() => {
-    if (localStorage[movieId]) {
-      setState(JSON.parse(localStorage[movieId]));
-      setIsLoading(false);
-      console.log('Log - data from: localStorage');
-    } else {
-      fetchData();
-      console.log('Log - data loaded from: API');
-    }
-  }, [fetchData, movieId]);
-
-  useEffect(() => {
-    localStorage.setItem(movieId, JSON.stringify(state));
-  }, [movieId, state]);
+    fetchData();
+  }, [fetchData]);
 
   return [state, isLoading, error];
 };
