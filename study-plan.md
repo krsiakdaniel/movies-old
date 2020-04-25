@@ -26,7 +26,41 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ### [Advanced guides](https://reactjs.org/docs/accessibility.html)
 
-- [ ] ...
+- [ ] Accessibility
+- [ ] Code-Splitting
+- [ ] Context
+- [ ] Error Boundaries
+- [ ] Forwarding Refs
+- [ ] Fragments
+- [ ] Higher-Order Components
+- [ ] Integrating with Other Libraries
+- [ ] JSX In Depth
+- [ ] Optimizing Performance
+- [ ] Portals
+- [ ] Profiler
+- [ ] React Without ES6
+- [ ] React Without JSX
+- [ ] Reconciliation
+- [ ] Refs and the DOM
+- [ ] Render Props
+- [ ] Static Type Checking
+- [ ] Strict Mode
+- [ ] Typechecking With PropTypes
+- [ ] Uncontrolled Components
+- [ ] Web Components
+
+## API Reference
+
+- [ ] React
+- [ ] React.Component
+- [ ] ReactDOM
+- [ ] ReactDOMServer
+- [ ] DOM Elements
+- [ ] SyntheticEvent
+- [ ] Test Utilities
+- [ ] Test Renderer
+- [ ] JS Environment Requirements
+- [ ] Glossary
 
 ### React Router
 
@@ -38,11 +72,36 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ### Hooks
 
+- [ ] Introducing Hooks
+- [ ] Hooks at a Glance
+- [ ] Using the State Hook
+- [ ] Using the Effect Hook
+- [ ] Rules of Hooks
+- [ ] Building Your Own Hooks
+- [ ] Hooks API Reference
+- [ ] Hooks FAQ
+
+---
+
 - <https://reactjs.org/docs/hooks-custom.html>
 - <https://blog.logrocket.com/how-to-get-previous-props-state-with-react-hooks/>
 - <https://reactjs.org/docs/hooks-reference.html#usecontext>
 - <https://alligator.io/react/usecontext/>
 - <https://reactjs.org/docs/hooks-effect.html>
+
+### Testing
+
+- [ ] Testing Overview
+- [ ] Testing Recipes
+- [ ] Testing Environments
+
+### Concurrent mode
+
+- [ ] Introducing Concurrent Mode
+- [ ] Suspense for Data Fetching
+- [ ] Concurrent UI Patterns
+- [ ] Adopting Concurrent Mode
+- [ ] Concurrent Mode API Reference
 
 ### State
 
