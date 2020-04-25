@@ -121,8 +121,15 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ## i18n
 
+- [POEditor](https://poeditor.com/)
 - <https://www.i18next.com/overview/getting-started>
 - <https://react.i18next.com/getting-started>
+
+## Open Graph
+
+- <https://sitechecker.pro/open-graph/>
+- <https://developers.facebook.com/docs/sharing/webmasters>
+- <https://cards-dev.twitter.com/validator>
 
 ## Testing
 
