@@ -1,6 +1,6 @@
 # ⚙️ Technologies
 
-Learn about [dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), technologies and services used to build this app.
+[Dependencies](https://github.com/krsiakdaniel/movies/network/dependencies), technologies, tools and services used to build this app.
 
 ## Core
 
@@ -9,16 +9,14 @@ Learn about [dependencies](https://github.com/krsiakdaniel/movies/network/depend
 - [TypeScript](https://www.typescriptlang.org/)
 - [CSS - Emotion](https://emotion.sh/docs/introduction)
 
-## Technologies
+## Design
 
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 - [Chakra UI](https://chakra-ui.com/getting-started)
 
 ## Tools
 
 - [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/docs/en/index.html)
-- [browserl.ist](https://browserl.ist/?q=%3E0.2%25%2C+not+dead%2C+not+ie+%3C%3D+11%2C+not+op_mini+all)
 
 ## API
 
