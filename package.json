@@ -6,6 +6,7 @@
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
+    "a11y-react-emoji": "^1.1.2",
     "i18next": "^19.4.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

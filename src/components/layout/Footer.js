@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Emoji from 'a11y-react-emoji';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
@@ -13,10 +14,7 @@ const Footer = () => {
     <>
       <StyledFooter>
         <p>
-          Made in{' '}
-          <span aria-hidden="true" role="img">
-            🇨🇿
-          </span>{' '}
+          Made in <Emoji symbol="🇨🇿" label="Czech Republic" />
           by <Link to={url}>Krsiak Daniel</Link>
         </p>
         <p className="tmdb">{t('footerTmdb')}</p>
