@@ -44,10 +44,10 @@ const StyledSearchBar = styled.div`
 
 const StyledSearchBarContent = styled.div`
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
+  padding: 16px;
+  width: 100%;
   position: relative;
-  padding: 0 16px;
 
   @media screen and (max-width: 768px) {
     padding: 0 24px;

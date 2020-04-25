@@ -27,21 +27,20 @@ const Footer = () => {
 const StyledFooter = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  padding: 16px;
 
   p {
-    text-align: center;
     font-size: 12px;
-    margin-bottom: 8px;
+    text-align: center;
   }
 
   .tmdb {
-    margin: 0 16px 16px;
     font-size: 10px;
     color: #bdc3c7;
+  }
 
-    @media screen and (max-width: 768px) {
-      margin: 0 24px 16px;
-    }
+  @media screen and (max-width: 768px) {
+    padding: 16px 24px;
   }
 `;
 

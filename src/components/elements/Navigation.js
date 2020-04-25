@@ -30,9 +30,9 @@ const StyledNavigation = styled.div`
   background: #fff;
 
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   padding: 16px;
+  width: 100%;
 
   li {
     display: inline-block;

@@ -28,8 +28,8 @@ const StyledHeader = styled.div`
 
   .header-content {
     max-width: 1200px;
-    padding: 16px;
     margin: 0 auto;
+    padding: 16px;
 
     a {
       color: #fff;
