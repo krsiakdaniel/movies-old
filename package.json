@@ -38,6 +38,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "cypress:record": "cypress run --record --key 971cf93f-3b4b-42c5-8ba5-f148a1a524ea",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

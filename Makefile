@@ -19,3 +19,6 @@ cy-open:
 
 cy-run:
 	yarn cypress:run
+
+cy-record:
+	yarn cypress:record

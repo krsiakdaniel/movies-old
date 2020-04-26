@@ -70,3 +70,11 @@ Files format on save in the editor using [.prettierrc](.prettierrc) options. Thi
 ```
 make prettier
 ```
+
+### Cypress
+
+See recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+
+- `make cy-open` = opens Cypress interactive mode
+- `make cy-run` = run tests in terminal
+- `make cy-record` = run tests and record them
