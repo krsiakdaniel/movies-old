@@ -6,6 +6,7 @@
   "license": "MIT",
   "version": "0.1.0",
   "dependencies": {
+    "@netlify/build": "^0.4.1",
     "@testing-library/dom": "^7.2.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -41,13 +42,13 @@
     "pretty-quick": "^2.0.1"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "netlify:build": "netlify-build",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:record": "cypress run --record --key 971cf93f-3b4b-42c5-8ba5-f148a1a524ea",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "husky": {
     "hooks": {

@@ -37,6 +37,8 @@ fixtures/dom/public/react.js
 _SpecRunner.html
 __benchmarks__
 cypress/integration/examples
+cypress/screenshots
+cypress/videos
 
 # production
 build/
