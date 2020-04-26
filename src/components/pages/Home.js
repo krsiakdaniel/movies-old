@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { NoSearchResults, NotFound } from './index';
 import { LoadMoreBtn, SearchBar } from '../elements';
 import { Grid, MovieThumb, Spinner } from '../shared';
+import { NoSearchResults, NotFound } from './index';
+
 import { useHomeFetch } from '../hooks';
 
 import {

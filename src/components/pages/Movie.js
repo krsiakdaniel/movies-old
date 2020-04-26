@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { NotFound } from './index';
 import { Actor, MovieInfo, Navigation } from '../elements';
 import { Grid, Spinner } from '../shared';
+import { NotFound } from './index';
+
 import { useMovieFetch } from '../hooks';
 
 const Movie = ({ match }) => {

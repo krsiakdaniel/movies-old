@@ -1,6 +1,8 @@
+/** @jsx jsx */
 import React from 'react';
+import { jsx, css } from '@emotion/core';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+
 import { cypress } from '../../utils';
 
 type Props = {
@@ -14,25 +16,23 @@ type Props = {
 // TODO: create config for url '/movie/'
 const MovieThumb = ({ alt, clickable, image, movieId, movieName }: Props) => {
   return (
-    <StyledMovieThumb>
+    <div css={cssMovieThumb}>
       {clickable ? (
-        <>
-          <Link to={`/movie/${movieId}`}>
-            <img src={image} alt={alt} className="clickable" />
-            <span className="movie-name" data-cy={cypress.movieName}>
-              {movieName}
-            </span>
-          </Link>
-        </>
+        <Link to={`/movie/${movieId}`}>
+          <img src={image} alt={alt} className="clickable" />
+          <span className="movie-name" data-cy={cypress.movieName}>
+            {movieName}
+          </span>
+        </Link>
       ) : (
         <img src={image} alt={alt} />
       )}
-    </StyledMovieThumb>
+    </div>
   );
 };
 
-// css
-const StyledMovieThumb = styled.div`
+// TODO: remove all 'className' in app
+const cssMovieThumb = css`
   text-align: center;
   position: relative;
   border-radius: 8px;

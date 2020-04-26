@@ -1,8 +1,11 @@
+/** @jsx jsx */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Emoji from 'a11y-react-emoji';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
+
+import { Link } from 'react-router-dom';
+
+import Emoji from 'a11y-react-emoji';
 
 // TODO: add texts to i18n
 // TODO: create config for url '/about'
@@ -11,20 +14,17 @@ const Footer = () => {
   const url = '/about';
 
   return (
-    <>
-      <StyledFooter>
-        <p>
-          Made in <Emoji symbol="🇨🇿" label="Czech Republic" />
-          by <Link to={url}>Krsiak Daniel</Link>
-        </p>
-        <p className="tmdb">{t('footerTmdb')}</p>
-      </StyledFooter>
-    </>
+    <div css={cssFooter}>
+      <p>
+        Made in <Emoji symbol="🇨🇿" label="Czech Republic" />
+        by <Link to={url}>Krsiak Daniel</Link>
+      </p>
+      <p className="tmdb">{t('footerTmdb')}</p>
+    </div>
   );
 };
 
-// css
-const StyledFooter = styled.div`
+const cssFooter = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;

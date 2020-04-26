@@ -1,10 +1,10 @@
+/** @jsx jsx */
 import React from 'react';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 
-const Spinner = () => <StyledSpinner />;
+const Spinner = () => <div css={cssSpinner} />;
 
-// css
-const StyledSpinner = styled.div`
+const cssSpinner = css`
   border: 5px solid #f3f3f3;
   border-top: 5px solid #16d47b;
   border-radius: 50%;

@@ -1,7 +1,9 @@
+/** @jsx jsx */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
+
+import { Link } from 'react-router-dom';
 
 type Props = {
   movie: string;
@@ -11,7 +13,7 @@ const Navigation = ({ movie }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <StyledNavigation>
+    <div css={cssNavigation}>
       <ul>
         <li>
           <Link to="/">{t('navHome')}</Link>
@@ -19,12 +21,11 @@ const Navigation = ({ movie }: Props) => {
         <li>/</li>
         <li>{movie}</li>
       </ul>
-    </StyledNavigation>
+    </div>
   );
 };
 
-// css
-const StyledNavigation = styled.div`
+const cssNavigation = css`
   display: flex;
   background: #fff;
 

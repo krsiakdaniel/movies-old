@@ -1,6 +1,8 @@
+/** @jsx jsx */
 import React, { useState, useRef } from 'react';
+import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
+
 import PropTypes from 'prop-types';
 import { cypress } from '../../utils';
 
@@ -21,8 +23,8 @@ const SearchBar = ({ callback }) => {
   };
 
   return (
-    <StyledSearchBar>
-      <StyledSearchBarContent>
+    <div css={cssSearchBarWrap}>
+      <div css={cssSearchBar}>
         <input
           type="text"
           placeholder={t('search')}
@@ -30,8 +32,8 @@ const SearchBar = ({ callback }) => {
           value={state}
           data-cy={cypress.searchBar}
         />
-      </StyledSearchBarContent>
-    </StyledSearchBar>
+      </div>
+    </div>
   );
 };
 
@@ -40,11 +42,11 @@ SearchBar.propTypes = {
 };
 
 // css
-const StyledSearchBar = styled.div`
+const cssSearchBarWrap = css`
   width: 100%;
 `;
 
-const StyledSearchBarContent = styled.div`
+const cssSearchBar = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;

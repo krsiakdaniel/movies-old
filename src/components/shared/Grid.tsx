@@ -1,5 +1,7 @@
+/** @jsx jsx */
 import React from 'react';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
+
 import { cypress } from '../../utils';
 
 type Props = {
@@ -9,16 +11,15 @@ type Props = {
 
 const Grid = ({ header, children }: Props) => {
   return (
-    <StyledGrid>
+    <div css={cssGrid}>
       <h1 data-cy={cypress.pageHeading}>{header}</h1>
-      <StyledGridContent>{children}</StyledGridContent>
-    </StyledGrid>
+      <div css={cssGridContent}>{children}</div>
+    </div>
   );
 };
 
 // TODO: use flexbox
-// css
-const StyledGrid = styled.div`
+const cssGrid = css`
   max-width: 1200px;
   margin: 0 auto 16px auto;
   padding: 0 16px;
@@ -28,7 +29,7 @@ const StyledGrid = styled.div`
   }
 `;
 
-const StyledGridContent = styled.div`
+const cssGridContent = css`
   display: grid;
   grid-template-columns: repeat(8, minmax(100px, 1fr));
   grid-gap: 16px;
@@ -48,7 +49,6 @@ const StyledGridContent = styled.div`
   }
 
   // TODO: breakpoints 480, 576, 768, 992, 1200, 1600
-
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(7, minmax(100px, 1fr));
   }

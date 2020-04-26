@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 
 // TODO: what is proper type for 'callback' or function?
 type Props = {
@@ -9,14 +10,14 @@ type Props = {
 
 const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
-    <StyledLoadMoreBtn type="button" onClick={callback}>
+    <button css={cssLoadMoreBtn} type="button" onClick={callback}>
       {text}
-    </StyledLoadMoreBtn>
+    </button>
   );
 };
 
 // css
-const StyledLoadMoreBtn = styled.button`
+const cssLoadMoreBtn = css`
   background: #27ae60;
   border: transparent;
   min-width: 150px;

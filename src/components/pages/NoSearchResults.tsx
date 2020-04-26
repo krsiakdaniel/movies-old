@@ -1,14 +1,17 @@
+/** @jsx jsx */
 import React from 'react';
-import Emoji from 'a11y-react-emoji';
+import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
+
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+
+import Emoji from 'a11y-react-emoji';
 
 const NoSearchResults = () => {
   const { t } = useTranslation();
 
   return (
-    <NoSearchResultsWrapperCss>
+    <div css={cssNoSearchResults}>
       <h2>
         {t('NoSearchResultsTitle')}
         <Emoji symbol="🤔" />
@@ -17,11 +20,11 @@ const NoSearchResults = () => {
       <p>
         <Link to="/">{t('linkHomepage')}</Link>
       </p>
-    </NoSearchResultsWrapperCss>
+    </div>
   );
 };
 
-const NoSearchResultsWrapperCss = styled.div`
+const cssNoSearchResults = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;

@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React from 'react';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 
 import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
 import NoImage from '../../assets/jpg/error/no-image.jpg';
@@ -11,7 +12,7 @@ type Props = {
 
 const Actor = ({ actor }: Props) => {
   return (
-    <StyledActor>
+    <div css={cssActor}>
       <img
         src={
           actor.profile_path
@@ -25,12 +26,11 @@ const Actor = ({ actor }: Props) => {
         <div className="actor-details__name">{actor.name}</div>
         <div className="actor-details__character">{actor.character}</div>
       </div>
-    </StyledActor>
+    </div>
   );
 };
 
-// css
-const StyledActor = styled.div`
+const cssActor = css`
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   padding: 4px;

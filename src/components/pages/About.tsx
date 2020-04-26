@@ -1,19 +1,21 @@
+/** @jsx jsx */
 import React from 'react';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 
+// TODO: use i18n
 const About = () => {
   return (
-    <AboutWrapperCss>
+    <div css={cssAbout}>
       <h2>About</h2>
       <p>
         Hi. My name is <strong>Krsiak Daniel</strong>. I really like movies. I
         watched just in cinema 100 movies in 10 years.
       </p>
-    </AboutWrapperCss>
+    </div>
   );
 };
 
-const AboutWrapperCss = styled.div`
+const cssAbout = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;

@@ -1,10 +1,11 @@
+/** @jsx jsx */
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 
 import { MovieThumb } from '../shared';
-import { calcTime, convertMoney } from '../../utils';
 
+import PropTypes from 'prop-types';
+import { calcTime, convertMoney } from '../../utils';
 import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
 
 import NoImage from '../../assets/svg/error/no-image.svg';
@@ -14,7 +15,7 @@ const TEXT_DIRECTORS = 'Directors: ';
 
 const MovieInfo = ({ movie, time, budget, revenue }) => {
   return (
-    <StyledMovieInfo backdrop={movie.backdrop_path}>
+    <div css={cssMovieInfo} backdrop={movie.backdrop_path}>
       <div className="movieinfo">
         <div className="movieinfo__thumb">
           <MovieThumb
@@ -59,7 +60,7 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
           </ul>
         </div>
       </div>
-    </StyledMovieInfo>
+    </div>
   );
 };
 
@@ -68,8 +69,7 @@ MovieInfo.propTypes = {
   directors: PropTypes.array,
 };
 
-// css
-const StyledMovieInfo = styled.div`
+const cssMovieInfo = css`
   background: ${(props) =>
     props.backdrop
       ? `url('${BASE_URL_IMAGE}${SIZE_BACKDROP}${props.backdrop}')`

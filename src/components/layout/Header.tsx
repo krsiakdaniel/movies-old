@@ -1,29 +1,31 @@
+/** @jsx jsx */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
+
+import { Link } from 'react-router-dom';
 
 import LogoMovies from '../../assets/svg/logo/logo-512.svg';
 import LogoTmdb from '../../assets/svg/logo/tmdb.svg';
 
+// TODO: add 'alts' to i18n
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <StyledHeader>
+    <div css={cssHeader}>
       <div className="header-content">
         <Link to="/">
-          <StyledLogoMovies src={LogoMovies} alt="Movies" />
+          <img src={LogoMovies} css={cssLogoMovies} alt="Movies" />
           <span>{t('headerTitle')}</span>
         </Link>
-        <StyledLogoTmdb src={LogoTmdb} alt="TMDb" />
+        <img src={LogoTmdb} css={cssLogoTmdb} alt="TMDb" />
       </div>
-    </StyledHeader>
+    </div>
   );
 };
 
-// css
-const StyledHeader = styled.div`
+const cssHeader = css`
   background: #2c3e50;
 
   .header-content {
@@ -56,8 +58,8 @@ const StyledHeader = styled.div`
   }
 `;
 
-const StyledLogoMovies = styled.img`
-  // TODO: remove floats, use flexbox
+// TODO: remove floats, use flexbox
+const cssLogoMovies = css`
   float: left;
   width: 48px;
   margin-right: 16px;
@@ -68,7 +70,7 @@ const StyledLogoMovies = styled.img`
   }
 `;
 
-const StyledLogoTmdb = styled.img`
+const cssLogoTmdb = css`
   float: right;
   width: 200px;
   position: relative;
