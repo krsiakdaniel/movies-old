@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { cypress } from '../../utils';
 
 const SearchBar = ({ callback }) => {
   const { t } = useTranslation();
@@ -27,6 +28,7 @@ const SearchBar = ({ callback }) => {
           placeholder={t('search')}
           onChange={handleSearch}
           value={state}
+          data-cy={cypress.searchBar}
         />
       </StyledSearchBarContent>
     </StyledSearchBar>

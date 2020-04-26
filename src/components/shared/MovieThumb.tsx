@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { cypress } from '../../utils';
 
 type Props = {
   alt: string;
@@ -18,7 +19,9 @@ const MovieThumb = ({ alt, clickable, image, movieId, movieName }: Props) => {
         <>
           <Link to={`/movie/${movieId}`}>
             <img src={image} alt={alt} className="clickable" />
-            <span className="movie-name">{movieName}</span>
+            <span className="movie-name" data-cy={cypress.movieName}>
+              {movieName}
+            </span>
           </Link>
         </>
       ) : (

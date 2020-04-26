@@ -12,3 +12,10 @@ test:
 
 prettier:
 	yarn prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
+
+# Cypress
+cy-open:
+	yarn cypress:open
+
+cy-run:
+	yarn cypress:run

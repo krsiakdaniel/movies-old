@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { cypress } from '../../utils';
 
 type Props = {
   header: string;
@@ -9,7 +10,7 @@ type Props = {
 const Grid = ({ header, children }: Props) => {
   return (
     <StyledGrid>
-      <h1>{header}</h1>
+      <h1 data-cy={cypress.pageHeading}>{header}</h1>
       <StyledGridContent>{children}</StyledGridContent>
     </StyledGrid>
   );

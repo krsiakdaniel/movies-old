@@ -16,6 +16,7 @@
     "@types/react-router-dom": "^5.1.4",
     "@types/styled-components": "^5.1.0",
     "a11y-react-emoji": "^1.1.2",
+    "cypress": "^4.4.1",
     "i18next": "^19.4.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -35,6 +36,8 @@
     "pretty-quick": "^2.0.1"
   },
   "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
