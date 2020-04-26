@@ -28,7 +28,6 @@
 - 📆 [Project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) describes what is planned and in progress.
 - 🔑 [TMDb API](https://github.com/krsiakdaniel/movies/wiki) setup explained in project Wiki.
 - ⚙️ [Technologies](technologies.md) used to build this app.
-- 📦 Deployment uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
 - 🔨 Scripts are in [Makefile](Makefile).
 
 ## ⚛ React
@@ -40,11 +39,19 @@
 
 - `make prettier` = Using [.prettierrc](.prettierrc) options format files on save or manually.
 
-
 ## 🐛 Cypress
 
-See recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+Available [tests](cypress/integration). See recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 - `make cy-open` = Cypress interactive mode.
 - `make cy-run` = Run tests in terminal.
 - `make cy-record` = Run tests and record them online.
+
+## 📦 Deployment
+
+This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
+
+It also runs [Cypress](https://github.com/krsiakdaniel/movies#-cypress) during build:
+
+- ✅ tests are ok = site gets published
+- ⛔ tests fail = build stops
