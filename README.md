@@ -41,7 +41,7 @@
 
 ## 🐛 Cypress
 
-E2E [tests](cypress/integration) in `/cypress/integration/`. You can see recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+[E2E tests](cypress/integration) run on **Netlify**, locally and can be recorded in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 
 - `make cy-open` = Cypress interactive mode.
@@ -50,9 +50,9 @@ E2E [tests](cypress/integration) in `/cypress/integration/`. You can see recorde
 
 ## 📦 Deployment
 
-This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
+This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) automation to:
 
-It also runs [Cypress](https://github.com/krsiakdaniel/movies#-cypress) test during build:
-
-- ✅ tests are ok = site gets published
-- ⛔ tests fail = build stops
+1. Build app from `master` branch on each commit.
+2. Run **Cypress test** during build:
+    1. ✅ Tests are ok = site gets published.
+    2. ⛔ Tests fail = build stops.
