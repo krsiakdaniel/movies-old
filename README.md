@@ -14,16 +14,13 @@
   <p>
     <a href="https://movies.krsiak.cz/">https://movies.krsiak.cz/</a>
   </p>
-</div>
 
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 [![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
-
----
+</div>
 
 [![movies](https://movies.krsiak.cz/og-image.png)](https://movies.krsiak.cz/)
-
 
 ## 🔗 Project links
 
@@ -32,37 +29,22 @@
 - 🔑 [TMDb API](https://github.com/krsiakdaniel/movies/wiki) setup explained in project Wiki.
 - ⚙️ [Technologies](technologies.md) used to build this app.
 - 📦 Deployment uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
+- 🔨 Scripts are in [Makefile](Makefile).
 
-## 🔨 Scripts
+## React
 
-Read [Makefile](Makefile) to find available scripts.
+- `make start` = Run app on <http://localhost:3000/>
+- `make build` = Build the app in `/build/` folder.
 
-### React
+## ✨ Prettier
 
-Run app on <http://localhost:3000/>
+- `make prettier` = Using [.prettierrc](.prettierrc) options format files on save or manually.
 
-```
-make start
-```
 
-Build the app in `/build/` folder.
-
-```
-make build
-```
-
-### Prettier
-
-Files format on save in the editor using [.prettierrc](.prettierrc) options. This can be done manually as well.
-
-```
-make prettier
-```
-
-### Cypress
+## 🐛 Cypress
 
 See recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
-- `make cy-open` = opens Cypress interactive mode
-- `make cy-run` = run tests in terminal
-- `make cy-record` = run tests and record them
+- `make cy-open` = Cypress interactive mode
+- `make cy-run` = Run tests in terminal.
+- `make cy-record` = Run tests and record them online.
