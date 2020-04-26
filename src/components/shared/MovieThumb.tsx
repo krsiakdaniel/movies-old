@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+type Props = {
+  alt: string;
+  clickable: boolean;
+  image: string;
+  movieId: number;
+  movieName: string;
+};
+
 // TODO: create config for url '/movie/'
-const MovieThumb = ({ alt, clickable, image, movieId, movieName }) => {
+const MovieThumb = ({ alt, clickable, image, movieId, movieName }: Props) => {
   return (
     <StyledMovieThumb>
       {clickable ? (
@@ -19,12 +26,6 @@ const MovieThumb = ({ alt, clickable, image, movieId, movieName }) => {
       )}
     </StyledMovieThumb>
   );
-};
-
-MovieThumb.propTypes = {
-  image: PropTypes.string,
-  movieId: PropTypes.number,
-  clickable: PropTypes.bool,
 };
 
 // css

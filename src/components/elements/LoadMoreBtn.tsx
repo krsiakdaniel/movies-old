@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const LoadMoreBtn = ({ text, callback }) => {
+// TODO: what is proper type for 'callback' or function?
+type Props = {
+  text: string;
+  callback: any;
+};
+
+const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
     <StyledLoadMoreBtn type="button" onClick={callback}>
       {text}
     </StyledLoadMoreBtn>
   );
-};
-
-LoadMoreBtn.propTypes = {
-  text: PropTypes.string,
-  callback: PropTypes.func,
 };
 
 // css

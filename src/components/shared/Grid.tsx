@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Grid = ({ header, children }) => {
+type Props = {
+  header: string;
+  children: React.ReactNode;
+};
+
+const Grid = ({ header, children }: Props) => {
   return (
     <StyledGrid>
       <h1>{header}</h1>
       <StyledGridContent>{children}</StyledGridContent>
     </StyledGrid>
   );
-};
-
-Grid.propTypes = {
-  header: PropTypes.string,
 };
 
 // TODO: use flexbox

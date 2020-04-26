@@ -1,5 +1,9 @@
 // Convert a number to money formatting
-export const convertMoney = (money) => {
+type Props = {
+  money: number;
+};
+
+const convertMoney = ({ money }: Props) => {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -7,3 +11,5 @@ export const convertMoney = (money) => {
   });
   return formatter.format(money);
 };
+
+export { convertMoney };

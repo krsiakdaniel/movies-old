@@ -1,11 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
 import NoImage from '../../assets/jpg/error/no-image.jpg';
 
-const Actor = ({ actor }) => {
+// TODO: fix - actor = 'object' throws error, define using TS 'interface'
+type Props = {
+  actor: any;
+};
+
+const Actor = ({ actor }: Props) => {
   return (
     <StyledActor>
       <img
@@ -23,10 +27,6 @@ const Actor = ({ actor }) => {
       </div>
     </StyledActor>
   );
-};
-
-Actor.propTypes = {
-  actor: PropTypes.object,
 };
 
 // css

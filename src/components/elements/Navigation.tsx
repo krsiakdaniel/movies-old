@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Navigation = ({ movie }) => {
+type Props = {
+  movie: string;
+};
+
+const Navigation = ({ movie }: Props) => {
   const { t } = useTranslation();
 
   return (
@@ -18,10 +21,6 @@ const Navigation = ({ movie }) => {
       </ul>
     </StyledNavigation>
   );
-};
-
-Navigation.propTypes = {
-  movie: PropTypes.string,
 };
 
 // css
