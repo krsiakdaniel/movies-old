@@ -48,7 +48,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:record": "cypress run --record --key 971cf93f-3b4b-42c5-8ba5-f148a1a524ea",
-    "test": "react-scripts test"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
