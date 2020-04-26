@@ -31,7 +31,7 @@
 - 📦 Deployment uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
 - 🔨 Scripts are in [Makefile](Makefile).
 
-## React
+## ⚛ React
 
 - `make start` = Run app on <http://localhost:3000/>
 - `make build` = Build the app in `/build/` folder.
@@ -45,6 +45,6 @@
 
 See recorded test runs in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
-- `make cy-open` = Cypress interactive mode
+- `make cy-open` = Cypress interactive mode.
 - `make cy-run` = Run tests in terminal.
 - `make cy-record` = Run tests and record them online.
