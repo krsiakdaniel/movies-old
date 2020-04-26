@@ -24,26 +24,14 @@
 
 [![movies](https://movies.krsiak.cz/og-image.png)](https://movies.krsiak.cz/)
 
-## 📚 Study plan
 
-My [study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript, React and other technologies.
+## 🔗 Project links
 
-## 📆 Project board
-
-Browse [project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) to see what is planned and in progress.
-
-## 🔑 TMDb API
-
-This product uses the TMDb API but is not endorsed or certified by TMDb.
-Browse project WIKI to learn how [TMDb API](https://github.com/krsiakdaniel/movies/wiki) works.
-
-## ⚙️ Technologies
-
-Read about [technologies](technologies.md) and services used to build this app.
-
-## 📦 Deployment
-
-App uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch and deploys on each commit.
+- 📚 [Study plan](study-plan.md) shows what I learnt about JavaScript, TypeScript and React.
+- 📆 [Project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) describes what is planned and in progress.
+- 🔑 [TMDb API](https://github.com/krsiakdaniel/movies/wiki) setup explained in project Wiki.
+- ⚙️ [Technologies](technologies.md) used to build this app.
+- 📦 Deployment uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) to build from `master` branch on each commit.
 
 ## 🔨 Scripts
 
