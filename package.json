@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react-hooks": "^3.0.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.9",
@@ -47,16 +48,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "plugins": [
-      "react-hooks"
-    ],
-    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn"
-    }
   },
   "husky": {
     "hooks": {
