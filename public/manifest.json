@@ -1,26 +1,26 @@
 {
-  "short_name": "Movies",
-  "name": "Movies Database.",
-  "start_url": ".",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "lang": "en-US",
   "display": "standalone",
   "icons": [
     {
-      "src": "favicon.png",
       "sizes": "32x32",
+      "src": "favicon.png",
       "type": "image/png"
     },
     {
+      "sizes": "192x192",
       "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "type": "image/png"
     },
     {
+      "sizes": "512x512",
       "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/png"
     }
-  ]
+  ],
+  "lang": "en-US",
+  "name": "Movies Database.",
+  "short_name": "Movies",
+  "start_url": ".",
+  "theme_color": "#000000"
 }

@@ -29,6 +29,7 @@ const useMovieFetch = (movieId) => {
       });
     } catch (error) {
       setError(true);
+      // eslint-disable-next-line no-console
       console.error(error);
     } finally {
       setIsLoading(false);

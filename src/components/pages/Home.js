@@ -49,10 +49,12 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
+  const noMoviesFound = movies.length === 0;
+
   if (isLoading) {
     return <Spinner />;
   }
-  if (movies.length === 0) {
+  if (noMoviesFound) {
     return <NoSearchResults />;
   }
   if (error) {

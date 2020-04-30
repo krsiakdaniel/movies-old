@@ -10,14 +10,15 @@ import { useMovieFetch } from '../hooks';
 const Movie = ({ match }) => {
   const { t } = useTranslation();
   const movieId = match.params.movieId;
-  console.log('Log - match:', match);
   // TODO: useLocation + get id from route 'movie'
 
   const [movie, isLoading, error] = useMovieFetch(movieId);
-  if (isLoading) return <Spinner />;
-  if (error) return <NotFound />;
-  console.log('Log - page - movie:', movie);
-  console.log('Log - movieId:', movieId);
+  if (isLoading) {
+    return <Spinner />;
+  }
+  if (error) {
+    return <NotFound />;
+  }
 
   return (
     <>
