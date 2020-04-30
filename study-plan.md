@@ -6,11 +6,11 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ### Installation
 
-- [ ] [Getting Started](https://reactjs.org/docs/getting-started.html)
-- [ ] Add React to a Website
-- [ ] Create a New React App
-- [ ] CDN Links
-- [ ] Release Channels
+- [x] [Getting Started](https://reactjs.org/docs/getting-started.html)
+- [x] Add React to a Website
+- [x] Create a New React App
+- [x] CDN Links
+- [x] Release Channels
 
 ### Main concepts
 
@@ -67,7 +67,7 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ### Hooks
 
-- [ ] [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [x] [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [ ] Hooks at a Glance
 - [ ] Using the State Hook
 - [ ] Using the Effect Hook
@@ -151,10 +151,12 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ## TypeScript
 
-- [ ] [TypeScript](https://www.typescriptlang.org/)
+- [x] [TypeScript in 5 mins](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [ ] [TypeScript](https://www.typescriptlang.org/) in depth
 - [ ] [React adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 - [ ] [React useState and Typescript](https://www.youtube.com/watch?v=D8ozazfo6tw&feature=youtu.be)
 - [ ] [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
+- [ ] [React TS cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/blob/master/README.md#basic-cheatsheet-table-of-contents)
 
 ---
 
