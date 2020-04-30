@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 
 import { Link } from 'react-router-dom';
 
-import LogoMovies from '../../assets/svg/logo/logo-512.svg';
-import LogoTmdb from '../../assets/svg/logo/tmdb.svg';
+import LogoMovies from 'assets/svg/logo/logo-512.svg';
+import LogoTmdb from 'assets/svg/logo/tmdb.svg';
 
 // TODO: add 'alts' to i18n
 const Header = () => {

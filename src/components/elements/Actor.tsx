@@ -2,8 +2,8 @@
 import React from 'react';
 import { jsx, css } from '@emotion/core';
 
-import { BASE_URL_IMAGE, SIZE_POSTER } from '../../config';
-import NoImage from '../../assets/jpg/error/no-image.jpg';
+import { BASE_URL_IMAGE, SIZE_POSTER } from 'config';
+import NoImage from 'assets/jpg/error/no-image.jpg';
 
 // TODO: fix - actor = 'object' throws error, define using TS 'interface'
 type Props = {

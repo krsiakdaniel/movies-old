@@ -10,10 +10,10 @@ i18n
         translation: {
           headerTitle: 'Movies',
           navHome: 'Home',
-          search: 'Search...',
+          search: 'Search…',
           homeMovies: 'Popular Movies',
           homeResults: 'Search Results',
-          homeLoadMore: 'More...',
+          homeLoadMore: 'More…',
           movieActors: 'Actors',
           NoSearchResultsTitle: 'No such movie',
           NoSearchResultsText:
