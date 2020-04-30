@@ -2,7 +2,7 @@
 import React from 'react';
 import { jsx, css } from '@emotion/core';
 
-import { cypress } from 'utils';
+import { cypress } from 'config';
 
 type Props = {
   header: string;

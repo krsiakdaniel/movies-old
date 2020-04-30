@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
-import { cypress } from 'utils';
+import { cypress } from 'config';
 
 type Props = {
   alt: string;

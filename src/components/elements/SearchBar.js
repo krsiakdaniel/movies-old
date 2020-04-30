@@ -4,7 +4,7 @@ import { jsx, css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
 import PropTypes from 'prop-types';
-import { cypress } from '../../utils';
+import { cypress } from '../../config';
 
 const SearchBar = ({ callback }) => {
   const { t } = useTranslation();
