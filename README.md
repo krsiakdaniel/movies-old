@@ -15,9 +15,9 @@
     <a href="https://movies.krsiak.cz/">https://movies.krsiak.cz/</a>
   </p>
 
-[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
-[![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
+[![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 </div>
 
 [![movies](https://movies.krsiak.cz/og-image.png)](https://movies.krsiak.cz/)
