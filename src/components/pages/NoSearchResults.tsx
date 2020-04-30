@@ -12,10 +12,10 @@ const NoSearchResults = () => {
   return (
     <div css={cssNoSearchResults}>
       <h2>
-        {t('NoSearchResultsTitle')}
+        {t('noSearchResultsTitle')}
         <Emoji symbol="🤔" />
       </h2>
-      <p>{t('NoSearchResultsText')}</p>
+      <p>{t('noSearchResultsText')}</p>
       <p>
         <Link to="/">{t('linkHomepage')}</Link>
       </p>
