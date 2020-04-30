@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react';
-import { jsx, css } from '@emotion/core';
+import { css } from '@emotion/core';
 
 import { BASE_URL_IMAGE, SIZE_POSTER } from 'config';
 import NoImage from 'assets/jpg/error/no-image.jpg';

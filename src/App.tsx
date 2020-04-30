@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react';
-import { jsx, css, Global } from '@emotion/core';
+import { css, Global } from '@emotion/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
 import {

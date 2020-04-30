@@ -18,11 +18,13 @@
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
     "a11y-react-emoji": "^1.1.2",
+    "customize-cra": "^0.9.1",
     "cypress": "^4.4.1",
     "i18next": "^19.4.3",
     "netlify-plugin-cypress": "^1.3.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.3.5",
     "react-is": "^16.13.1",
@@ -31,6 +33,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
     "eslint": "^6.8.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react-hooks": "^3.0.0",
@@ -40,8 +43,9 @@
     "pretty-quick": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "eject": "react-app-rewired eject",
     "netlify:build": "netlify-build",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",

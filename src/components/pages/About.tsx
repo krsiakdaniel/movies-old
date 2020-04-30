@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react';
-import { jsx, css } from '@emotion/core';
+import { css } from '@emotion/core';
 
 // TODO: use i18n
 const About = () => {

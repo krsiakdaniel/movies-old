@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react';
-import { jsx, css } from '@emotion/core';
+import { css } from '@emotion/core';
 
 // TODO: what is proper type for 'callback' or function?
 type Props = {
