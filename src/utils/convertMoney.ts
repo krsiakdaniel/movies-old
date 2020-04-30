@@ -5,9 +5,9 @@ type Props = {
 
 const convertMoney = ({ money }: Props) => {
   const formatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 0,
+    style: 'currency',
   });
   return formatter.format(money);
 };

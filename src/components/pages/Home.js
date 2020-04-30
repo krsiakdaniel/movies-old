@@ -49,10 +49,15 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
-  if (isLoading) return <Spinner />;
-  if (movies.length === 0) return <NoSearchResults />;
-  if (error) return <NotFound />;
-  console.log('Log - page - movies:', movies);
+  if (isLoading) {
+    return <Spinner />;
+  }
+  if (movies.length === 0) {
+    return <NoSearchResults />;
+  }
+  if (error) {
+    return <NotFound />;
+  }
 
   // TODO: clear results using '×'
   return (

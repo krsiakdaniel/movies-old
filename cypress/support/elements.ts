@@ -1,7 +1,7 @@
 const elements = {
   attributes: {
-    searchBar: '[data-cy="search-bar"]',
     pageHeading: '[data-cy="page-heading"]',
+    searchBar: '[data-cy="search-bar"]',
   },
   texts: {
     searchBar: 'star trek',

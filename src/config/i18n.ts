@@ -8,30 +8,29 @@ i18n
     resources: {
       en: {
         translation: {
+          error404Text: 'Sorry but it looks like the page does not exist.',
+          error404Title: '404',
           headerTitle: 'Movies',
-          navHome: 'Home',
-          search: 'Search…',
+          homeLoadMore: 'More…',
           homeMovies: 'Popular Movies',
           homeResults: 'Search Results',
-          homeLoadMore: 'More…',
+          linkHomepage: 'Go back to homepage',
           movieActors: 'Actors',
-          NoSearchResultsTitle: 'No such movie',
+          navHome: 'Home',
           NoSearchResultsText:
             'Seems there is no movie with the name you searched.',
-          error404Title: '404',
-          error404Text: 'Sorry but it looks like the page does not exist.',
+          NoSearchResultsTitle: 'No such movie',
+          search: 'Search…',
           footerTmdb:
             'This product uses the TMDb API but is not endorsed or certified by TMDb.',
-          linkHomepage: 'Go back to homepage',
         },
       },
     },
-    lng: 'en',
     fallbackLng: 'en',
-
     interpolation: {
       escapeValue: false,
     },
+    lng: 'en',
   });
 
 export { i18n };

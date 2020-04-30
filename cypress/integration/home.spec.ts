@@ -1,5 +1,7 @@
 import { elements } from '../support/elements';
 
+const statusSuccess = 200;
+
 describe('Homepage', () => {
   beforeEach(() => {
     cy.visit('/');
@@ -7,7 +9,7 @@ describe('Homepage', () => {
 
   it('Page status = 200', () => {
     cy.request('/').then((response) => {
-      expect(response.status).to.eq(200);
+      expect(response.status).to.eq(statusSuccess);
     });
   });
 

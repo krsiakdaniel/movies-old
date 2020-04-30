@@ -3,9 +3,11 @@ type Props = {
   time: number;
 };
 
+const timeNumber = 60;
+
 const calcTime = ({ time }: Props) => {
-  const hours = Math.floor(time / 60);
-  const mins = time % 60;
+  const hours = Math.floor(time / timeNumber);
+  const mins = time % timeNumber;
   return `${hours}h ${mins}m`;
 };
 

@@ -14,11 +14,9 @@ const useMovieFetch = (movieId) => {
     try {
       const endpointMovieData = `${BASE_URL_API}movie/${movieId}?api_key=${API_KEY}`;
       const resultMovieData = await (await fetch(endpointMovieData)).json();
-      console.log('Log - result movie data:', resultMovieData);
 
       const endpointCredits = `${BASE_URL_API}movie/${movieId}/credits?api_key=${API_KEY}`;
       const resultCredits = await (await fetch(endpointCredits)).json();
-      console.log('Log - credits:', resultCredits);
 
       const directors = resultCredits.crew.filter(
         (member) => member.job === 'Director',
