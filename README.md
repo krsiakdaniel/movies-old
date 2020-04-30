@@ -51,8 +51,8 @@
 
 This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) automation to:
 
-1. Build app from `master` branch on each commit.
-2. Runs **Cypress tests** during build:
-  1. ✅ Tests are ok = site gets published.
-  2. ⛔ Tests fail = build stops.
-3. Use `make netlify-build` to run Netlify build preview locally.
+1.  Build app from `master` branch on each commit.
+2.  Runs **Cypress tests** during build:
+  1.  ✅ Tests are ok = site gets published.
+  2.  ⛔ Tests fail = build stops.
+3.  Use `make netlify-build` to run Netlify build preview locally.
