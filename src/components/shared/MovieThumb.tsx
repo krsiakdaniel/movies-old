@@ -36,6 +36,9 @@ const cssMovieThumb = css`
   text-align: center;
   position: relative;
   border-radius: 8px;
+  min-width: 132px;
+  min-height: 198px;
+  background: #fff;
 
   img {
     object-fit: cover;
