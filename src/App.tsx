@@ -2,7 +2,6 @@
 import React from 'react';
 import { jsx, css, Global } from '@emotion/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { Header, Footer } from './components/layout';
 import {
   Home,
@@ -20,11 +19,20 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          {/*TODO: use router 5.1, useParams to match 'movieId' */}
           <Route path="/movie/:movieId" component={Movie} />
-          <Route path="/about" component={About} />
-          <Route path="/no-search-results" component={NoSearchResults} />
-          <Route component={NotFound} />
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/no-search-results">
+            <NoSearchResults />
+          </Route>
+          <Route>
+            <NotFound />
+          </Route>
         </Switch>
         <Footer />
       </Router>
