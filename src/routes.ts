@@ -8,25 +8,25 @@ import {
 
 const routes = [
   {
+    component: Home,
     exact: true,
     path: '/',
-    component: Home,
   },
   {
-    path: '/Movie',
     component: Movie,
+    path: '/Movie',
   },
   {
-    path: '/About',
     component: About,
+    path: '/About',
   },
   {
-    path: '/NoSearchResults',
     component: NoSearchResults,
+    path: '/NoSearchResults',
   },
   {
-    path: '/NotFound',
     component: NotFound,
+    path: '/NotFound',
   },
 ];
 
