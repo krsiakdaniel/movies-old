@@ -26,12 +26,12 @@ const SubNavigation = ({ movie }: Props) => {
 
 const cssSubNavigation = css`
   display: flex;
-  background: #fff;
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
   width: 100%;
+  background: #fff;
+  font-size: 12px;
 
   li {
     display: inline-block;

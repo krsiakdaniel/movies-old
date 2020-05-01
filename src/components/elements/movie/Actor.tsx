@@ -19,50 +19,48 @@ const Actor = ({ actor }: Props) => {
             : NoImage
         }
         alt={actor.name}
-        className="actor__img"
+        css={cssActorImage}
       />
-      <div className="actor-details">
-        <div className="actor-details__name">{actor.name}</div>
-        <div className="actor-details__character">{actor.character}</div>
+      <div css={cssActorDetails}>
+        <div css={cssActorName}>{actor.name}</div>
+        <div css={cssActorCharacter}>{actor.character}</div>
       </div>
     </div>
   );
 };
 
 const cssActor = css`
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   padding: 4px;
   text-align: center;
   background: #fff;
+`;
 
-  .actor {
-    &__img {
-      height: 160px;
-      object-fit: cover;
-      border-radius: 8px;
+const cssActorImage = css`
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
 
-      @media screen and (max-width: 480px) {
-        height: 200px;
-      }
-    }
-
-    &-details {
-      padding: 0 4px;
-      font-size: 14px;
-
-      &__name {
-        display: block;
-        margin: 8px 0 0 0;
-        font-weight: 700;
-      }
-
-      &__character {
-        display: block;
-        margin: 0 0 8px 0;
-      }
-    }
+  @media screen and (max-width: 480px) {
+    height: 200px;
   }
+`;
+
+const cssActorDetails = css`
+  padding: 0 4px;
+  font-size: 14px;
+`;
+
+const cssActorName = css`
+  display: block;
+  margin: 8px 0 0 0;
+  font-weight: 700;
+`;
+
+const cssActorCharacter = css`
+  display: block;
+  margin: 0 0 8px 0;
 `;
 
 export { Actor };

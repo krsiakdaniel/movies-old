@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
+// import { theme } from 'styles';
 import { useTranslation } from 'react-i18next';
 
 import { Link } from 'react-router-dom';
@@ -17,29 +18,27 @@ const Footer = () => {
         {t('footerMadeBy')}{' '}
         <Link to={pageUrls.about}>{t('appAuthorName')}</Link>
       </p>
-      <p className="tmdb">{t('footerTmdb')}</p>
+      <p css={cssTMDb}>{t('footerTMDb')}</p>
     </div>
   );
 };
 
-const cssFooter = css`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+const cssFooter = css({
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: 16,
+  fontSize: 12,
+  textAlign: 'center',
 
-  p {
-    font-size: 12px;
-    text-align: center;
-  }
+  '@media screen and (max-width: 768px)': {
+    padding: '16px 24px',
+  },
+});
 
-  .tmdb {
-    font-size: 10px;
-    color: #bdc3c7;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 16px 24px;
-  }
-`;
+const cssTMDb = css({
+  fontSize: 10,
+  color: '#bdc3c7',
+  // color: theme.colors.gray,
+});
 
 export { Footer };

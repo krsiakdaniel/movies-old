@@ -24,14 +24,20 @@ i18n
           error404Title: '404',
           footerMadeBy: 'by',
           footerMadeIn: 'Made in',
-          footerTmdb:
+          footerTMDb:
             'This product uses the TMDb API but is not endorsed or certified by TMDb.',
           headerTitle: 'Movies',
           homeLoadMore: 'More…',
           homeMovies: 'Popular Movies',
           homeResults: 'Search Results',
+          ratingIMDb: 'IMDb rating:',
           linkHome: 'Go back to homepage',
           movieActors: 'Actors',
+          movieInfoBudget: 'Budget',
+          movieInfoDirector: 'Director',
+          movieInfoDirectors: 'Directors',
+          movieInfoRevenue: 'Revenue',
+          movieInfoRunningTime: 'Running time:',
           navHome: 'Home',
           noSearchResultsText:
             'Seems there is no movie with the name you searched.',
