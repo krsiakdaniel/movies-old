@@ -1,10 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core';
 
-// TODO: what is proper type for 'callback' or function?
 type Props = {
   text: string;
-  callback: any;
+  callback: React.MouseEventHandler<HTMLElement>;
 };
 
 const LoadMoreBtn = ({ text, callback }: Props) => {
