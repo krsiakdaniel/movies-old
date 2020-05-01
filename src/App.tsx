@@ -1,7 +1,7 @@
 import React from 'react';
 import { css, Global } from '@emotion/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Header, Footer } from './components/layout';
+import { AppLayout } from './components/layout';
 import {
   Home,
   About,
@@ -15,24 +15,24 @@ const App = () => {
     <div>
       <Global styles={cssGlobal} />
       <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          {/*TODO: use router 5.1 and hooks to get 'movieId' */}
-          <Route path="/movie/:movieId" component={Movie} />
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/no-search-results">
-            <NoSearchResults />
-          </Route>
-          <Route>
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer />
+        <AppLayout>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            {/*TODO: use router 5.1 and hooks to get 'movieId' */}
+            <Route path="/movie/:movieId" component={Movie} />
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/no-search-results">
+              <NoSearchResults />
+            </Route>
+            <Route>
+              <NotFound />
+            </Route>
+          </Switch>
+        </AppLayout>
       </Router>
     </div>
   );
