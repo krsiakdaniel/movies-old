@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import LogoMovies from 'assets/svg/logo/logo-512.svg';
 import LogoTmdb from 'assets/svg/logo/tmdb.svg';
 
-// TODO: add 'alts' to i18n
 const Header = () => {
   const { t } = useTranslation();
 
@@ -15,10 +14,10 @@ const Header = () => {
     <div css={cssHeader}>
       <div className="header-content">
         <Link to="/">
-          <img src={LogoMovies} css={cssLogoMovies} alt="Movies" />
+          <img src={LogoMovies} css={cssLogoMovies} alt={t('altMovies')} />
           <span>{t('headerTitle')}</span>
         </Link>
-        <img src={LogoTmdb} css={cssLogoTmdb} alt="TMDb" />
+        <img src={LogoTmdb} css={cssLogoTmdb} alt={t('altTMDb')} />
       </div>
     </div>
   );

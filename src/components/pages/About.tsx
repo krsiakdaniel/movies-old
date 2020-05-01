@@ -1,14 +1,16 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import { useTranslation } from 'react-i18next';
 
-// TODO: use i18n
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div css={cssAbout}>
-      <h2>About</h2>
+      <h2>{t('aboutTitle')}</h2>
       <p>
-        Hi. My name is <strong>Krsiak Daniel</strong>. I really like movies. I
-        watched just in cinema 100 movies in 10 years.
+        {t('aboutText1')} <strong>{t('appAuthorName')}</strong>{' '}
+        {t('aboutText2')}
       </p>
     </div>
   );

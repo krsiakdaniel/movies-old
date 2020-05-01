@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 import Emoji from 'a11y-react-emoji';
 
-// TODO: add texts to i18n
 // TODO: create config for url '/about'
 const Footer = () => {
   const { t } = useTranslation();
@@ -15,8 +14,8 @@ const Footer = () => {
   return (
     <div css={cssFooter}>
       <p>
-        Made in <Emoji symbol="🇨🇿" label="Czech Republic" />
-        by <Link to={url}>Krsiak Daniel</Link>
+        {t('footerMadeIn')} <Emoji symbol="🇨🇿" label="Czech Republic" />
+        {t('footerMadeBy')} <Link to={url}>{t('appAuthorName')}</Link>
       </p>
       <p className="tmdb">{t('footerTmdb')}</p>
     </div>
