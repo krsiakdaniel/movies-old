@@ -30,7 +30,7 @@ i18n
           homeLoadMore: 'More…',
           homeMovies: 'Popular Movies',
           homeResults: 'Search Results',
-          linkHomepage: 'Go back to homepage',
+          linkHome: 'Go back to homepage',
           movieActors: 'Actors',
           navHome: 'Home',
           noSearchResultsText:

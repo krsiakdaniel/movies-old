@@ -5,17 +5,17 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import Emoji from 'a11y-react-emoji';
+import { pageUrls } from 'config';
 
-// TODO: create config for url '/about'
 const Footer = () => {
   const { t } = useTranslation();
-  const url = '/about';
 
   return (
     <div css={cssFooter}>
       <p>
         {t('footerMadeIn')} <Emoji symbol="🇨🇿" label="Czech Republic" />
-        {t('footerMadeBy')} <Link to={url}>{t('appAuthorName')}</Link>
+        {t('footerMadeBy')}{' '}
+        <Link to={pageUrls.about}>{t('appAuthorName')}</Link>
       </p>
       <p className="tmdb">{t('footerTmdb')}</p>
     </div>

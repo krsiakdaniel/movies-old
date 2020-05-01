@@ -12,7 +12,7 @@ const NotFound = () => {
       <h2>{t('error404Title')}</h2>
       <p>{t('error404Text')}</p>
       <p>
-        <Link to="/">{t('linkHomepage')}</Link>
+        <Link to="/">{t('linkHome')}</Link>
       </p>
     </div>
   );

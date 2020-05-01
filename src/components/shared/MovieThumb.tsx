@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
-import { cypress } from 'config';
+import { cypress, pageUrls } from 'config';
 
 type Props = {
   alt: string;
@@ -12,12 +12,11 @@ type Props = {
   movieName: string;
 };
 
-// TODO: create config for url '/movie/'
 const MovieThumb = ({ alt, clickable, image, movieId, movieName }: Props) => {
   return (
     <div css={cssMovieThumb}>
       {clickable ? (
-        <Link to={`/movie/${movieId}`}>
+        <Link to={`${pageUrls.movie}${movieId}`}>
           <img src={image} alt={alt} className="clickable" />
           <span className="movie-name" data-cy={cypress.movieName}>
             {movieName}

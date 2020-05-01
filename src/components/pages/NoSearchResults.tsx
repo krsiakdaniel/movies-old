@@ -17,7 +17,7 @@ const NoSearchResults = () => {
       </h2>
       <p>{t('noSearchResultsText')}</p>
       <p>
-        <Link to="/">{t('linkHomepage')}</Link>
+        <Link to="/">{t('linkHome')}</Link>
       </p>
     </div>
   );
