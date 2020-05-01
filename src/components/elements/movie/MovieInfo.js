@@ -4,10 +4,10 @@ import { css } from '@emotion/core';
 import { MovieThumb } from '../shared';
 
 import PropTypes from 'prop-types';
-import { calcTime, convertMoney } from '../../utils';
-import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../config';
+import { calcTime, convertMoney } from '../../../utils';
+import { BASE_URL_IMAGE, SIZE_BACKDROP, SIZE_POSTER } from '../../../config';
 
-import NoImage from '../../assets/svg/error/no-image.svg';
+import NoImage from '../../../assets/svg/error/no-image.svg';
 
 const TEXT_DIRECTOR = 'Director: ';
 const TEXT_DIRECTORS = 'Directors: ';

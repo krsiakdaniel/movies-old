@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Actor, MovieInfo, Navigation } from '../elements';
-import { Grid, Spinner } from '../shared';
+import { Actor, MovieInfo, SubNavigation } from '../elements/movie';
+import { Grid, Spinner } from '../elements/shared';
 import { NotFound } from './index';
 
 import { useMovieFetch } from '../hooks';
@@ -22,7 +22,7 @@ const Movie = ({ match }) => {
 
   return (
     <>
-      <Navigation movie={movie.original_title} />
+      <SubNavigation movie={movie.original_title} />
       <MovieInfo
         movie={movie}
         time={movie.runtime}

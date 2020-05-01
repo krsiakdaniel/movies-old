@@ -8,11 +8,11 @@ type Props = {
   movie: string;
 };
 
-const Navigation = ({ movie }: Props) => {
+const SubNavigation = ({ movie }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssNavigation}>
+    <div css={cssSubNavigation}>
       <ul>
         <li>
           <Link to="/">{t('navHome')}</Link>
@@ -24,7 +24,7 @@ const Navigation = ({ movie }: Props) => {
   );
 };
 
-const cssNavigation = css`
+const cssSubNavigation = css`
   display: flex;
   background: #fff;
 
@@ -47,4 +47,4 @@ const cssNavigation = css`
   }
 `;
 
-export { Navigation };
+export { SubNavigation };

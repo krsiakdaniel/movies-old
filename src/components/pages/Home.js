@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { LoadMoreBtn, SearchBar } from '../elements';
-import { Grid, MovieThumb, Spinner } from '../shared';
+import { LoadMoreBtn, SearchBar } from '../elements/home';
+import { Grid, MovieThumb, Spinner } from '../elements/shared';
 import { NoSearchResults, NotFound } from './index';
 
 import { useHomeFetch } from '../hooks';
