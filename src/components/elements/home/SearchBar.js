@@ -30,6 +30,7 @@ const SearchBar = ({ callback }) => {
           onChange={handleSearch}
           value={state}
           data-cy={cypress.searchBar}
+          css={cssSearchBarInput}
         />
       </div>
     </div>
@@ -40,45 +41,44 @@ SearchBar.propTypes = {
   callback: PropTypes.func,
 };
 
-// css
-const cssSearchBarWrap = css`
-  width: 100%;
-`;
+const cssSearchBarWrap = css({
+  width: '100%',
+});
 
-const cssSearchBar = css`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
-  width: 100%;
-  position: relative;
+const cssSearchBar = css({
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: '0 16px',
+  width: '100%',
+  position: 'relative',
 
-  @media screen and (max-width: 768px) {
-    padding: 0 24px;
-  }
+  '@media screen and (max-width: 768px)': {
+    padding: '0 24px',
+  },
+});
 
-  input {
-    margin: 32px auto;
-    width: 100%;
-    height: 40px;
-    position: relative;
-    display: inline-block;
-    min-width: 0;
-    padding: 4px 16px;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    line-height: 1.5715;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #d9d9d9;
-    border-radius: 8px;
-    transition: all 0.4s;
+const cssSearchBarInput = css({
+  margin: '32px auto',
+  width: '100%',
+  height: 40,
+  position: 'relative',
+  display: 'inline-block',
+  minWidth: 0,
+  padding: '4px 16px',
+  color: 'rgba(0, 0, 0, 0.5)',
+  fontSize: 14,
+  lineHeight: 1.5715,
+  backgroundColor: '#fff',
+  backgroundImage: 'none',
+  border: '1px solid #d9d9d9',
+  borderRadius: 8,
+  transition: 'all 0.4s',
 
-    :focus {
-      outline: 0;
-      border-color: #27ae60;
-      box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.1);
-    }
-  }
-`;
+  ':focus': {
+    outline: 0,
+    borderColor: '#27ae60',
+    boxShadow: '0 0 0 2px rgba(39, 174, 96, 0.1)',
+  },
+});
 
 export { SearchBar };

@@ -15,8 +15,7 @@ const Footer = () => {
     <div css={cssFooter}>
       <p>
         {t('footerMadeIn')} <Emoji symbol="🇨🇿" label="Czech Republic" />
-        {t('footerMadeBy')}{' '}
-        <Link to={pageUrls.about}>{t('appAuthorName')}</Link>
+        {t('footerMadeBy')} <Link to={pageUrls.about}>{t('appAuthor')}</Link>
       </p>
       <p css={cssTMDb}>{t('footerTMDb')}</p>
     </div>
@@ -26,12 +25,12 @@ const Footer = () => {
 const cssFooter = css({
   maxWidth: 1200,
   margin: '0 auto',
-  padding: 16,
+  padding: '0 16px',
   fontSize: 12,
   textAlign: 'center',
 
   '@media screen and (max-width: 768px)': {
-    padding: '16px 24px',
+    padding: '0 24px',
   },
 });
 

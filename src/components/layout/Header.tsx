@@ -23,61 +23,61 @@ const Header = () => {
   );
 };
 
-const cssHeader = css`
-  background: #2c3e50;
-`;
+const cssHeader = css({
+  background: '#2c3e50',
+});
 
-const cssHeaderContent = css`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+const cssHeaderContent = css({
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: 16,
 
-  @media screen and (max-width: 768px) {
-    padding: 16px 24px;
-  }
-`;
+  '@media screen and (max-width: 768px)': {
+    padding: '16px 24px',
+  },
+});
 
-const cssHeaderLink = css`
-  color: #fff;
-  font-size: 32px;
+const cssHeaderLink = css({
+  color: '#fff',
+  fontSize: 32,
 
-  :hover img {
-    transition: all 0.4s;
-    transform: rotate(180deg);
-  }
+  ':hover img': {
+    transition: 'all 0.4s',
+    transform: 'rotate(180deg)',
+  },
 
-  @media screen and (max-width: 480px) {
-    font-size: 28px;
+  '@media screen and (max-width: 480px)': {
+    fontSize: 28,
 
-    span {
-      position: relative;
-      top: 5px;
-    }
-  }
-`;
+    span: {
+      position: 'relative',
+      top: 5,
+    },
+  },
+});
 
 // TODO: remove floats, use flexbox
-const cssLogoMovies = css`
-  float: left;
-  width: 48px;
-  margin-right: 16px;
-  transition: all 0.4s;
+const cssLogoMovies = css({
+  float: 'left',
+  width: 48,
+  marginRight: 16,
+  transition: 'all 0.4s',
 
-  :hover {
-    transform: rotate(180deg);
-  }
-`;
+  ':hover': {
+    transform: 'rotate(180deg)',
+  },
+});
 
-const cssLogoTMDb = css`
-  float: right;
-  width: 200px;
-  position: relative;
-  top: 18px;
+const cssLogoTMDb = css({
+  float: 'right',
+  width: 200,
+  position: 'relative',
+  top: 18,
 
-  @media screen and (max-width: 480px) {
-    width: 100px;
-    top: 24px;
-  }
-`;
+  '@media screen and (max-width: 480px)': {
+    width: 100,
+    top: 24,
+  },
+});
 
 export { Header };

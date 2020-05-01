@@ -12,8 +12,7 @@ const NoSearchResults = () => {
   return (
     <div css={cssNoSearchResults}>
       <h2>
-        {t('noSearchResultsTitle')}
-        <Emoji symbol="🤔" />
+        {t('noSearchResultsTitle')} <Emoji symbol="🤔" />
       </h2>
       <p>{t('noSearchResultsText')}</p>
       <p>
@@ -23,14 +22,14 @@ const NoSearchResults = () => {
   );
 };
 
-const cssNoSearchResults = css`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+const cssNoSearchResults = css({
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: 16,
 
-  @media screen and (max-width: 768px) {
-    padding: 16px 24px;
-  }
-`;
+  '@media screen and (max-width: 768px)': {
+    padding: '16px 24px',
+  },
+});
 
 export { NoSearchResults };

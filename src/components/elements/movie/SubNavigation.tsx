@@ -24,27 +24,27 @@ const SubNavigation = ({ movie }: Props) => {
   );
 };
 
-const cssSubNavigation = css`
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
-  width: 100%;
-  background: #fff;
-  font-size: 12px;
+const cssSubNavigation = css({
+  display: 'flex',
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: 16,
+  width: '100%',
+  background: '#fff',
+  fontSize: 12,
 
-  li {
-    display: inline-block;
-    padding-right: 8px;
-  }
+  li: {
+    display: 'inline-block',
+    paddingRight: 8,
+  },
 
-  @media screen and (max-width: 768px) {
-    padding: 16px 24px;
+  '@media screen and (max-width: 768px)': {
+    padding: '16px 24px',
 
-    li {
-      font-size: 16px;
-    }
-  }
-`;
+    li: {
+      fontSize: 16,
+    },
+  },
+});
 
 export { SubNavigation };

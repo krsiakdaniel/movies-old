@@ -4,12 +4,16 @@ import { useTranslation } from 'react-i18next';
 
 import { Link } from 'react-router-dom';
 
+import Emoji from 'a11y-react-emoji';
+
 const NotFound = () => {
   const { t } = useTranslation();
 
   return (
     <div css={cssNotFound}>
-      <h2>{t('error404Title')}</h2>
+      <h2>
+        {t('error404Title')} <Emoji symbol="⚠️" />
+      </h2>
       <p>{t('error404Text')}</p>
       <p>
         <Link to="/">{t('linkHome')}</Link>
@@ -18,14 +22,14 @@ const NotFound = () => {
   );
 };
 
-const cssNotFound = css`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+const cssNotFound = css({
+  maxWidth: 1200,
+  margin: '0 auto',
+  padding: 16,
 
-  @media screen and (max-width: 768px) {
-    padding: 16px 24px;
-  }
-`;
+  '@media screen and (max-width: 768px)': {
+    padding: '16px 24px',
+  },
+});
 
 export { NotFound };

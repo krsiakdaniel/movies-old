@@ -34,14 +34,10 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
 
           <ul css={cssMovieInfoList}>
             <li>
-              <strong>{t('ratingIMDb')}</strong> {movie.vote_average}
+              <strong>{t('ratingIMDb')}: </strong> {movie.vote_average}
             </li>
             <li>
-              <strong>
-                {movie?.directors?.length > 1
-                  ? t('movieInfoDirector')
-                  : t('movieInfoDirectors')}
-              </strong>
+              <strong>{t('movieInfoDirector')}: </strong>
               {movie?.directors?.map((director) => (
                 <span key={director.credit_id}>
                   {director.name}
@@ -50,13 +46,13 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
               ))}
             </li>
             <li>
-              <strong>{t('movieInfoRunningTime')}</strong> {calcTime(time)}
+              <strong>{t('movieInfoRunningTime')}: </strong> {calcTime(time)}
             </li>
             <li>
-              <strong>{t('movieInfoBudget')}</strong> {convertMoney(budget)}
+              <strong>{t('movieInfoBudget')}: </strong> {convertMoney(budget)}
             </li>
             <li>
-              <strong>{t('movieInfoRevenue')}</strong> {convertMoney(revenue)}
+              <strong>{t('movieInfoRevenue')}: </strong> {convertMoney(revenue)}
             </li>
           </ul>
         </div>
@@ -70,60 +66,62 @@ MovieInfo.propTypes = {
   directors: PropTypes.array,
 };
 
-const cssMovieBackdrop = css`
-  background: ${(props) =>
+const cssMovieBackdrop = css({
+  // TODO: fix bg
+  background: `${(props) =>
     props.backdrop
       ? `url('${BASE_URL_IMAGE}${SIZE_BACKDROP}${props.backdrop}')`
-      : '#34495e'};
-  background-size: cover !important;
-  background-position: center !important;
-  width: 100%;
-  padding: 32px 16px;
-  margin-bottom: 32px;
-  animation: animateMovieInfo 1s;
+      : '#34495e'}`,
+  backgroundSize: 'cover !important',
+  backgroundPosition: 'center !important',
+  width: '100%',
+  padding: '32px 16px',
+  marginBottom: 32,
+  animation: 'animateMovieInfo 1s',
 
-  @media screen and (max-width: 768px) {
-    padding: 32px 24px;
-  }
+  '@media screen and (max-width: 768px)': {
+    padding: '32px 24px',
+  },
 
-  @keyframes animateMovieInfo {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
+  // TODO: fix
+  // @keyframes animateMovieInfo {
+  //   from {
+  //     opacity: 0,
+  //   }
+  //   to {
+  //     opacity: 1,
+  //   }
+  // }
+});
 
-const cssMovieInfo = css`
-  max-width: 1200px;
-  min-height: 450px;
-  margin: 0 auto;
-  background: rgb(0, 0, 0, 0.7);
-  border-radius: 8px;
-  position: relative;
-`;
+const cssMovieInfo = css({
+  maxWidth: 1200,
+  minHeight: 450,
+  margin: '0 auto',
+  background: 'rgb(0, 0, 0, 0.7)',
+  borderRadius: 8,
+  position: 'relative',
+});
 
-const cssMovieInfoThumb = css`
-  width: 300px;
-  float: left;
+const cssMovieInfoThumb = css({
+  width: 300,
+  float: 'left',
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
+  '@media screen and (max-width: 768px)': {
+    width: '100%',
+  },
+});
 
-const cssMovieInfoText = css`
-  padding: 40px;
-  color: #fff;
-  overflow: hidden;
-`;
+const cssMovieInfoText = css({
+  padding: 40,
+  color: '#fff',
+  overflow: 'hidden',
+});
 
-const cssMovieInfoList = css`
-  li {
-    margin-bottom: 4px;
-  }
-`;
+const cssMovieInfoList = css({
+  li: {
+    marginBottom: 4,
+  },
+});
 
 export { MovieInfo };

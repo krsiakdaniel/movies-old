@@ -38,81 +38,60 @@ const App = () => {
   );
 };
 
-const cssGlobal = css`
-  html {
-    box-sizing: border-box;
-    font-size: 16px; // base size for '1rem'
-  }
+const cssGlobal = css({
+  html: {
+    boxSizing: 'border-box',
+    fontSize: 16, // base size for '1rem'
+  },
 
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
+  '*, *:before, *:after': {
+    boxSizing: 'inherit',
+    margin: 0,
+    padding: 0,
+  },
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: #032139;
-    overflow-y: scroll;
-    background: #f7fbfb;
-  }
+  body: {
+    fontFamily: 'Poppins',
+    color: '#032139',
+    overflowY: 'scroll',
+    background: '#f7fbfb',
+  },
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 16px;
-  }
+  'h1, h2, h3, h4, h5, h6': {
+    marginBottom: 16,
+  },
 
-  p {
-    margin-bottom: 16px;
-  }
+  p: {
+    marginBottom: 16,
+  },
 
-  ol,
-  ul {
-    list-style: none;
-  }
+  'ol, ul': {
+    listStyle: 'none',
+  },
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ul,
-  li,
-  p,
-  span,
-  input,
-  label {
-    line-height: 1;
-  }
+  'h1, h2, h3, h4, h5, h6, ul, li, p, span, input, label': {
+    lineHeight: 1,
+  },
 
-  a {
-    color: #27ae60;
-    text-decoration: none;
-    display: inline-block;
-  }
+  a: {
+    color: '#27ae60',
+    textDecoration: 'none',
+    display: 'inline-block',
+  },
 
-  a:hover,
-  a:active,
-  a:focus {
-    text-decoration: underline;
-  }
+  'a:hover, a:active, a:focus': {
+    textDecoration: 'underline',
+  },
 
-  a:focus {
-    outline: none;
-  }
+  'a:focus': {
+    outline: 'none',
+  },
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-`;
+  img: {
+    display: 'block',
+    width: '100%',
+    height: 'auto',
+  },
+});
 
 export { App };
