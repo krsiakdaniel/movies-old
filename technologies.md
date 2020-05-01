@@ -7,24 +7,20 @@
 - [React](https://reactjs.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org/)
-- [CSS - Emotion](https://emotion.sh/docs/introduction)
 
 ## Design
 
 - [Chakra UI](https://chakra-ui.com/getting-started)
-
-## Tools
-
-- [EditorConfig](https://editorconfig.org/)
-- [Prettier](https://prettier.io/docs/en/index.html)
+- [Emotion](https://emotion.sh/docs/introduction)
 
 ## API
 
-- [TMDb](https://www.themoviedb.org/documentation/api)
+- [TMDb](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Services
 
-- [Uptime Robot status](https://stats.uptimerobot.com/7DxZ0imzV4)
 - [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys)
-- [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
+- [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/dashboard?bid=17493411)
 - [Smartlook](https://www.smartlook.com/)
+- [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs)
+- [Uptime Robot status](https://stats.uptimerobot.com/7DxZ0imzV4)

@@ -15,7 +15,7 @@
     <a href="https://movies.krsiak.cz/">https://movies.krsiak.cz/</a>
   </p>
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/files?bid=17493411)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/dashboard?bid=17493411)
 [![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 </div>
@@ -28,12 +28,12 @@
 - 📆 [Project board](https://github.com/krsiakdaniel/movies/projects/1?fullscreen=true) describes what is planned and in progress.
 - 🔑 [TMDb API](https://github.com/krsiakdaniel/movies/wiki) setup explained in project Wiki.
 - ⚙️ [Technologies](technologies.md) used to build this app.
-- 🔨 Scripts are in [Makefile](Makefile).
+- 🔨 [Makefile](Makefile) scripts.
 
 ## ⚛ React
 
 - `make start` = Run app on <http://localhost:3000/>
-- `make build` = Build the app in `/build/` folder.
+- `make build` = Build the app in `/build` folder.
 
 ## ✨ Prettier
 
@@ -41,7 +41,7 @@
 
 ## 🐛 Cypress
 
-[E2E tests](cypress/integration) run on **Netlify**, locally and can be recorded in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+[E2E tests](cypress/integration) run on **Netlify** during build. They can run locally as well. Tests' runs are in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 - `make cy-open` = Cypress interactive mode.
 - `make cy-run` = Run tests in terminal.
