@@ -61,7 +61,6 @@ const Home = () => {
     return <NotFound />;
   }
 
-  // TODO: clear results using '×'
   return (
     <>
       <SearchBar callback={searchMovies} />

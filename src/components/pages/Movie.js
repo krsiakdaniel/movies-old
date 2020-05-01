@@ -10,7 +10,7 @@ import { useMovieFetch } from '../hooks';
 const Movie = ({ match }) => {
   const { t } = useTranslation();
   const movieId = match.params.movieId;
-  // TODO: useLocation + get id from route 'movie'
+  // TODO: use hooks to get 'movieId'
 
   const [movie, isLoading, error] = useMovieFetch(movieId);
   if (isLoading) {

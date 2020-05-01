@@ -17,7 +17,7 @@ const Grid = ({ header, children }: Props) => {
   );
 };
 
-// TODO: use flexbox
+// TODO: on mobile show actors in rows
 const cssGrid = css`
   max-width: 1200px;
   margin: 0 auto 16px auto;
@@ -47,7 +47,6 @@ const cssGridContent = css`
     }
   }
 
-  // TODO: breakpoints 480, 576, 768, 992, 1200, 1600
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(7, minmax(100px, 1fr));
   }
@@ -65,7 +64,6 @@ const cssGridContent = css`
     grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
-  // TODO: on mobile show actors in rows
   @media screen and (max-width: 480px) {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -10,7 +10,6 @@ import {
   NotFound,
 } from './components/pages';
 
-// TODO: load pages from 'routes.js'
 const App = () => {
   return (
     <div>
@@ -21,7 +20,7 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          {/*TODO: use router 5.1, useParams to match 'movieId' */}
+          {/*TODO: use router 5.1 and hooks to get 'movieId' */}
           <Route path="/movie/:movieId" component={Movie} />
           <Route path="/about">
             <About />
@@ -78,7 +77,6 @@ const cssGlobal = css`
     list-style: none;
   }
 
-  // TODO: add proper typography rules
   h1,
   h2,
   h3,

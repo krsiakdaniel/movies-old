@@ -36,7 +36,6 @@ const cssActor = css`
   text-align: center;
   background: #fff;
 
-  // TODO: start using BEM
   .actor {
     &__img {
       height: 160px;

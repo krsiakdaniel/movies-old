@@ -29,7 +29,6 @@ const MovieThumb = ({ alt, clickable, image, movieId, movieName }: Props) => {
   );
 };
 
-// TODO: remove all 'className' in app
 const cssMovieThumb = css`
   text-align: center;
   position: relative;
