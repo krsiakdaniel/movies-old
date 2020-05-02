@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 import { Actor, MovieInfo, SubNavigation } from '../elements/movie';
 import { Grid, Spinner } from '../elements/shared';
@@ -22,6 +23,12 @@ const Movie = ({ match }) => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {movie.title} | {t('headerTitle')}
+        </title>
+        <meta name="description" content={movie.overview} />
+      </Helmet>
       <SubNavigation movie={movie.original_title} />
       <MovieInfo
         movie={movie}
