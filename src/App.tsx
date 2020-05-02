@@ -14,8 +14,9 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            {/*TODO: use router 5.1 and hooks to get 'movieId' */}
-            <Route path="/movie/:movieId" component={Movie} />
+            <Route path="/movie/:movieId">
+              <Movie />
+            </Route>
             <Route path="/about">
               <About />
             </Route>
