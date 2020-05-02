@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { LoadMoreBtn, SearchBar } from '../elements/home';
+import { LoadMoreBtn, NoMovieFound, SearchBar } from '../elements/home';
 import { Grid, MovieThumb, Spinner } from '../elements/shared';
-import { NoSearchResults, NotFound } from './index';
+import { NotFound } from './index';
 
 import { useHomeFetch } from '../hooks';
 
@@ -14,7 +14,7 @@ import {
   BASE_URL_MOVIES_SEARCH,
 } from '../../config';
 
-import NoImage from '../../assets/svg/error/no-image.svg';
+import noMoviePoster from '../../assets/svg/error/no-image.svg';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -49,13 +49,10 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
-  const noMoviesFound = movies.length === 0;
+  const moviesLoaded = movies.length > 0;
 
   if (isLoading) {
     return <Spinner />;
-  }
-  if (noMoviesFound) {
-    return <NoSearchResults />;
   }
   if (error) {
     return <NotFound />;
@@ -64,23 +61,29 @@ const Home = () => {
   return (
     <>
       <SearchBar callback={searchMovies} />
-      <Grid header={searchTerm ? t('homeResults') : t('homeMovies')}>
-        {movies.map((movie) => (
-          <MovieThumb
-            clickable
-            key={movie.id}
-            movieId={movie.id}
-            movieName={movie.title}
-            image={
-              movie.poster_path
-                ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
-                : NoImage
-            }
-            alt={movie.title}
-          />
-        ))}
-      </Grid>
+      {moviesLoaded ? (
+        <Grid header={searchTerm ? t('homeResults') : t('homeMovies')}>
+          {movies.map((movie) => (
+            <MovieThumb
+              clickable
+              key={movie.id}
+              movieId={movie.id}
+              movieName={movie.title}
+              image={
+                movie.poster_path
+                  ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
+                  : noMoviePoster
+              }
+              alt={movie.title}
+            />
+          ))}
+        </Grid>
+      ) : (
+        <NoMovieFound />
+      )}
+
       {isLoading && <Spinner />}
+
       {currentPage < totalPages && !isLoading && (
         <LoadMoreBtn text={t('homeLoadMore')} callback={loadMoreMovies} />
       )}
