@@ -38,7 +38,7 @@
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "eslint": "^6.8.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.9",
     "prettier": "^2.0.4",
