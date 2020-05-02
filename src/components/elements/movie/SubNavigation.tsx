@@ -1,8 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-
 import { Link } from 'react-router-dom';
+
+import { pageUrls } from 'config';
 
 type Props = {
   movie: string;
@@ -15,7 +16,7 @@ const SubNavigation = ({ movie }: Props) => {
     <div css={cssSubNavigation}>
       <ul>
         <li>
-          <Link to="/">{t('navHome')}</Link>
+          <Link to={pageUrls.home}>{t('navHome')}</Link>
         </li>
         <li>/</li>
         <li>{movie}</li>

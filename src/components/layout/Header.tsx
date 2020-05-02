@@ -1,8 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-
 import { Link } from 'react-router-dom';
+
+import { pageUrls } from 'config';
 
 import LogoMovies from 'assets/svg/logo/logo-512.svg';
 import LogoTMDb from 'assets/svg/logo/tmdb.svg';
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <div css={cssHeader}>
       <div css={cssHeaderContent}>
-        <Link to="/" css={cssHeaderLink}>
+        <Link to={pageUrls.home} css={cssHeaderLink}>
           <img src={LogoMovies} css={cssLogoMovies} alt={t('altMovies')} />
           <span>{t('headerTitle')}</span>
         </Link>

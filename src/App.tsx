@@ -5,6 +5,8 @@ import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import { AppLayout } from './components/layout';
 import { Home, About, Movie, NotFound } from './components/pages';
 
+import { pageUrls } from 'config';
+
 const App = () => {
   return (
     <div>
@@ -13,13 +15,13 @@ const App = () => {
           <CSSReset />
           <AppLayout>
             <Switch>
-              <Route exact path="/">
+              <Route exact path={pageUrls.home}>
                 <Home />
               </Route>
-              <Route path="/movie/:movieId">
+              <Route path={`${pageUrls.movie}${pageUrls.movieId}`}>
                 <Movie />
               </Route>
-              <Route path="/about">
+              <Route path={pageUrls.about}>
                 <About />
               </Route>
               <Route>

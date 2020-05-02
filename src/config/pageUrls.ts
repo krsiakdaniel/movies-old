@@ -1,6 +1,8 @@
 const pageUrls = {
-  about: '/about',
+  home: '/',
   movie: '/movie/',
+  movieId: ':movieId',
+  about: '/about',
 };
 
 export { pageUrls };
