@@ -1,6 +1,5 @@
 import React from 'react';
 import { css } from '@emotion/core';
-// import { theme } from 'styles';
 import { useTranslation } from 'react-i18next';
 
 import { Link } from 'react-router-dom';
@@ -37,7 +36,6 @@ const cssFooter = css({
 const cssTMDb = css({
   fontSize: 10,
   color: '#bdc3c7',
-  // color: theme.colors.gray,
 });
 
 export { Footer };
