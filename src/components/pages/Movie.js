@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import { Actor, MovieInfo, SubNavigation } from '../elements/movie';
@@ -8,10 +9,9 @@ import { NotFound } from './index';
 
 import { useMovieFetch } from '../hooks';
 
-const Movie = ({ match }) => {
+const Movie = () => {
   const { t } = useTranslation();
-  const movieId = match.params.movieId;
-  // TODO: use hooks to get 'movieId'
+  let { movieId } = useParams();
 
   const [movie, isLoading, error] = useMovieFetch(movieId);
   if (isLoading) {
