@@ -76,7 +76,7 @@ const Home = () => {
                 ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
                 : NoImage
             }
-            alt={movie.original_title}
+            alt={movie.title}
           />
         ))}
       </Grid>
