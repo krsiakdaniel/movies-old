@@ -1,6 +1,6 @@
 import React from 'react';
 import { css, Global } from '@emotion/core';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { AppLayout } from './components/layout';
 import {
   Home,
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Global styles={cssGlobal} />
-      <Router>
+      <HashRouter>
         <AppLayout>
           <Switch>
             <Route exact path="/">
@@ -33,7 +33,7 @@ const App = () => {
             </Route>
           </Switch>
         </AppLayout>
-      </Router>
+      </HashRouter>
     </div>
   );
 };
