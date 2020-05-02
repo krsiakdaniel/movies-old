@@ -40,7 +40,7 @@ i18n
           navHome: 'Home',
           noMovieFound: {
             title: 'No movies found',
-            text: 'Please use search and make sure movie name has no typo.',
+            text: 'Please use search.',
             alt: 'No movie',
           },
           search: 'Search…',

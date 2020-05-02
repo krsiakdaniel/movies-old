@@ -21,12 +21,15 @@ const NoMovieFound = () => {
 
 const cssNoMovieFound = css({
   maxWidth: 1200,
-  margin: '0 auto',
-  padding: '0 16px',
+  margin: '0 auto 32px auto',
+  padding: 32,
   textAlign: 'center',
+  background: '#fff',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.12)',
+  borderRadius: 8,
 
-  '@media screen and (max-width: 768px)': {
-    padding: '0 24px',
+  '@media screen and (max-width: 1200px)': {
+    margin: '0 24px 32px 24px',
   },
 });
 
@@ -36,7 +39,7 @@ const cssNoMovieText = css({
 
 const cssNoMovieImg = css({
   width: 128,
-  margin: '0 auto 32px auto',
+  margin: '0 auto',
 });
 
 export { NoMovieFound };
