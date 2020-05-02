@@ -14,7 +14,7 @@ import {
   BASE_URL_MOVIES_SEARCH,
 } from '../../config';
 
-import noMoviePoster from '../../assets/svg/error/no-image.svg';
+import imgNoPoster from '../../assets/svg/error/no-image.svg';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -72,7 +72,7 @@ const Home = () => {
               image={
                 movie.poster_path
                   ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
-                  : noMoviePoster
+                  : imgNoPoster
               }
               alt={movie.title}
             />

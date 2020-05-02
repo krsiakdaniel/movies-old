@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { css } from '@emotion/core';
 import Emoji from 'a11y-react-emoji';
 
-import noMovieImg from '../../../assets/svg/error/no-movie.svg';
+import imgError404 from 'assets/svg/error/no-movie.svg';
 
 const NoMovieFound = () => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const NoMovieFound = () => {
         {t('noMovieFound.title')} <Emoji symbol="🤔" />
       </h1>
       <p css={cssNoMovieText}>{t('noMovieFound.text')}</p>
-      <img src={noMovieImg} css={cssNoMovieImg} alt={t('noMovieFound.alt')} />
+      <img src={imgError404} css={cssNoMovieImg} alt={t('noMovieFound.alt')} />
     </div>
   );
 };
