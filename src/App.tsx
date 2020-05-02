@@ -2,13 +2,7 @@ import React from 'react';
 import { css, Global } from '@emotion/core';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { AppLayout } from './components/layout';
-import {
-  Home,
-  About,
-  Movie,
-  NoSearchResults,
-  NotFound,
-} from './components/pages';
+import { Home, About, Movie, NotFound } from './components/pages';
 
 const App = () => {
   return (
@@ -24,9 +18,6 @@ const App = () => {
             <Route path="/movie/:movieId" component={Movie} />
             <Route path="/about">
               <About />
-            </Route>
-            <Route path="/no-search-results">
-              <NoSearchResults />
             </Route>
             <Route>
               <NotFound />

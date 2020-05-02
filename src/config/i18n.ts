@@ -38,9 +38,11 @@ i18n
           movieInfoRevenue: 'Revenue',
           movieInfoRunningTime: 'Running time',
           navHome: 'Home',
-          noSearchResultsText:
-            'Make sure the movie name is correct and has no typos.',
-          noSearchResultsTitle: 'No movie found',
+          noMovieFound: {
+            title: 'No movies found',
+            text: 'Please use search and make sure movie name has no typo.',
+            alt: 'No movie',
+          },
           search: 'Search…',
         },
       },
