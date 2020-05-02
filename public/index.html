@@ -26,23 +26,35 @@
     <div id="root"></div>
 
     <!-- Smartlook -->
-    <script type='text/javascript'>
-      window.smartlook||(function(d) {
-        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
-      })(document);
-      smartlook('init', 'a41f44a89e3f9ca486881b137c0ffd3a235e83c6');
+    <script>
+      (function() {
+        if (window.location.hostname === "localhost") {
+          console.log("Do not run on localhost: Smartlook ✓");
+        } else {
+          window.smartlook||(function(d) {
+            var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+            var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+          })(document);
+          smartlook('init', 'a41f44a89e3f9ca486881b137c0ffd3a235e83c6');
+        }
+      })();
     </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19708746-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      (function() {
+        if (window.location.hostname === "localhost") {
+          console.log("Do not run on localhost: Google Analytics ✓");
+        } else {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'UA-19708746-2');
+          gtag('config', 'UA-19708746-2');
+        }
+      })();
     </script>
   </body>
 </html>
