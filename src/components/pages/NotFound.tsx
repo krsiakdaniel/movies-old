@@ -22,7 +22,7 @@ const NotFound = () => {
 const cssNotFound = css({
   maxWidth: 1200,
   margin: '32px auto',
-  padding: 16,
+  padding: 32,
   textAlign: 'center',
   background: '#fff',
   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.12)',
