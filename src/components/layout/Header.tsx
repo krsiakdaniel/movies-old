@@ -16,7 +16,7 @@ const Header = () => {
       <div css={cssHeaderContent}>
         <Link to={pageUrls.home} css={cssHeaderLink}>
           <img src={LogoMovies} css={cssLogoMovies} alt={t('alt.movies')} />
-          <span>{t('header.title')}</span>
+          <span>{t('shared.app.title')}</span>
         </Link>
         <img src={LogoTMDb} css={cssLogoTMDb} alt={t('alt.TMDb')} />
       </div>

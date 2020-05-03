@@ -36,9 +36,6 @@ i18n
             api:
               'This product uses the TMDb API but is not endorsed or certified by TMDb.',
           },
-          header: {
-            title: 'Movies',
-          },
           home: {
             loadMore: 'More…',
             popularMovies: 'Popular Movies',
@@ -63,7 +60,10 @@ i18n
             placeholder: 'Search…',
           },
           shared: {
-            appAuthor: 'Krsiak Daniel',
+            app: {
+              author: 'Krsiak Daniel',
+              title: 'Movies',
+            },
           },
         },
       },

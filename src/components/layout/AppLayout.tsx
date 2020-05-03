@@ -15,7 +15,7 @@ const AppLayout = ({ children }: Props) => {
   return (
     <>
       <Helmet>
-        <title>{t('header.title')}</title>
+        <title>{t('shared.app.title')}</title>
       </Helmet>
       <Header />
       <Box>{children}</Box>

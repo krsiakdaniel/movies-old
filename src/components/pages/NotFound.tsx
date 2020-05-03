@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { css } from '@emotion/core';
 import Emoji from 'a11y-react-emoji';
@@ -9,13 +10,20 @@ const NotFound = () => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssNotFound}>
-      <h1>
-        {t('error404.title')} <Emoji symbol="😕" />
-      </h1>
-      <p css={cssNotFoundText}>{t('error404.text')}</p>
-      <img src={imgNoMovie} css={cssNotFoundImg} alt={t('alt.error404')} />
-    </div>
+    <>
+      <Helmet>
+        <title>
+          {t('error404.title')} | {t('shared.app.title')}
+        </title>
+      </Helmet>
+      <div css={cssNotFound}>
+        <h1>
+          {t('error404.title')} <Emoji symbol="😕" />
+        </h1>
+        <p css={cssNotFoundText}>{t('error404.text')}</p>
+        <img src={imgNoMovie} css={cssNotFoundImg} alt={t('alt.error404')} />
+      </div>
+    </>
   );
 };
 

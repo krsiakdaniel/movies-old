@@ -15,7 +15,7 @@ const Footer = () => {
       <Text fontSize="sm">
         {t('footer.madeIn')} <Emoji symbol="🇨🇿" label={t('footer.country')} />
         {t('footer.madeBy')}
-        <Link to={pageUrls.about}>{t('shared.appAuthor')}</Link>
+        <Link to={pageUrls.about}>{t('shared.app.author')}</Link>
       </Text>
       <Text fontSize="xs" css={cssTMDb}>
         {t('footer.api')}

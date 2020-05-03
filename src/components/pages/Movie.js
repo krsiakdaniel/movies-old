@@ -25,7 +25,7 @@ const Movie = () => {
     <>
       <Helmet>
         <title>
-          {movie.title} | {t('header.title')}
+          {movie.title} | {t('shared.app.title')}
         </title>
         <meta name="description" content={movie.overview} />
       </Helmet>
