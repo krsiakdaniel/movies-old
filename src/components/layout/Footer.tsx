@@ -27,6 +27,7 @@ const Footer = () => {
 // TODO: use chakra
 const cssFooter = css({
   textAlign: 'center',
+  marginBottom: 32,
 });
 
 const cssTMDb = css({

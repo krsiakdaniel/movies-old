@@ -18,7 +18,7 @@ const Spinner = () => {
 
 // TODO: use chakra
 const cssSpinnerRow = css({
-  margin: '16px auto',
+  margin: '32px auto',
   textAlign: 'center',
   maxWidth: 1200,
 });

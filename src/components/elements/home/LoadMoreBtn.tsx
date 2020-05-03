@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@chakra-ui/core';
+import { Box, Button } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 
 type Props = {
@@ -9,26 +9,29 @@ type Props = {
 
 const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
-    <Button
-      type="button"
-      variantColor="green"
-      css={cssLoadMoreBtn}
-      onClick={callback}
-    >
-      {text}
-    </Button>
+    <Box css={cssLoadMoreBtnRow}>
+      <Button
+        type="button"
+        variantColor="green"
+        onClick={callback}
+        css={cssLoadMoreBtn}
+      >
+        {text}
+      </Button>
+    </Box>
   );
 };
 
-const cssLoadMoreBtn = css({
-  minWidth: 150,
-  cursor: 'pointer',
-  display: 'block',
+// TODO: use chakra
+const cssLoadMoreBtnRow = css({
   margin: '32px auto',
+  textAlign: 'center',
+  maxWidth: 1200,
+});
 
-  '@media screen and (max-width: 768px)': {
-    margin: '24px auto',
-  },
+const cssLoadMoreBtn = css({
+  minWidth: 128,
+  cursor: 'pointer',
 });
 
 export { LoadMoreBtn };
