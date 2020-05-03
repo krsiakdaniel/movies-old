@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 import { Actor, MovieInfo, SubNavigation } from '../elements/movie';
 import { Grid, Spinner } from '../elements/shared';
-import { NotFound } from './index';
+import { Page404 } from './index';
 
 import { useMovieFetch } from '../hooks';
 
@@ -18,7 +18,7 @@ const Movie = () => {
     return <Spinner />;
   }
   if (error) {
-    return <NotFound />;
+    return <Page404 />;
   }
 
   return (

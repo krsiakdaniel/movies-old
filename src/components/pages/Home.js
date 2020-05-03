@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { LoadMoreBtn, NoMovieFound, SearchBar } from '../elements/home';
 import { Grid, MovieThumb, Spinner } from '../elements/shared';
-import { NotFound } from './index';
+import { Page404 } from './index';
 
 import { useHomeFetch } from '../hooks';
 
@@ -55,7 +55,7 @@ const Home = () => {
     return <Spinner />;
   }
   if (error) {
-    return <NotFound />;
+    return <Page404 />;
   }
 
   return (

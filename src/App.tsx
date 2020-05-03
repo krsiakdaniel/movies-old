@@ -3,7 +3,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 
 import { AppLayout } from './components/layout';
-import { Home, About, Movie, NotFound } from './components/pages';
+import { Home, About, Movie, Page404 } from './components/pages';
 
 import { pageUrls } from 'config';
 
@@ -25,7 +25,7 @@ const App = () => {
                 <About />
               </Route>
               <Route>
-                <NotFound />
+                <Page404 />
               </Route>
             </Switch>
           </AppLayout>

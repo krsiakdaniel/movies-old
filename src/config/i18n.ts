@@ -21,13 +21,15 @@ i18n
           },
           alt: {
             movies: 'Movies',
-            TMDb: 'TMDb',
             noMovie: 'No movie',
-            error404: 'Page not found',
+            page404: 'Page not found',
+            TMDb: 'TMDb',
           },
-          error404: {
-            text: 'Sorry but it looks like this page does not exist.',
-            title: '404',
+          error: {
+            page404: {
+              text: 'Sorry but it looks like this page does not exist.',
+              title: '404',
+            },
           },
           footer: {
             country: 'Czech Republic',
