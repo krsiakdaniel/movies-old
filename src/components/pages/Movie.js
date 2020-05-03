@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 import { Actor, MovieInfo, SubNavigation } from '../elements/movie';
 import { Grid, Spinner } from '../elements/shared';
-import { NotFound } from './index';
+import { Page404 } from './index';
 
 import { useMovieFetch } from '../hooks';
 
@@ -18,25 +18,25 @@ const Movie = () => {
     return <Spinner />;
   }
   if (error) {
-    return <NotFound />;
+    return <Page404 />;
   }
 
   return (
     <>
       <Helmet>
         <title>
-          {movie.title} | {t('headerTitle')}
+          {movie.title} | {t('shared.app.title')}
         </title>
         <meta name="description" content={movie.overview} />
       </Helmet>
-      <SubNavigation movie={movie.original_title} />
+      <SubNavigation movieTitle={movie.title} />
       <MovieInfo
         movie={movie}
         time={movie.runtime}
         budget={movie.budget}
         revenue={movie.revenue}
       />
-      <Grid header={t('movieActors')}>
+      <Grid header={t('movie.actors')}>
         {movie?.actors?.map((actor) => (
           <Actor key={actor.credit_id} actor={actor} />
         ))}

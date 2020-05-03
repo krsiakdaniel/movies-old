@@ -1,4 +1,4 @@
 export * from './Home';
 export * from './Movie';
 export * from './About';
-export * from './NotFound';
+export * from './Page404';

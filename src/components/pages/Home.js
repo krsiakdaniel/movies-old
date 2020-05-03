@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { LoadMoreBtn, NoMovieFound, SearchBar } from '../elements/home';
 import { Grid, MovieThumb, Spinner } from '../elements/shared';
-import { NotFound } from './index';
+import { Page404 } from './index';
 
 import { useHomeFetch } from '../hooks';
 
@@ -55,17 +55,21 @@ const Home = () => {
     return <Spinner />;
   }
   if (error) {
-    return <NotFound />;
+    return <Page404 />;
   }
 
   return (
     <>
       <SearchBar callback={searchMovies} />
       {moviesLoaded ? (
-        <Grid header={searchTerm ? t('homeResults') : t('homeMovies')}>
+        <Grid
+          header={
+            searchTerm ? t('home.searchResults') : t('home.popularMovies')
+          }
+        >
           {movies.map((movie) => (
             <MovieThumb
-              clickable
+              isClickable
               key={movie.id}
               movieId={movie.id}
               movieName={movie.title}
@@ -85,7 +89,7 @@ const Home = () => {
       {isLoading && <Spinner />}
 
       {currentPage < totalPages && !isLoading && (
-        <LoadMoreBtn text={t('homeLoadMore')} callback={loadMoreMovies} />
+        <LoadMoreBtn text={t('home.loadMore')} callback={loadMoreMovies} />
       )}
     </>
   );

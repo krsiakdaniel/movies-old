@@ -1,8 +1,9 @@
 import React from 'react';
+import { Box, Image, Text } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 
+import imgNoActor from 'assets/jpg/error/no-image.jpg';
 import { BASE_URL_IMAGE, SIZE_POSTER } from 'config';
-import NoImage from 'assets/jpg/error/no-image.jpg';
 
 // TODO: fix - actor = 'object' throws error, define using TS 'interface'
 type Props = {
@@ -11,56 +12,49 @@ type Props = {
 
 const Actor = ({ actor }: Props) => {
   return (
-    <div css={cssActor}>
-      <img
+    <Box css={cssActor}>
+      <Image
         src={
           actor.profile_path
             ? `${BASE_URL_IMAGE}${SIZE_POSTER}${actor.profile_path}`
-            : NoImage
+            : imgNoActor
         }
         alt={actor.name}
         css={cssActorImage}
       />
-      <div css={cssActorDetails}>
-        <div css={cssActorName}>{actor.name}</div>
-        <div css={cssActorCharacter}>{actor.character}</div>
-      </div>
-    </div>
+      <Box css={cssActorDetails}>
+        <Text css={cssActorName}>{actor.name}</Text>
+        <Text css={cssActorCharacter}>{actor.character}</Text>
+      </Box>
+    </Box>
   );
 };
 
+// TODO: use chakra
 const cssActor = css({
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.12)',
-  borderRadius: 8,
+  border: '1px solid #e2e8f0',
+  borderRadius: 4,
   padding: 4,
   textAlign: 'center',
   background: '#fff',
 });
 
 const cssActorImage = css({
-  height: 160,
-  objectFit: 'cover',
-  borderRadius: 8,
-
-  '@media screen and (max-width: 480px)': {
-    height: 200,
-  },
+  borderRadius: 4,
+  marginBottom: 8,
 });
 
 const cssActorDetails = css({
-  padding: '0 4px',
   fontSize: 14,
+  padding: '0 4px',
 });
 
 const cssActorName = css({
-  display: 'block',
-  margin: '8px 0 0 0',
   fontWeight: 700,
 });
 
 const cssActorCharacter = css({
-  display: 'block',
-  margin: '0 0 8px 0',
+  marginBottom: 4,
 });
 
 export { Actor };

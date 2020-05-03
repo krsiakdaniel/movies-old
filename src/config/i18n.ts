@@ -13,37 +13,60 @@ i18n
     resources: {
       en: {
         translation: {
-          aboutText1: 'Hi. My name is',
-          aboutText2:
-            'and I really like movies. I watched just in cinema 100 movies in 10 years.',
-          aboutTitle: 'About',
-          altMovies: 'Movies',
-          altTMDb: 'TMDb',
-          appAuthor: 'Krsiak Daniel',
-          error404Text: 'Sorry but it looks like this page does not exist.',
-          error404Title: '404',
-          footerMadeBy: 'by',
-          footerMadeIn: 'Made in',
-          footerTMDb:
-            'This product uses the TMDb API but is not endorsed or certified by TMDb.',
-          headerTitle: 'Movies',
-          homeLoadMore: 'More…',
-          homeMovies: 'Popular Movies',
-          homeResults: 'Search Results',
-          ratingIMDb: 'IMDb rating',
-          linkHome: 'Go back to homepage',
-          movieActors: 'Actors',
-          movieInfoBudget: 'Budget',
-          movieInfoDirector: 'Director',
-          movieInfoRevenue: 'Revenue',
-          movieInfoRunningTime: 'Running time',
-          navHome: 'Home',
+          about: {
+            text1: 'Hi. My name is',
+            text2:
+              'and I really like movies. I watched just in cinema 100 movies in 10 years.',
+            title: 'About',
+          },
+          alt: {
+            movies: 'Movies',
+            noMovie: 'No movie',
+            page404: 'Page not found',
+            TMDb: 'TMDb',
+          },
+          error: {
+            page404: {
+              text: 'Sorry but it looks like this page does not exist.',
+              title: '404',
+            },
+          },
+          footer: {
+            country: 'Czech Republic',
+            madeBy: 'by',
+            madeIn: 'Made in',
+            api:
+              'This product uses the TMDb API but is not endorsed or certified by TMDb.',
+          },
+          home: {
+            loadMore: 'More…',
+            popularMovies: 'Popular Movies',
+            searchResults: 'Search Results',
+          },
+          movie: {
+            actors: 'Actors',
+            budget: 'Budget',
+            director: 'Director',
+            rating: 'Rating',
+            revenue: 'Revenue',
+            runningTime: 'Running time',
+          },
+          subnav: {
+            home: 'Home',
+          },
           noMovieFound: {
             title: 'No movies found',
             text: 'Please use search.',
-            alt: 'No movie',
           },
-          search: 'Search…',
+          search: {
+            placeholder: 'Search…',
+          },
+          shared: {
+            app: {
+              author: 'Krsiak Daniel',
+              title: 'Movies',
+            },
+          },
         },
       },
     },

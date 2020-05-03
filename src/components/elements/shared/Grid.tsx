@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box, Heading, Grid as GridChakra } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 
 import { cypress } from 'config';
@@ -10,15 +11,16 @@ type Props = {
 
 const Grid = ({ header, children }: Props) => {
   return (
-    <div css={cssGrid}>
-      <h1 data-cy={cypress.pageHeading}>{header}</h1>
-      <div css={cssGridContent}>{children}</div>
-    </div>
+    <Box css={cssGridRow}>
+      <Heading css={cssGridHeading} data-cy={cypress.pageHeading}>
+        {header}
+      </Heading>
+      <GridChakra css={cssGrid}>{children}</GridChakra>
+    </Box>
   );
 };
 
-// TODO: on mobile show actors in rows
-const cssGrid = css({
+const cssGridRow = css({
   maxWidth: 1200,
   margin: '0 auto 16px auto',
   padding: '0 16px',
@@ -28,25 +30,13 @@ const cssGrid = css({
   },
 });
 
-const cssGridContent = css({
-  display: 'grid',
+const cssGridHeading = css({
+  marginBottom: 16,
+});
+
+const cssGrid = css({
   gridTemplateColumns: 'repeat(8, minmax(100px, 1fr))',
-  gridGap: 16,
-  position: 'relative',
-
-  '.grid-element': {
-    animation: 'animateGrid 0.5s',
-  },
-
-  // TODO: fix
-  // @keyframes animateGrid {
-  //   from {
-  //     opacity: 0,
-  //   }
-  //   to {
-  //     opacity: 1,
-  //   }
-  // }
+  gridGap: 8,
 
   '@media screen and (max-width: 1200px)': {
     gridTemplateColumns: 'repeat(7, minmax(100px, 1fr))',
@@ -58,15 +48,16 @@ const cssGridContent = css({
 
   '@media screen and (max-width: 768px)': {
     gridTemplateColumns: 'repeat(5, minmax(100px, 1fr))',
-    gridGap: 16,
   },
 
   '@media screen and (max-width: 576px)': {
     gridTemplateColumns: 'repeat(4, minmax(100px, 1fr))',
   },
 
+  /// TODO: on mobile - img on left, info text on right
   '@media screen and (max-width: 480px)': {
-    gridTemplateColumns: 'repeat(3, 1fr)',
+    gridTemplateColumns: 'repeat(1, auto)',
+    // gridAutoFlow: 'column',
   },
 });
 

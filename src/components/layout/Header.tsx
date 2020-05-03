@@ -1,36 +1,41 @@
 import React from 'react';
+import { Box, Image, Text } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
-
 import { Link } from 'react-router-dom';
 
-import LogoMovies from 'assets/svg/logo/logo-512.svg';
-import LogoTMDb from 'assets/svg/logo/tmdb.svg';
+import { pageUrls } from 'config';
+
+import imgMovies from 'assets/svg/logo/logo-512.svg';
+import imgTMDb from 'assets/svg/logo/TMDb.svg';
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssHeader}>
-      <div css={cssHeaderContent}>
-        <Link to="/" css={cssHeaderLink}>
-          <img src={LogoMovies} css={cssLogoMovies} alt={t('altMovies')} />
-          <span>{t('headerTitle')}</span>
+    <Box css={cssHeaderRow}>
+      <Box css={cssHeader}>
+        <Link to={pageUrls.home} css={cssHeaderLink}>
+          <Image src={imgMovies} css={cssLogoMovies} alt={t('alt.movies')} />
+          <Text css={cssHeaderText}>{t('shared.app.title')}</Text>
         </Link>
-        <img src={LogoTMDb} css={cssLogoTMDb} alt={t('altTMDb')} />
-      </div>
-    </div>
+        <Image src={imgTMDb} css={cssLogoTMDb} alt={t('alt.TMDb')} />
+      </Box>
+    </Box>
   );
 };
 
-const cssHeader = css({
-  background: '#2c3e50',
+// TODO: use chakra
+const cssHeaderRow = css({
+  width: '100%',
+  background: '#2d3748',
 });
 
-const cssHeaderContent = css({
+const cssHeader = css({
   maxWidth: 1200,
   margin: '0 auto',
   padding: 16,
+  minHeight: 80,
 
   '@media screen and (max-width: 768px)': {
     padding: '16px 24px',
@@ -38,21 +43,9 @@ const cssHeaderContent = css({
 });
 
 const cssHeaderLink = css({
-  color: '#fff',
-  fontSize: 32,
-
   ':hover img': {
     transition: 'all 0.4s',
     transform: 'rotate(180deg)',
-  },
-
-  '@media screen and (max-width: 480px)': {
-    fontSize: 28,
-
-    span: {
-      position: 'relative',
-      top: 5,
-    },
   },
 });
 
@@ -68,15 +61,27 @@ const cssLogoMovies = css({
   },
 });
 
+const cssHeaderText = css({
+  color: '#fff',
+  fontSize: 32,
+  display: 'inline-block',
+
+  '@media screen and (max-width: 480px)': {
+    fontSize: 28,
+    position: 'relative',
+    top: 5,
+  },
+});
+
 const cssLogoTMDb = css({
   float: 'right',
-  width: 200,
+  width: 160,
   position: 'relative',
   top: 18,
 
   '@media screen and (max-width: 480px)': {
-    width: 100,
-    top: 24,
+    width: 96,
+    top: 25,
   },
 });
 

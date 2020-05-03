@@ -1,8 +1,7 @@
 import React from 'react';
+import { Box, Text } from '@chakra-ui/core';
 import { css } from '@emotion/core';
-// import { theme } from 'styles';
 import { useTranslation } from 'react-i18next';
-
 import { Link } from 'react-router-dom';
 
 import Emoji from 'a11y-react-emoji';
@@ -12,32 +11,27 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssFooter}>
-      <p>
-        {t('footerMadeIn')} <Emoji symbol="🇨🇿" label="Czech Republic" />
-        {t('footerMadeBy')} <Link to={pageUrls.about}>{t('appAuthor')}</Link>
-      </p>
-      <p css={cssTMDb}>{t('footerTMDb')}</p>
-    </div>
+    <Box css={cssFooter}>
+      <Text fontSize="sm">
+        {t('footer.madeIn')} <Emoji symbol="🇨🇿" label={t('footer.country')} />
+        {t('footer.madeBy')}
+        <Link to={pageUrls.about}>{t('shared.app.author')}</Link>
+      </Text>
+      <Text fontSize="xs" css={cssTMDb}>
+        {t('footer.api')}
+      </Text>
+    </Box>
   );
 };
 
+// TODO: use chakra
 const cssFooter = css({
-  maxWidth: 1200,
-  margin: '0 auto',
-  padding: '0 16px',
-  fontSize: 12,
   textAlign: 'center',
-
-  '@media screen and (max-width: 768px)': {
-    padding: '0 24px',
-  },
+  marginBottom: 32,
 });
 
 const cssTMDb = css({
-  fontSize: 10,
   color: '#bdc3c7',
-  // color: theme.colors.gray,
 });
 
 export { Footer };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Box } from '@chakra-ui/core';
 import { useTranslation } from 'react-i18next';
 
 import { Header, Footer } from './index';
@@ -14,14 +15,15 @@ const AppLayout = ({ children }: Props) => {
   return (
     <>
       <Helmet>
-        <title>{t('headerTitle')}</title>
-        <meta name="description" content="Todo on steroid!" />
+        <title>{t('shared.app.title')}</title>
       </Helmet>
       <Header />
-      <div>{children}</div>
+      <Box>{children}</Box>
       <Footer />
     </>
   );
 };
+
+// TODO: use chakra + css={} to define maxWidth, margin, padding?
 
 export { AppLayout };
