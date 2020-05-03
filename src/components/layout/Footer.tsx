@@ -13,12 +13,12 @@ const Footer = () => {
   return (
     <Box css={cssFooter}>
       <Text fontSize="sm">
-        {t('footerMadeIn')} <Emoji symbol="🇨🇿" label="Czech Republic" />
-        {t('footerMadeBy')}
-        <Link to={pageUrls.about}>{t('appAuthor')}</Link>
+        {t('footer.madeIn')} <Emoji symbol="🇨🇿" label={t('footer.country')} />
+        {t('footer.madeBy')}
+        <Link to={pageUrls.about}>{t('shared.appAuthor')}</Link>
       </Text>
       <Text fontSize="xs" css={cssTMDb}>
-        {t('footerTMDb')}
+        {t('footer.api')}
       </Text>
     </Box>
   );

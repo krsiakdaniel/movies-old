@@ -11,10 +11,10 @@ const NotFound = () => {
   return (
     <div css={cssNotFound}>
       <h1>
-        {t('error404Title')} <Emoji symbol="😕" />
+        {t('error404.title')} <Emoji symbol="😕" />
       </h1>
-      <p css={cssNotFoundText}>{t('error404Text')}</p>
-      <img src={imgNoMovie} css={cssNotFoundImg} alt={t('noMovieFound.alt')} />
+      <p css={cssNotFoundText}>{t('error404.text')}</p>
+      <img src={imgNoMovie} css={cssNotFoundImg} alt={t('alt.error404')} />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const SubNavigation = ({ movie }: Props) => {
     <div css={cssSubNavigation}>
       <ul>
         <li>
-          <Link to={pageUrls.home}>{t('navHome')}</Link>
+          <Link to={pageUrls.home}>{t('subnav.home')}</Link>
         </li>
         <li>/</li>
         <li>{movie}</li>

@@ -8,9 +8,10 @@ const About = () => {
 
   return (
     <Box css={cssAbout}>
-      <Heading>{t('aboutTitle')}</Heading>
+      <Heading>{t('about.title')}</Heading>
       <Text>
-        {t('aboutText1')} <strong>{t('appAuthor')}</strong> {t('aboutText2')}
+        {t('about.text1')} <strong>{t('shared.appAuthor')}</strong>{' '}
+        {t('about.text2')}
       </Text>
     </Box>
   );

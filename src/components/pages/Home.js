@@ -62,7 +62,11 @@ const Home = () => {
     <>
       <SearchBar callback={searchMovies} />
       {moviesLoaded ? (
-        <Grid header={searchTerm ? t('homeResults') : t('homeMovies')}>
+        <Grid
+          header={
+            searchTerm ? t('home.searchResults') : t('home.popularMovies')
+          }
+        >
           {movies.map((movie) => (
             <MovieThumb
               clickable
@@ -85,7 +89,7 @@ const Home = () => {
       {isLoading && <Spinner />}
 
       {currentPage < totalPages && !isLoading && (
-        <LoadMoreBtn text={t('homeLoadMore')} callback={loadMoreMovies} />
+        <LoadMoreBtn text={t('home.loadMore')} callback={loadMoreMovies} />
       )}
     </>
   );

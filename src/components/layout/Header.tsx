@@ -15,10 +15,10 @@ const Header = () => {
     <div css={cssHeader}>
       <div css={cssHeaderContent}>
         <Link to={pageUrls.home} css={cssHeaderLink}>
-          <img src={LogoMovies} css={cssLogoMovies} alt={t('altMovies')} />
-          <span>{t('headerTitle')}</span>
+          <img src={LogoMovies} css={cssLogoMovies} alt={t('alt.movies')} />
+          <span>{t('header.title')}</span>
         </Link>
-        <img src={LogoTMDb} css={cssLogoTMDb} alt={t('altTMDb')} />
+        <img src={LogoTMDb} css={cssLogoTMDb} alt={t('alt.TMDb')} />
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const SearchBar = ({ callback }) => {
       <div css={cssSearchBar}>
         <input
           type="text"
-          placeholder={t('search')}
+          placeholder={t('search.placeholder')}
           onChange={handleSearch}
           value={state}
           data-cy={cypress.searchBar}

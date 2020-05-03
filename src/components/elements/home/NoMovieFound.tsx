@@ -14,7 +14,7 @@ const NoMovieFound = () => {
         {t('noMovieFound.title')} <Emoji symbol="🤔" />
       </h1>
       <p css={cssNoMovieText}>{t('noMovieFound.text')}</p>
-      <img src={imgError404} css={cssNoMovieImg} alt={t('noMovieFound.alt')} />
+      <img src={imgError404} css={cssNoMovieImg} alt={t('alt.noMovie')} />
     </div>
   );
 };

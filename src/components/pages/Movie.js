@@ -25,7 +25,7 @@ const Movie = () => {
     <>
       <Helmet>
         <title>
-          {movie.title} | {t('headerTitle')}
+          {movie.title} | {t('header.title')}
         </title>
         <meta name="description" content={movie.overview} />
       </Helmet>
@@ -36,7 +36,7 @@ const Movie = () => {
         budget={movie.budget}
         revenue={movie.revenue}
       />
-      <Grid header={t('movieActors')}>
+      <Grid header={t('movie.actors')}>
         {movie?.actors?.map((actor) => (
           <Actor key={actor.credit_id} actor={actor} />
         ))}

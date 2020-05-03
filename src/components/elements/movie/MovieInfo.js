@@ -34,10 +34,10 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
 
           <ul css={cssMovieInfoList}>
             <li>
-              <strong>{t('ratingIMDb')}: </strong> {movie.vote_average}
+              <strong>{t('movie.rating')}: </strong> {movie.vote_average}
             </li>
             <li>
-              <strong>{t('movieInfoDirector')}: </strong>
+              <strong>{t('movie.director')}: </strong>
               {movie?.directors?.map((director) => (
                 <span key={director.credit_id}>
                   {director.name}
@@ -46,13 +46,13 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
               ))}
             </li>
             <li>
-              <strong>{t('movieInfoRunningTime')}: </strong> {calcTime(time)}
+              <strong>{t('movie.runningTime')}: </strong> {calcTime(time)}
             </li>
             <li>
-              <strong>{t('movieInfoBudget')}: </strong> {convertMoney(budget)}
+              <strong>{t('movie.budget')}: </strong> {convertMoney(budget)}
             </li>
             <li>
-              <strong>{t('movieInfoRevenue')}: </strong> {convertMoney(revenue)}
+              <strong>{t('movie.revenue')}: </strong> {convertMoney(revenue)}
             </li>
           </ul>
         </div>
