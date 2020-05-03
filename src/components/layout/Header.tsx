@@ -1,34 +1,37 @@
 import React from 'react';
+import { Box, Image } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { pageUrls } from 'config';
 
-import LogoMovies from 'assets/svg/logo/logo-512.svg';
-import LogoTMDb from 'assets/svg/logo/TMDb.svg';
+import imgMovies from 'assets/svg/logo/logo-512.svg';
+import imgTMDb from 'assets/svg/logo/TMDb.svg';
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssHeader}>
-      <div css={cssHeaderContent}>
+    <Box css={cssHeaderRow}>
+      <Box css={cssHeader}>
         <Link to={pageUrls.home} css={cssHeaderLink}>
-          <img src={LogoMovies} css={cssLogoMovies} alt={t('alt.movies')} />
+          <Image src={imgMovies} css={cssLogoMovies} alt={t('alt.movies')} />
           <span>{t('shared.app.title')}</span>
         </Link>
-        <img src={LogoTMDb} css={cssLogoTMDb} alt={t('alt.TMDb')} />
-      </div>
-    </div>
+        <Image src={imgTMDb} css={cssLogoTMDb} alt={t('alt.TMDb')} />
+      </Box>
+    </Box>
   );
 };
 
-const cssHeader = css({
-  background: '#2c3e50',
+// TODO: use chakra
+const cssHeaderRow = css({
+  width: '100%',
+  background: '#2d3748',
 });
 
-const cssHeaderContent = css({
+const cssHeader = css({
   maxWidth: 1200,
   margin: '0 auto',
   padding: 16,
