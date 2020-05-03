@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { pageUrls } from 'config';
+import { routes } from 'routes';
 
 import imgMovies from 'assets/svg/logo/logo-512.svg';
 import imgTMDb from 'assets/svg/logo/TMDb.svg';
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <Box css={cssHeaderRow}>
       <Box css={cssHeader}>
-        <Link to={pageUrls.home} css={cssHeaderLink}>
+        <Link to={routes.home.path} css={cssHeaderLink}>
           <Image src={imgMovies} css={cssLogoMovies} alt={t('alt.movies')} />
           <Text css={cssHeaderText}>{t('shared.app.title')}</Text>
         </Link>

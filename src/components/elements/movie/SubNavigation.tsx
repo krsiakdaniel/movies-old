@@ -9,7 +9,7 @@ import { css } from '@emotion/core';
 // import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { pageUrls } from 'config';
+import { routes } from 'routes';
 
 type Props = {
   movieTitle: string;
@@ -24,7 +24,7 @@ const SubNavigation = ({ movieTitle }: Props) => {
       <Box css={cssSubNavigation}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink href={pageUrls.home}>
+            <BreadcrumbLink href={routes.home.path}>
               {t('subnav.home')}
             </BreadcrumbLink>
           </BreadcrumbItem>
