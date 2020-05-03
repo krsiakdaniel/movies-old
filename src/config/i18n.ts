@@ -51,7 +51,7 @@ i18n
             revenue: 'Revenue',
             runningTime: 'Running time',
           },
-          subnav: {
+          breadcrumb: {
             home: 'Home',
           },
           noMovieFound: {

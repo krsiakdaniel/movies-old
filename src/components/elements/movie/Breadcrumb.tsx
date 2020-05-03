@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Box,
-  Breadcrumb,
+  Breadcrumb as BreadcrumbChakra,
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/core';
@@ -16,22 +16,22 @@ type Props = {
 };
 
 // TODO: make links work with ROUTER
-const SubNavigation = ({ movieTitle }: Props) => {
+const Breadcrumb = ({ movieTitle }: Props) => {
   const { t } = useTranslation();
 
   return (
     <Box css={cssSubNavigationRow}>
       <Box css={cssSubNavigation}>
-        <Breadcrumb>
+        <BreadcrumbChakra>
           <BreadcrumbItem>
             <BreadcrumbLink href={routes.home.path}>
-              {t('subnav.home')}
+              {t('breadcrumb.home')}
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink href="#">{movieTitle}</BreadcrumbLink>
           </BreadcrumbItem>
-        </Breadcrumb>
+        </BreadcrumbChakra>
       </Box>
     </Box>
   );
@@ -56,4 +56,4 @@ const cssSubNavigation = css({
   },
 });
 
-export { SubNavigation };
+export { Breadcrumb };
