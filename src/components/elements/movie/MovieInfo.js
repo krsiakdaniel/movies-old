@@ -23,7 +23,7 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
                 ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
                 : NoImage
             }
-            clickable={false}
+            isClickable={false}
             alt={movie.title}
           />
         </div>

@@ -69,7 +69,7 @@ const Home = () => {
         >
           {movies.map((movie) => (
             <MovieThumb
-              clickable
+              isClickable
               key={movie.id}
               movieId={movie.id}
               movieName={movie.title}
