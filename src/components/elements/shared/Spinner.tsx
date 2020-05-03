@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 
 const Spinner = () => {
   return (
-    <Box css={cssSpinnerWrap}>
+    <Box css={cssSpinnerRow}>
       <SpinnerChakra
         thickness="4px"
         speed="0.4s"
@@ -17,7 +17,7 @@ const Spinner = () => {
 };
 
 // TODO: use chakra
-const cssSpinnerWrap = css({
+const cssSpinnerRow = css({
   margin: '16px auto',
   textAlign: 'center',
   maxWidth: 1200,

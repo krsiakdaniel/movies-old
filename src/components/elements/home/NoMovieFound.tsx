@@ -1,6 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Box, Heading, Image, Text } from '@chakra-ui/core';
 import { css } from '@emotion/core';
+import { useTranslation } from 'react-i18next';
 import Emoji from 'a11y-react-emoji';
 
 import imgError404 from 'assets/svg/error/no-movie.svg';
@@ -9,32 +10,42 @@ const NoMovieFound = () => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssNoMovieFound}>
-      <h1>
-        {t('noMovieFound.title')} <Emoji symbol="🤔" />
-      </h1>
-      <p css={cssNoMovieText}>{t('noMovieFound.text')}</p>
-      <img src={imgError404} css={cssNoMovieImg} alt={t('alt.noMovie')} />
-    </div>
+    <Box css={cssNoMovieFoundRow}>
+      <Box css={cssNoMovieFoundWrap}>
+        <Box css={cssNoMovieFound}>
+          <Heading>
+            {t('noMovieFound.title')} <Emoji symbol="🤔" />
+          </Heading>
+          <Text css={cssNoMovieText}>{t('noMovieFound.text')}</Text>
+          <Image src={imgError404} css={cssNoMovieImg} alt={t('alt.noMovie')} />
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
-const cssNoMovieFound = css({
+// TODO: use chakra
+const cssNoMovieFoundRow = css({
+  width: '100%',
+});
+
+const cssNoMovieFoundWrap = css({
+  padding: '0 16px',
   maxWidth: 1200,
-  margin: '0 auto 32px auto',
+  margin: '0 auto',
+});
+
+const cssNoMovieFound = css({
   padding: 32,
   textAlign: 'center',
   background: '#fff',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.12)',
+  border: '1px solid #e2e8f0',
   borderRadius: 8,
-
-  '@media screen and (max-width: 1200px)': {
-    margin: '0 24px 32px 24px',
-  },
+  marginBottom: 32,
 });
 
 const cssNoMovieText = css({
-  marginBottom: 32,
+  marginBottom: 16,
 });
 
 const cssNoMovieImg = css({

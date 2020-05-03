@@ -22,7 +22,7 @@ const SearchBar = ({ callback }) => {
   };
 
   return (
-    <div css={cssSearchBarWrap}>
+    <div css={cssSearchBarRow}>
       <div css={cssSearchBar}>
         <input
           type="text"
@@ -41,7 +41,7 @@ SearchBar.propTypes = {
   callback: PropTypes.func,
 };
 
-const cssSearchBarWrap = css({
+const cssSearchBarRow = css({
   width: '100%',
 });
 
