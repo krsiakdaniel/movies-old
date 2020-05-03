@@ -1,3 +1,3 @@
 export * from './Actor';
 export * from './MovieInfo';
-export * from './SubNavigation';
+export * from './Breadcrumb';
