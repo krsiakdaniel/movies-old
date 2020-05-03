@@ -10,61 +10,6 @@ import { BASE_URL_IMAGE, SIZE_POSTER } from '../../../config';
 
 import imgNoPoster from '../../../assets/svg/error/no-image.svg';
 
-const MovieInfo = ({ movie, time, budget, revenue }) => {
-  const { t } = useTranslation();
-
-  return (
-    <Box css={cssMovieBackdrop} backdrop={movie.backdrop_path}>
-      <Box css={cssMovie}>
-        <Box css={cssMovieThumbWrap}>
-          <MovieThumb
-            image={
-              movie.poster_path
-                ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
-                : imgNoPoster
-            }
-            isClickable={false}
-            alt={movie.title}
-            css={cssMovieThumb}
-          />
-        </Box>
-
-        <Box css={cssMovieInfo}>
-          <Heading css={cssMovieTitle}>{movie.title}</Heading>
-          <Text css={cssMovieOverview}>{movie.overview}</Text>
-
-          <List css={cssMovieDetails}>
-            lineHeight: 1,
-            <ListItem>
-              <strong>{t('movie.director')}:</strong>
-              {movie?.directors?.map((director) => (
-                <Text key={director.credit_id}>
-                  {director.name}
-                  {movie.directors.length > 1 ? ', ' : ''}
-                </Text>
-              ))}
-            </ListItem>
-            <ListItem>
-              <strong>{t('movie.runningTime')}:</strong> {calcTime(time)}
-            </ListItem>
-            <ListItem>
-              <strong>{t('movie.budget')}:</strong> {convertMoney(budget)}
-            </ListItem>
-            <ListItem>
-              <strong>{t('movie.revenue')}:</strong> {convertMoney(revenue)}
-            </ListItem>
-          </List>
-        </Box>
-      </Box>
-    </Box>
-  );
-};
-
-MovieInfo.propTypes = {
-  movie: PropTypes.object,
-  directors: PropTypes.array,
-};
-
 // TODO: use chakra
 const cssMovieBackdrop = css({
   // TODO: fix bg
@@ -139,5 +84,60 @@ const cssMovieOverview = css({
 const cssMovieDetails = css({
   lineHeight: 1,
 });
+
+const MovieInfo = ({ movie, time, budget, revenue }) => {
+  const { t } = useTranslation();
+
+  return (
+    <Box css={cssMovieBackdrop} backdrop={movie.backdrop_path}>
+      <Box css={cssMovie}>
+        <Box css={cssMovieThumbWrap}>
+          <MovieThumb
+            image={
+              movie.poster_path
+                ? `${BASE_URL_IMAGE}${SIZE_POSTER}${movie.poster_path}`
+                : imgNoPoster
+            }
+            isClickable={false}
+            alt={movie.title}
+            css={cssMovieThumb}
+          />
+        </Box>
+
+        <Box css={cssMovieInfo}>
+          <Heading css={cssMovieTitle}>{movie.title}</Heading>
+          <Text css={cssMovieOverview}>{movie.overview}</Text>
+
+          <List css={cssMovieDetails}>
+            lineHeight: 1,
+            <ListItem>
+              <strong>{t('movie.director')}:</strong>
+              {movie?.directors?.map((director) => (
+                <Text key={director.credit_id}>
+                  {director.name}
+                  {movie.directors.length > 1 ? ', ' : ''}
+                </Text>
+              ))}
+            </ListItem>
+            <ListItem>
+              <strong>{t('movie.runningTime')}:</strong> {calcTime(time)}
+            </ListItem>
+            <ListItem>
+              <strong>{t('movie.budget')}:</strong> {convertMoney(budget)}
+            </ListItem>
+            <ListItem>
+              <strong>{t('movie.revenue')}:</strong> {convertMoney(revenue)}
+            </ListItem>
+          </List>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+MovieInfo.propTypes = {
+  movie: PropTypes.object,
+  directors: PropTypes.array,
+};
 
 export { MovieInfo };
