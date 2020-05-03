@@ -2,10 +2,10 @@ import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 
-import { AppLayout } from './components/layout';
-import { Home, About, Movie, Page404 } from './components/pages';
+import { AppLayout } from 'components/layout';
+import { Home, About, Movie, Page404 } from 'components/pages';
 
-import { pageUrls } from 'config';
+import { routes } from 'routes';
 
 const App = () => {
   return (
@@ -15,13 +15,13 @@ const App = () => {
           <CSSReset />
           <AppLayout>
             <Switch>
-              <Route exact path={pageUrls.home}>
+              <Route exact path={routes.home.path}>
                 <Home />
               </Route>
-              <Route path={`${pageUrls.movie}${pageUrls.movieId}`}>
+              <Route path={routes.movieId.path}>
                 <Movie />
               </Route>
-              <Route path={pageUrls.about}>
+              <Route path={routes.about.path}>
                 <About />
               </Route>
               <Route>

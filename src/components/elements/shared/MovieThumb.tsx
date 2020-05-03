@@ -3,7 +3,8 @@ import { Box, Image, Text } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
-import { cypress, pageUrls } from 'config';
+import { cypress } from 'config';
+import { routes } from 'routes';
 
 type Props = {
   alt: string;
@@ -17,7 +18,7 @@ const MovieThumb = ({ alt, isClickable, image, movieId, movieName }: Props) => {
   return (
     <Box css={cssMovieThumb}>
       {isClickable ? (
-        <Link to={`${pageUrls.movie}${movieId}`}>
+        <Link to={`${routes.movie.path}${movieId}`}>
           <Image src={image} alt={alt} css={cssMovieImage} />
           <Text css={cssMovieName} data-cy={cypress.movieName}>
             {movieName}
