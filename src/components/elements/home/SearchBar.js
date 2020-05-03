@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Box, Input } from '@chakra-ui/core';
 import { css } from '@emotion/core';
 import { useTranslation } from 'react-i18next';
 
@@ -22,9 +23,9 @@ const SearchBar = ({ callback }) => {
   };
 
   return (
-    <div css={cssSearchBarRow}>
-      <div css={cssSearchBar}>
-        <input
+    <Box css={cssSearchBarRow}>
+      <Box css={cssSearchBar}>
+        <Input
           type="text"
           placeholder={t('search.placeholder')}
           onChange={handleSearch}
@@ -32,8 +33,8 @@ const SearchBar = ({ callback }) => {
           data-cy={cypress.searchBar}
           css={cssSearchBarInput}
         />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
@@ -41,6 +42,7 @@ SearchBar.propTypes = {
   callback: PropTypes.func,
 };
 
+// TODO: use chakra
 const cssSearchBarRow = css({
   width: '100%',
 });
@@ -49,8 +51,6 @@ const cssSearchBar = css({
   maxWidth: 1200,
   margin: '0 auto',
   padding: '0 16px',
-  width: '100%',
-  position: 'relative',
 
   '@media screen and (max-width: 768px)': {
     padding: '0 24px',
@@ -58,20 +58,7 @@ const cssSearchBar = css({
 });
 
 const cssSearchBarInput = css({
-  margin: '32px auto',
-  width: '100%',
-  height: 40,
-  position: 'relative',
-  display: 'inline-block',
-  minWidth: 0,
-  padding: '4px 16px',
-  color: 'rgba(0, 0, 0, 0.5)',
-  fontSize: 14,
-  lineHeight: 1.5715,
-  backgroundColor: '#fff',
-  backgroundImage: 'none',
-  border: '1px solid #d9d9d9',
-  borderRadius: 8,
+  margin: '32px 0',
   transition: 'all 0.4s',
 
   ':focus': {
