@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { pageUrls } from 'config';
 
 import LogoMovies from 'assets/svg/logo/logo-512.svg';
-import LogoTMDb from 'assets/svg/logo/tmdb.svg';
+import LogoTMDb from 'assets/svg/logo/TMDb.svg';
 
 const Header = () => {
   const { t } = useTranslation();
