@@ -1,50 +1,58 @@
 import React from 'react';
+import {
+  Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+} from '@chakra-ui/core';
 import { css } from '@emotion/core';
+// import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
 import { pageUrls } from 'config';
 
 type Props = {
-  movie: string;
+  movieTitle: string;
 };
 
-const SubNavigation = ({ movie }: Props) => {
+// TODO: make links work with ROUTER
+const SubNavigation = ({ movieTitle }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <div css={cssSubNavigation}>
-      <ul>
-        <li>
-          <Link to={pageUrls.home}>{t('subnav.home')}</Link>
-        </li>
-        <li>/</li>
-        <li>{movie}</li>
-      </ul>
-    </div>
+    <Box css={cssSubNavigationRow}>
+      <Box css={cssSubNavigation}>
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <BreadcrumbLink href={pageUrls.home}>
+              {t('subnav.home')}
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem isCurrentPage>
+            <BreadcrumbLink href="#">{movieTitle}</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+      </Box>
+    </Box>
   );
 };
 
+// TODO: use chakra
+const cssSubNavigationRow = css({
+  margin: '0 auto',
+  textAlign: 'center',
+  maxWidth: 1200,
+});
+
 const cssSubNavigation = css({
-  display: 'flex',
   maxWidth: 1200,
   margin: '0 auto',
-  padding: 16,
-  width: '100%',
-  background: '#fff',
-  fontSize: 12,
-
-  li: {
-    display: 'inline-block',
-    paddingRight: 8,
-  },
+  padding: '16px',
+  fontSize: 12, // xs
+  textAlign: 'left',
 
   '@media screen and (max-width: 768px)': {
     padding: '16px 24px',
-
-    li: {
-      fontSize: 16,
-    },
   },
 });
 

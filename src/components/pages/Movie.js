@@ -29,7 +29,7 @@ const Movie = () => {
         </title>
         <meta name="description" content={movie.overview} />
       </Helmet>
-      <SubNavigation movie={movie.original_title} />
+      <SubNavigation movieTitle={movie.title} />
       <MovieInfo
         movie={movie}
         time={movie.runtime}
