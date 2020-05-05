@@ -7,7 +7,7 @@ import { Actor, MovieInfo, Breadcrumb } from '../elements/movie';
 import { Grid, Spinner } from '../elements/shared';
 import { Page404 } from './index';
 
-import { useMovieFetch } from '../hooks';
+import { useMovieFetch } from '../hooks/useMovieFetch';
 
 const Movie = () => {
   const { t } = useTranslation();
