@@ -5,7 +5,7 @@ import { LoadMoreBtn, NoMovieFound, SearchBar } from '../elements/home';
 import { Grid, MovieThumb, Spinner } from '../elements/shared';
 import { Page404 } from './index';
 
-import { useHomeFetch } from '../hooks';
+import { useHomeFetch } from 'components/hooks/useHomeFetch';
 
 import {
   BASE_URL_IMAGE,
@@ -20,16 +20,14 @@ const Home = () => {
   const { t } = useTranslation();
 
   const [searchTerm, setSearchTerm] = useState('');
-  const [
-    {
-      state: { movies, currentPage, totalPages },
-      isLoading,
-      error,
-    },
+  const {
     fetchMovies,
-  ] = useHomeFetch(searchTerm);
+    state: { movies, currentPage, totalPages },
+    isLoading,
+    error,
+  } = useHomeFetch(searchTerm);
 
-  const searchMovies = (searchTerm) => {
+  const searchMovies = (searchTerm: string) => {
     const endpoint = searchTerm
       ? BASE_URL_MOVIES_SEARCH + searchTerm
       : BASE_URL_MOVIES_POPULAR;
