@@ -9,13 +9,19 @@ import { routes } from 'routes';
 import imgMovies from 'assets/svg/logo/logo-512.svg';
 import imgTMDb from 'assets/svg/logo/TMDb.svg';
 
+const refreshPage = () => {
+  if (window.location.hash === '#/') {
+    window.location.reload(true);
+  }
+};
+
 const Header = () => {
   const { t } = useTranslation();
 
   return (
     <Box css={cssHeaderRow}>
       <Box css={cssHeader}>
-        <Link to={routes.home.path} css={cssHeaderLink}>
+        <Link to={routes.home.path} onClick={refreshPage} css={cssHeaderLink}>
           <Image src={imgMovies} css={cssLogoMovies} alt={t('alt.movies')} />
           <Text css={cssHeaderText}>{t('shared.app.title')}</Text>
         </Link>
