@@ -2,3 +2,6 @@
   package = "netlify-plugin-cypress"
   [plugins.inputs]
   record = true
+
+[[plugins]]
+  package = "netlify-plugin-checklinks"
