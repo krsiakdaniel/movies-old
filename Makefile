@@ -1,6 +1,9 @@
 default:
 	cat Makefile
 
+clear:
+	rm -rf ./node_modules
+
 # --- React app
 start:
 	yarn start
