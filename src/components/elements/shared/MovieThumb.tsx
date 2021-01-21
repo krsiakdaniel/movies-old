@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Image, Text } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Image, Text } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 
 import { cypress } from 'config';

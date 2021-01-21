@@ -4,8 +4,8 @@ import {
   Breadcrumb as BreadcrumbChakra,
   BreadcrumbItem,
   BreadcrumbLink,
-} from '@chakra-ui/core';
-import { css } from '@emotion/core';
+} from '@chakra-ui/react';
+import { css } from '@emotion/react';
 // import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

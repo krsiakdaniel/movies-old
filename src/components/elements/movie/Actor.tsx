@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Image, Text } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Image, Text } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 
 import imgNoActor from 'assets/jpg/error/no-image.jpg';
 import { BASE_URL_IMAGE, SIZE_POSTER } from 'config';

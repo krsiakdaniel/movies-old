@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Heading, List, ListItem, Text } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Heading, List, ListItem, Text } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 import { MovieThumb } from '../shared';
 import { useTranslation } from 'react-i18next';
 

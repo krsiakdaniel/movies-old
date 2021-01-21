@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Spinner as SpinnerChakra } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Spinner as SpinnerChakra } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 
 const Spinner = () => {
   return (

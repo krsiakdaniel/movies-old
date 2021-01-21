@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Box, Heading, Text } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Heading, Text } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {

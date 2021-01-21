@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { Box, Input } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Input } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
 
 import PropTypes from 'prop-types';

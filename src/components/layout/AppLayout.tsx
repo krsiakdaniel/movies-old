@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Box } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
 import { Header, Footer } from './index';

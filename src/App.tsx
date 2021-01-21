@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
+import { ChakraProvider } from '@chakra-ui/react';
 
 import { AppLayout } from 'components/layout';
 import { Home, About, Movie, Page404 } from 'components/pages';
@@ -11,8 +11,7 @@ const App = () => {
   return (
     <div>
       <HashRouter>
-        <ThemeProvider>
-          <CSSReset />
+        <ChakraProvider>
           <AppLayout>
             <Switch>
               <Route exact path={routes.home.path}>
@@ -29,7 +28,7 @@ const App = () => {
               </Route>
             </Switch>
           </AppLayout>
-        </ThemeProvider>
+        </ChakraProvider>
       </HashRouter>
     </div>
   );

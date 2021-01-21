@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Button } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Button } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 
 type Props = {
   text: string;
@@ -12,7 +12,7 @@ const LoadMoreBtn = ({ text, callback }: Props) => {
     <Box css={cssLoadMoreBtnRow}>
       <Button
         type="button"
-        variantColor="green"
+        colorScheme="green"
         onClick={callback}
         css={cssLoadMoreBtn}
       >

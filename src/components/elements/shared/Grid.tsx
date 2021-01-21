@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Heading, Grid as GridChakra } from '@chakra-ui/core';
-import { css } from '@emotion/core';
+import { Box, Heading, Grid as GridChakra } from '@chakra-ui/react';
+import { css } from '@emotion/react';
 
 import { cypress } from 'config';
 
