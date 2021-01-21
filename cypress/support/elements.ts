@@ -1,9 +1,9 @@
 const elements = {
-  attributes: {
+  attribute: {
     pageHeading: '[data-cy="page-heading"]',
     searchBar: '[data-cy="search-bar"]',
   },
-  texts: {
+  text: {
     searchBar: 'star trek',
     searchResults: 'Search Results',
   },

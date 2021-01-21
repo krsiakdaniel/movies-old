@@ -1,12 +1,8 @@
-import { elements } from '../support/elements';
+import { elements } from '../support';
 
 const statusSuccess = 200;
 
 describe('Homepage', () => {
-  beforeEach(() => {
-    cy.visit('/');
-  });
-
   it('Page status = 200', () => {
     cy.request('/').then((response) => {
       expect(response.status).to.eq(statusSuccess);
@@ -14,12 +10,13 @@ describe('Homepage', () => {
   });
 
   it('Search bar', () => {
-    cy.get(elements.attributes.searchBar)
+    cy.visit('/');
+    cy.get(elements.attribute.searchBar)
       .should('be.visible')
       .click()
-      .type(elements.texts.searchBar);
-    cy.get(elements.attributes.pageHeading)
+      .type(elements.text.searchBar);
+    cy.get(elements.attribute.pageHeading)
       .should('be.visible')
-      .contains(elements.texts.searchResults);
+      .contains(elements.text.searchResults);
   });
 });
