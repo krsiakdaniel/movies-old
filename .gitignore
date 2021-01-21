@@ -97,6 +97,7 @@ yarn-error.log*
 remote-repo/
 chrome-user-data
 .module-cache
+.eslintcache
 
 # databases
 *.sql
