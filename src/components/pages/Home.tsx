@@ -16,7 +16,7 @@ import {
 
 import imgNoPoster from '../../assets/svg/error/no-image.svg'
 
-const Home = () => {
+export const Home = () => {
   const { t } = useTranslation()
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -90,5 +90,3 @@ const Home = () => {
     </>
   )
 }
-
-export { Home }

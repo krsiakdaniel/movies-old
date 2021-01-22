@@ -14,7 +14,7 @@ type Props = {
 }
 
 // TODO: make links work with ROUTER
-const Breadcrumb = ({ movieTitle }: Props) => {
+export const Breadcrumb = ({ movieTitle }: Props) => {
   const { t } = useTranslation()
 
   return (
@@ -34,5 +34,3 @@ const Breadcrumb = ({ movieTitle }: Props) => {
     </Box>
   )
 }
-
-export { Breadcrumb }

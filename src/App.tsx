@@ -7,7 +7,7 @@ import { Home, About, Movie, Page404 } from 'components/pages'
 
 import { routes } from 'routes'
 
-const App = () => {
+export const App = () => {
   return (
     <HashRouter>
       <ChakraProvider>
@@ -31,5 +31,3 @@ const App = () => {
     </HashRouter>
   )
 }
-
-export { App }

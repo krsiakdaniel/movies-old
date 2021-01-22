@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import { Box, Input } from '@chakra-ui/react'
 
-const SearchBar = ({ callback }) => {
+export const SearchBar = ({ callback }) => {
   const { t } = useTranslation()
 
   const [state, setState] = useState('')
@@ -37,5 +37,3 @@ const SearchBar = ({ callback }) => {
 SearchBar.propTypes = {
   callback: PropTypes.func,
 }
-
-export { SearchBar }

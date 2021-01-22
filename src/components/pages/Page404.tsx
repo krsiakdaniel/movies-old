@@ -6,7 +6,7 @@ import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 
 import imgNoMovie from 'assets/svg/error/404.svg'
 
-const Page404 = () => {
+export const Page404 = () => {
   const { t } = useTranslation()
 
   return (
@@ -26,5 +26,3 @@ const Page404 = () => {
     </>
   )
 }
-
-export { Page404 }

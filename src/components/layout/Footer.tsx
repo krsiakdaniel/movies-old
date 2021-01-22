@@ -6,7 +6,7 @@ import { Box, Text } from '@chakra-ui/react'
 
 import { routes } from 'routes'
 
-const Footer = () => {
+export const Footer = () => {
   const { t } = useTranslation()
 
   return (
@@ -20,5 +20,3 @@ const Footer = () => {
     </Box>
   )
 }
-
-export { Footer }

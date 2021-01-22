@@ -12,7 +12,13 @@ type Props = {
   movieName: string
 }
 
-const MovieThumb = ({ alt, isClickable, image, movieId, movieName }: Props) => {
+export const MovieThumb = ({
+  alt,
+  isClickable,
+  image,
+  movieId,
+  movieName,
+}: Props) => {
   return (
     <Box>
       {isClickable ? (
@@ -26,5 +32,3 @@ const MovieThumb = ({ alt, isClickable, image, movieId, movieName }: Props) => {
     </Box>
   )
 }
-
-export { MovieThumb }

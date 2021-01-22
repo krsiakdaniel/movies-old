@@ -1,6 +1,6 @@
 import { Home, About, Movie } from './components/pages'
 
-const routes = {
+export const routes = {
   home: {
     path: '/',
     component: Home,
@@ -19,5 +19,3 @@ const routes = {
     component: Movie,
   },
 }
-
-export { routes }

@@ -6,7 +6,7 @@ type Props = {
   callback: React.MouseEventHandler<HTMLElement>
 }
 
-const LoadMoreBtn = ({ text, callback }: Props) => {
+export const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
     <Box>
       <Button type="button" colorScheme="green" onClick={callback}>
@@ -15,5 +15,3 @@ const LoadMoreBtn = ({ text, callback }: Props) => {
     </Box>
   )
 }
-
-export { LoadMoreBtn }

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { Box, Heading, Text } from '@chakra-ui/react'
 
-const About = () => {
+export const About = () => {
   const { t } = useTranslation()
 
   return (
@@ -23,5 +23,3 @@ const About = () => {
     </>
   )
 }
-
-export { About }

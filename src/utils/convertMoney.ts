@@ -3,7 +3,7 @@ type Props = {
   money: number
 }
 
-const convertMoney = ({ money }: Props) => {
+export const convertMoney = ({ money }: Props) => {
   const formatter = new Intl.NumberFormat('en-US', {
     currency: 'USD',
     minimumFractionDigits: 0,
@@ -11,5 +11,3 @@ const convertMoney = ({ money }: Props) => {
   })
   return formatter.format(money)
 }
-
-export { convertMoney }

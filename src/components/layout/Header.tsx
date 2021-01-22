@@ -14,7 +14,7 @@ const refreshPage = () => {
   }
 }
 
-const Header = () => {
+export const Header = () => {
   const { t } = useTranslation()
 
   return (
@@ -29,5 +29,3 @@ const Header = () => {
     </Box>
   )
 }
-
-export { Header }

@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode
 }
 
-const Grid = ({ header, children }: Props) => {
+export const Grid = ({ header, children }: Props) => {
   return (
     <Box>
       <Heading data-cy="page-heading">{header}</Heading>
@@ -14,5 +14,3 @@ const Grid = ({ header, children }: Props) => {
     </Box>
   )
 }
-
-export { Grid }

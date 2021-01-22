@@ -5,7 +5,7 @@ import { Box, Heading, Image, Text } from '@chakra-ui/react'
 
 import imgError404 from 'assets/svg/error/no-movie.svg'
 
-const NoMovieFound = () => {
+export const NoMovieFound = () => {
   const { t } = useTranslation()
 
   return (
@@ -22,5 +22,3 @@ const NoMovieFound = () => {
     </Box>
   )
 }
-
-export { NoMovieFound }

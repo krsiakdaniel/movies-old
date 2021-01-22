@@ -10,7 +10,7 @@ import { BASE_URL_IMAGE, SIZE_POSTER } from '../../../config'
 
 import imgNoPoster from '../../../assets/svg/error/no-image.svg'
 
-const MovieInfo = ({ movie, time, budget, revenue }) => {
+export const MovieInfo = ({ movie, time, budget, revenue }) => {
   const { t } = useTranslation()
 
   return (
@@ -63,5 +63,3 @@ MovieInfo.propTypes = {
   movie: PropTypes.object,
   directors: PropTypes.array,
 }
-
-export { MovieInfo }

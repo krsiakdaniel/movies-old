@@ -9,7 +9,7 @@ type Props = {
   children: ReactNode
 }
 
-const AppLayout = ({ children }: Props) => {
+export const AppLayout = ({ children }: Props) => {
   const { t } = useTranslation()
 
   return (
@@ -23,5 +23,3 @@ const AppLayout = ({ children }: Props) => {
     </>
   )
 }
-
-export { AppLayout }

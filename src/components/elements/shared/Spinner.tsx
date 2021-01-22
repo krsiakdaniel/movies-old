@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Spinner as SpinnerChakra } from '@chakra-ui/react'
 
-const Spinner = () => {
+export const Spinner = () => {
   return (
     <Box>
       <SpinnerChakra
@@ -16,5 +16,3 @@ const Spinner = () => {
     </Box>
   )
 }
-
-export { Spinner }

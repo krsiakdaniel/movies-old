@@ -9,7 +9,7 @@ import { Page404 } from './index'
 
 import { useMovieFetch } from '../hooks/useMovieFetch'
 
-const Movie = () => {
+export const Movie = () => {
   const { t } = useTranslation()
   let { movieId } = useParams()
 
@@ -44,5 +44,3 @@ const Movie = () => {
     </>
   )
 }
-
-export { Movie }

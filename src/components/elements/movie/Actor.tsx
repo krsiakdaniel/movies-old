@@ -10,7 +10,7 @@ type Props = {
   actor: any
 }
 
-const Actor = ({ actor }: Props) => {
+export const Actor = ({ actor }: Props) => {
   return (
     <Box>
       <Image
@@ -28,5 +28,3 @@ const Actor = ({ actor }: Props) => {
     </Box>
   )
 }
-
-export { Actor }
