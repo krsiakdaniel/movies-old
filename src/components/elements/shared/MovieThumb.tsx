@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Image, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import { Box, Image, Text } from '@chakra-ui/react'
 
 import { routes } from 'routes'
 

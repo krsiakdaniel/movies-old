@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Box, Heading, Text } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 const About = () => {
   const { t } = useTranslation()

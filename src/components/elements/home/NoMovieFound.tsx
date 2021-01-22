@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Heading, Image, Text } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import Emoji from 'a11y-react-emoji'
+import { Box, Heading, Image, Text } from '@chakra-ui/react'
 
 import imgError404 from 'assets/svg/error/no-movie.svg'
 

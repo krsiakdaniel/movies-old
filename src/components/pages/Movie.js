@@ -1,7 +1,7 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
-import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import { useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import { Actor, MovieInfo, Breadcrumb } from '../elements/movie'
 import { Grid, Spinner } from '../elements/shared'

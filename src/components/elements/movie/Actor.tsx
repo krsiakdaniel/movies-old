@@ -1,8 +1,9 @@
 import React from 'react'
 import { Box, Image, Text } from '@chakra-ui/react'
 
-import imgNoActor from 'assets/jpg/error/no-image.jpg'
 import { BASE_URL_IMAGE, SIZE_POSTER } from 'config'
+
+import imgNoActor from 'assets/jpg/error/no-image.jpg'
 
 // TODO: fix - actor = 'object' throws error, define using TS 'interface'
 type Props = {

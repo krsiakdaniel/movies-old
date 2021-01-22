@@ -1,11 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Breadcrumb as BreadcrumbChakra,
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/react'
-import { useTranslation } from 'react-i18next'
 
 import { routes } from 'routes'
 

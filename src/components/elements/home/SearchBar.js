@@ -1,9 +1,7 @@
 import React, { useState, useRef } from 'react'
-import { Box, Input } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
-
 import PropTypes from 'prop-types'
-import { cypress } from '../../../config'
+import { Box, Input } from '@chakra-ui/react'
 
 const SearchBar = ({ callback }) => {
   const { t } = useTranslation()

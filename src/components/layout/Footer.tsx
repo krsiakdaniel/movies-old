@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-
 import Emoji from 'a11y-react-emoji'
+import { Box, Text } from '@chakra-ui/react'
+
 import { routes } from 'routes'
 
 const Footer = () => {

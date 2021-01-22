@@ -1,9 +1,10 @@
 import React from 'react'
-import { Box, Heading, List, ListItem, Text } from '@chakra-ui/react'
-import { MovieThumb } from '../shared'
 import { useTranslation } from 'react-i18next'
-
 import PropTypes from 'prop-types'
+import { Box, Heading, List, ListItem, Text } from '@chakra-ui/react'
+
+import { MovieThumb } from '../shared'
+
 import { calcTime, convertMoney } from '../../../utils'
 import { BASE_URL_IMAGE, SIZE_POSTER } from '../../../config'
 

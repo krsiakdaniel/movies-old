@@ -1,8 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import Emoji from 'a11y-react-emoji'
+import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 
 import imgNoMovie from 'assets/svg/error/404.svg'
 
