@@ -1,22 +1,22 @@
-import { elements } from '../support'
+import { attributes, texts } from '../support'
 
 const statusSuccess = 200
 
 describe('Homepage', () => {
-  it('Page status = 200', () => {
+  it('Page status: 200', () => {
     cy.request('/').then((response) => {
       expect(response.status).to.eq(statusSuccess)
     })
   })
 
-  it('Search bar', () => {
+  it('Test: Search query', () => {
     cy.visit('/')
-    cy.get(elements.attribute.searchBar)
+    cy.get(attributes.searchBar)
       .should('be.visible')
       .click()
-      .type(elements.text.searchBar)
-    cy.get(elements.attribute.pageHeading)
+      .type(texts.searchQuery)
+    cy.get(attributes.pageHeading)
       .should('be.visible')
-      .contains(elements.text.searchResults)
+      .contains(texts.searchResultsTitle)
   })
 })

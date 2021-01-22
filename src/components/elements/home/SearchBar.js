@@ -29,7 +29,7 @@ const SearchBar = ({ callback }) => {
           placeholder={t('search.placeholder')}
           onChange={handleSearch}
           value={state}
-          data-cy={cypress.searchBar}
+          data-cy="search-bar"
         />
       </Box>
     </Box>

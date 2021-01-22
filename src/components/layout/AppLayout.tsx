@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Helmet } from 'react-helmet'
 import { Box } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { Header, Footer } from './index'
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const AppLayout = ({ children }: Props) => {

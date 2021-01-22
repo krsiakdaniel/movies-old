@@ -1,17 +1,15 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Box, Heading, Grid as GridChakra } from '@chakra-ui/react'
-
-import { cypress } from 'config'
 
 type Props = {
   header: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Grid = ({ header, children }: Props) => {
   return (
     <Box>
-      <Heading data-cy={cypress.pageHeading}>{header}</Heading>
+      <Heading data-cy="page-heading">{header}</Heading>
       <GridChakra>{children}</GridChakra>
     </Box>
   )
