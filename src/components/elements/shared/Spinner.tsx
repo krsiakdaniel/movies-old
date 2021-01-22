@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Spinner as SpinnerChakra } from '@chakra-ui/react';
+import React from 'react'
+import { Box, Spinner as SpinnerChakra } from '@chakra-ui/react'
 
 const Spinner = () => {
   return (
@@ -14,7 +14,7 @@ const Spinner = () => {
         my="32px"
       />
     </Box>
-  );
-};
+  )
+}
 
-export { Spinner };
+export { Spinner }

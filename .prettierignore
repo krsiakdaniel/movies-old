@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+public
+coverage
+
+# Ignore all:
+*.html
+/node_modules

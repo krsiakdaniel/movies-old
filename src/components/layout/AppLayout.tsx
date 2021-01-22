@@ -1,16 +1,16 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Box } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { Box } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
 
-import { Header, Footer } from './index';
+import { Header, Footer } from './index'
 
 type Props = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const AppLayout = ({ children }: Props) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <>
@@ -21,7 +21,7 @@ const AppLayout = ({ children }: Props) => {
       <Box>{children}</Box>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export { AppLayout };
+export { AppLayout }

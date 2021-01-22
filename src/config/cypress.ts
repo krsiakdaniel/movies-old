@@ -3,6 +3,6 @@ const cypress = {
   movieName: 'movie-name',
   pageHeading: 'page-heading',
   searchBar: 'search-bar',
-};
+}
 
-export { cypress };
+export { cypress }

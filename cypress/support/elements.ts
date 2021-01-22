@@ -7,6 +7,6 @@ const elements = {
     searchBar: 'star trek',
     searchResults: 'Search Results',
   },
-};
+}
 
-export { elements };
+export { elements }

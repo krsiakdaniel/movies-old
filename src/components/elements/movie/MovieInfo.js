@@ -1,16 +1,16 @@
-import React from 'react';
-import { Box, Heading, List, ListItem, Text } from '@chakra-ui/react';
-import { MovieThumb } from '../shared';
-import { useTranslation } from 'react-i18next';
+import React from 'react'
+import { Box, Heading, List, ListItem, Text } from '@chakra-ui/react'
+import { MovieThumb } from '../shared'
+import { useTranslation } from 'react-i18next'
 
-import PropTypes from 'prop-types';
-import { calcTime, convertMoney } from '../../../utils';
-import { BASE_URL_IMAGE, SIZE_POSTER } from '../../../config';
+import PropTypes from 'prop-types'
+import { calcTime, convertMoney } from '../../../utils'
+import { BASE_URL_IMAGE, SIZE_POSTER } from '../../../config'
 
-import imgNoPoster from '../../../assets/svg/error/no-image.svg';
+import imgNoPoster from '../../../assets/svg/error/no-image.svg'
 
 const MovieInfo = ({ movie, time, budget, revenue }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Box backdrop={movie.backdrop_path}>
@@ -55,12 +55,12 @@ const MovieInfo = ({ movie, time, budget, revenue }) => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
 MovieInfo.propTypes = {
   movie: PropTypes.object,
   directors: PropTypes.array,
-};
+}
 
-export { MovieInfo };
+export { MovieInfo }

@@ -1,10 +1,10 @@
-import React from 'react';
-import { Box, Button } from '@chakra-ui/react';
+import React from 'react'
+import { Box, Button } from '@chakra-ui/react'
 
 type Props = {
-  text: string;
-  callback: React.MouseEventHandler<HTMLElement>;
-};
+  text: string
+  callback: React.MouseEventHandler<HTMLElement>
+}
 
 const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
@@ -13,7 +13,7 @@ const LoadMoreBtn = ({ text, callback }: Props) => {
         {text}
       </Button>
     </Box>
-  );
-};
+  )
+}
 
-export { LoadMoreBtn };
+export { LoadMoreBtn }

@@ -1,17 +1,17 @@
-import React from 'react';
-import { Box, Image, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Box, Image, Text } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
-import { cypress } from 'config';
-import { routes } from 'routes';
+import { cypress } from 'config'
+import { routes } from 'routes'
 
 type Props = {
-  alt: string;
-  isClickable: boolean;
-  image: string;
-  movieId: number;
-  movieName: string;
-};
+  alt: string
+  isClickable: boolean
+  image: string
+  movieId: number
+  movieName: string
+}
 
 const MovieThumb = ({ alt, isClickable, image, movieId, movieName }: Props) => {
   return (
@@ -25,7 +25,7 @@ const MovieThumb = ({ alt, isClickable, image, movieId, movieName }: Props) => {
         <Image src={image} alt={alt} />
       )}
     </Box>
-  );
-};
+  )
+}
 
-export { MovieThumb };
+export { MovieThumb }

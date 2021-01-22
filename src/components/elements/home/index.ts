@@ -1,3 +1,3 @@
-export * from './LoadMoreBtn';
-export * from './NoMovieFound';
-export * from './SearchBar';
+export * from './LoadMoreBtn'
+export * from './NoMovieFound'
+export * from './SearchBar'

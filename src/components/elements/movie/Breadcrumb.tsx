@@ -1,21 +1,21 @@
-import React from 'react';
+import React from 'react'
 import {
   Box,
   Breadcrumb as BreadcrumbChakra,
   BreadcrumbItem,
   BreadcrumbLink,
-} from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+} from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
 
-import { routes } from 'routes';
+import { routes } from 'routes'
 
 type Props = {
-  movieTitle: string;
-};
+  movieTitle: string
+}
 
 // TODO: make links work with ROUTER
 const Breadcrumb = ({ movieTitle }: Props) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Box>
@@ -32,7 +32,7 @@ const Breadcrumb = ({ movieTitle }: Props) => {
         </BreadcrumbChakra>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export { Breadcrumb };
+export { Breadcrumb }

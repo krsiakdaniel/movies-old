@@ -1,2 +1,2 @@
-export * from './calcTime';
-export * from './convertMoney';
+export * from './calcTime'
+export * from './convertMoney'

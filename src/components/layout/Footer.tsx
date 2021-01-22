@@ -1,13 +1,13 @@
-import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Box, Text } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
-import Emoji from 'a11y-react-emoji';
-import { routes } from 'routes';
+import Emoji from 'a11y-react-emoji'
+import { routes } from 'routes'
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Box>
@@ -18,7 +18,7 @@ const Footer = () => {
       </Text>
       <Text fontSize="xs">{t('footer.api')}</Text>
     </Box>
-  );
-};
+  )
+}
 
-export { Footer };
+export { Footer }

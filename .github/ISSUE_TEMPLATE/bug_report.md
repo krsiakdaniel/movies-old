@@ -4,7 +4,6 @@ about: Create a report to fix a bug you found
 title: 'Bug:'
 labels: bug
 assignees: krsiakdaniel
-
 ---
 
 **Describe the bug**
@@ -12,6 +11,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to
 2. Click on
 3. See error
@@ -23,15 +23,17 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop:**
- - OS:
- - Browser:
- - Version:
+
+- OS:
+- Browser:
+- Version:
 
 **Smartphone:**
- - Device:
- - OS:
- - Browser:
- - Version:
+
+- Device:
+- OS:
+- Browser:
+- Version:
 
 **Additional context**
 Add any other context about the problem here.

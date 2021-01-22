@@ -1,25 +1,25 @@
-import React, { useState, useRef } from 'react';
-import { Box, Input } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useRef } from 'react'
+import { Box, Input } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
 
-import PropTypes from 'prop-types';
-import { cypress } from '../../../config';
+import PropTypes from 'prop-types'
+import { cypress } from '../../../config'
 
 const SearchBar = ({ callback }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
-  const [state, setState] = useState('');
-  const timeOut = useRef(null);
+  const [state, setState] = useState('')
+  const timeOut = useRef(null)
 
   const handleSearch = (e) => {
-    const searchInputValue = e.target.value;
-    setState(searchInputValue);
+    const searchInputValue = e.target.value
+    setState(searchInputValue)
 
-    clearTimeout(timeOut.current);
+    clearTimeout(timeOut.current)
     timeOut.current = setTimeout(() => {
-      callback(searchInputValue);
-    }, 1000);
-  };
+      callback(searchInputValue)
+    }, 1000)
+  }
 
   return (
     <Box>
@@ -33,11 +33,11 @@ const SearchBar = ({ callback }) => {
         />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
 SearchBar.propTypes = {
   callback: PropTypes.func,
-};
+}
 
-export { SearchBar };
+export { SearchBar }

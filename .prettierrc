@@ -1,6 +1,7 @@
 {
   "singleQuote": true,
   "trailingComma": "all",
+  "semi": false,
   "overrides": [
     { "files": "*.yml", "options": { "useTabs": false } },
     { "files": "*.json", "options": { "useTabs": false } },

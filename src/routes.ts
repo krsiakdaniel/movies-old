@@ -1,4 +1,4 @@
-import { Home, About, Movie } from './components/pages';
+import { Home, About, Movie } from './components/pages'
 
 const routes = {
   home: {
@@ -18,6 +18,6 @@ const routes = {
     path: '/movie/:movieId',
     component: Movie,
   },
-};
+}
 
-export { routes };
+export { routes }

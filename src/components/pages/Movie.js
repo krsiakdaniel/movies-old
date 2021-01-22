@@ -1,24 +1,24 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { useParams } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
-import { Actor, MovieInfo, Breadcrumb } from '../elements/movie';
-import { Grid, Spinner } from '../elements/shared';
-import { Page404 } from './index';
+import { Actor, MovieInfo, Breadcrumb } from '../elements/movie'
+import { Grid, Spinner } from '../elements/shared'
+import { Page404 } from './index'
 
-import { useMovieFetch } from '../hooks/useMovieFetch';
+import { useMovieFetch } from '../hooks/useMovieFetch'
 
 const Movie = () => {
-  const { t } = useTranslation();
-  let { movieId } = useParams();
+  const { t } = useTranslation()
+  let { movieId } = useParams()
 
-  const [movie, isLoading, error] = useMovieFetch(movieId);
+  const [movie, isLoading, error] = useMovieFetch(movieId)
   if (isLoading) {
-    return <Spinner />;
+    return <Spinner />
   }
   if (error) {
-    return <Page404 />;
+    return <Page404 />
   }
 
   return (
@@ -42,7 +42,7 @@ const Movie = () => {
         ))}
       </Grid>
     </>
-  );
-};
+  )
+}
 
-export { Movie };
+export { Movie }

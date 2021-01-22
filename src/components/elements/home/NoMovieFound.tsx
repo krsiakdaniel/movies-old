@@ -1,12 +1,12 @@
-import React from 'react';
-import { Box, Heading, Image, Text } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
-import Emoji from 'a11y-react-emoji';
+import React from 'react'
+import { Box, Heading, Image, Text } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
+import Emoji from 'a11y-react-emoji'
 
-import imgError404 from 'assets/svg/error/no-movie.svg';
+import imgError404 from 'assets/svg/error/no-movie.svg'
 
 const NoMovieFound = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Box>
@@ -20,7 +20,7 @@ const NoMovieFound = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export { NoMovieFound };
+export { NoMovieFound }
