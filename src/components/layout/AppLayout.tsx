@@ -24,6 +24,4 @@ const AppLayout = ({ children }: Props) => {
   );
 };
 
-// TODO: use chakra + css={} to define maxWidth, margin, padding?
-
 export { AppLayout };

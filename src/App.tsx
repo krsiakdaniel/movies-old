@@ -9,7 +9,7 @@ import { routes } from 'routes';
 
 const App = () => {
   return (
-    <div>
+    <>
       <HashRouter>
         <ChakraProvider>
           <AppLayout>
@@ -30,7 +30,7 @@ const App = () => {
           </AppLayout>
         </ChakraProvider>
       </HashRouter>
-    </div>
+    </>
   );
 };
 

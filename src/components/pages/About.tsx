@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Box, Heading, Text } from '@chakra-ui/react';
-import { css } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
           {t('about.title')} | {t('shared.app.title')}
         </title>
       </Helmet>
-      <Box css={cssAbout}>
+      <Box>
         <Heading>{t('about.title')}</Heading>
         <Text>
           {t('about.text1')} <strong>{t('shared.app.author')}</strong>{' '}
@@ -24,12 +23,5 @@ const About = () => {
     </>
   );
 };
-
-// TODO: use chakra
-const cssAbout = css({
-  maxWidth: 1200,
-  margin: '0 auto',
-  padding: 16,
-});
 
 export { About };

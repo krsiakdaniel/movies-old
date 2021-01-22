@@ -5,8 +5,6 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/react';
-import { css } from '@emotion/react';
-// import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { routes } from 'routes';
@@ -20,8 +18,8 @@ const Breadcrumb = ({ movieTitle }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <Box css={cssSubNavigationRow}>
-      <Box css={cssSubNavigation}>
+    <Box>
+      <Box>
         <BreadcrumbChakra>
           <BreadcrumbItem>
             <BreadcrumbLink href={routes.home.path}>
@@ -36,24 +34,5 @@ const Breadcrumb = ({ movieTitle }: Props) => {
     </Box>
   );
 };
-
-// TODO: use chakra
-const cssSubNavigationRow = css({
-  margin: '0 auto',
-  textAlign: 'center',
-  maxWidth: 1200,
-});
-
-const cssSubNavigation = css({
-  maxWidth: 1200,
-  margin: '0 auto',
-  padding: '16px',
-  fontSize: 12, // xs
-  textAlign: 'left',
-
-  '@media screen and (max-width: 768px)': {
-    padding: '16px 24px',
-  },
-});
 
 export { Breadcrumb };

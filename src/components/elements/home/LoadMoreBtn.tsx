@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Button } from '@chakra-ui/react';
-import { css } from '@emotion/react';
 
 type Props = {
   text: string;
@@ -9,29 +8,12 @@ type Props = {
 
 const LoadMoreBtn = ({ text, callback }: Props) => {
   return (
-    <Box css={cssLoadMoreBtnRow}>
-      <Button
-        type="button"
-        colorScheme="green"
-        onClick={callback}
-        css={cssLoadMoreBtn}
-      >
+    <Box>
+      <Button type="button" colorScheme="green" onClick={callback}>
         {text}
       </Button>
     </Box>
   );
 };
-
-// TODO: use chakra
-const cssLoadMoreBtnRow = css({
-  margin: '32px auto',
-  textAlign: 'center',
-  maxWidth: 1200,
-});
-
-const cssLoadMoreBtn = css({
-  minWidth: 128,
-  cursor: 'pointer',
-});
 
 export { LoadMoreBtn };
