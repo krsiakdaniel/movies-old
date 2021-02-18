@@ -39,6 +39,8 @@
 
 ## 🐛 Cypress
 
+Tests run on [Buddy](https://buddy.works/) with each commit to `master` branch.
+
 E2E tests are written in [Cypress](cypress/integration), and can be run locally or seen in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 - `make cy-open` = Cypress interactive mode.
