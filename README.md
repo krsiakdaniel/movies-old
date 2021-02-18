@@ -14,7 +14,6 @@
   </p>
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/743125152cfc42d68e414657f635eb19)](https://app.codacy.com/manual/krsiakdaniel/movies/dashboard?bid=17493411)
-[![Netlify](https://img.shields.io/netlify/ffdb97fb-1b98-4b1f-843b-f79ca6a0e1e0)](https://app.netlify.com/sites/movies-krsiak/deploys)
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784723880-fee7f3be2f7dc41793c2024c?label=website)](https://stats.uptimerobot.com/7DxZ0imzV4)
 
 </div>
@@ -40,7 +39,7 @@
 
 ## 🐛 Cypress
 
-[E2E tests](cypress/integration) run on **Netlify** during build. They can run locally as well. Tests' runs are in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+E2E tests are written in [Cypress](cypress/integration), and can be run locally or seen in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 - `make cy-open` = Cypress interactive mode.
 - `make cy-run` = Run tests in terminal.
@@ -48,10 +47,4 @@
 
 ## 📦 Deployment
 
-This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) automation to:
-
-1 Build app from `master` branch on each commit. 2. Runs **Cypress tests** during build:
-
-1. ✅ Tests are ok = site gets published.
-2. ⛔ Tests fail = build stops.
-3. Use `make netlify-build` to run Netlify build preview locally.
+[DigitalOcean](https://www.digitalocean.com/) builds app from `master` branch with each new commit.

@@ -19,7 +19,7 @@
 
 ## Services
 
-- [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys)
+- [DigitalOcean](https://www.digitalocean.com/)
 - [Codacy](https://app.codacy.com/manual/krsiakdaniel/movies/dashboard?bid=17493411)
 - [Smartlook](https://www.smartlook.com/)
 - [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs)

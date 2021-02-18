@@ -11,10 +11,6 @@ start:
 build:
 	yarn build
 
-# --- Netlify
-netlify-build:
-	yarn netlify:build
-
 # --- Testing
 # Cypress (E2E tests)
 cy-open:
