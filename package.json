@@ -23,7 +23,7 @@
     "customize-cra": "^1.0.0",
     "cypress": "6.5.0",
     "emotion": "^11.0.0",
-    "framer-motion": "^3.3.0",
+    "framer-motion": "^3.5.2",
     "i18next": "^19.8.9",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
