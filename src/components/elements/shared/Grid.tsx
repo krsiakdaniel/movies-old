@@ -9,7 +9,7 @@ type Props = {
 export const Grid = ({ header, children }: Props) => {
   return (
     <Box>
-      <Heading data-cy="page-heading">{header}</Heading>
+      <Heading data-testid="page-heading">{header}</Heading>
       <GridChakra>{children}</GridChakra>
     </Box>
   )

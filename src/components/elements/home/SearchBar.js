@@ -27,7 +27,7 @@ export const SearchBar = ({ callback }) => {
           placeholder={t('search.placeholder')}
           onChange={handleSearch}
           value={state}
-          data-cy="search-bar"
+          data-testid="search-bar"
         />
       </Box>
     </Box>

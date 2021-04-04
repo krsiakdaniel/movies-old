@@ -24,7 +24,7 @@ export const MovieThumb = ({
       {isClickable ? (
         <Link to={`${routes.movie.path}${movieId}`}>
           <Image src={image} alt={alt} />
-          <Text data-cy="movie-name">{movieName}</Text>
+          <Text data-testid="movie-name">{movieName}</Text>
         </Link>
       ) : (
         <Image src={image} alt={alt} />
