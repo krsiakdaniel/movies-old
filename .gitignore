@@ -95,6 +95,7 @@ yarn-error.log*
 # misc
 remote-repo/
 chrome-user-data
+*.css.map
 
 # databases
 *.sql
@@ -116,3 +117,4 @@ Thumbs.db
 .cache
 .eslintcache
 .module-cache
+.sass-cache
