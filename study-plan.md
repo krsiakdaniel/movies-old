@@ -199,4 +199,4 @@ My study plan shows what I learnt about JavaScript, TypeScript, React and other 
 
 ## Deployment
 
-- [x] Deploy from <https://www.digitalocean.com/>
+- [x] Deploy from Github using [Netlify](https://www.netlify.com/)

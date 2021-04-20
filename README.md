@@ -39,9 +39,7 @@
 
 ## 🐛 Cypress
 
-Tests run on [Buddy](https://buddy.works/) with each commit to `master` branch.
-
-E2E tests are written in [Cypress](cypress/integration), and can be run locally or seen in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
+E2E tests are written in [Cypress](cypress/integration) and run on **Netlify** during build. They can also be run locally or seen in [Cypress Dashboard](https://dashboard.cypress.io/projects/tcj8uu/runs).
 
 - `make cy-open` = Cypress interactive mode.
 - `make cy-run` = Run tests in terminal.
@@ -49,4 +47,12 @@ E2E tests are written in [Cypress](cypress/integration), and can be run locally 
 
 ## 📦 Deployment
 
-[DigitalOcean](https://www.digitalocean.com/) builds app from `master` branch with each new commit.
+This app uses [Netlify](https://app.netlify.com/sites/movies-krsiak/deploys) automation.
+
+1. The app builds from `master` branch on each commit.
+2. Runs **Cypress tests** during build:
+
+- ✅ Tests are ok = site gets published.
+- ⛔ Tests fail = build stops.
+
+Command `make netlify-build` can be used to run Netlify build preview locally.
